@@ -1,0 +1,3198 @@
+[
+ {
+  "slug": "carbonethics",
+  "name": "CarbonEthics",
+  "type": "company",
+  "website": "https://www.carbonethics.co/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian climate company restoring blue-carbon (mangrove, seagrass) and peatland ecosystems with coastal communities; Certified B Corp.",
+  "sectors": [
+   "climate-environment",
+   "oceans-coasts"
+  ],
+  "regions": [
+   "indonesia",
+   "kepulauan-riau",
+   "kalimantan-tengah"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Publishes annual impact reports 2020-2025 with outcome metrics (e.g. farmer income vs 2021 baseline, n stated)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.carbonethics.co/our-impacts"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Publishes annual impact reports 2020-2025 with outcome metrics (e.g. farmer income vs 2021 baseline, n stated)",
+      "url": "https://www.carbonethics.co/our-impacts"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Multi-year impact reports public; B Corp public profile; no public financial statements",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/carbon-ethics/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Multi-year impact reports public; B Corp public profile; no public financial statements",
+      "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/carbon-ethics/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Independent B Lab certification; overall B Impact score 88.4 (assessment covers governance)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/carbon-ethics/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Independent B Lab certification; overall B Impact score 88.4 (assessment covers governance)",
+      "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/carbon-ethics/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Community partnerships with FPIC and farmer groups described for restoration sites",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://www.carbonethics.co/our-impacts"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Community partnerships with FPIC and farmer groups described for restoration sites",
+      "url": "https://www.carbonethics.co/our-impacts"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "trash-ranger-indonesia",
+  "name": "Trash Ranger Indonesia",
+  "type": "ngo",
+  "website": "https://perstrashrangerindonesia.wordpress.com/",
+  "logo_url": "https://perstrashrangerindonesia.wordpress.com/wp-content/uploads/2024/01/foto-logo-trash-ranger-ind.jpeg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2023,
+  "summary": "Volunteer youth community (under Youth Ranger Indonesia) running waste clean-ups and environmental campaigns through city chapters; formed June 2023.",
+  "sectors": [
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia",
+   "jawa-tengah",
+   "di-yogyakarta"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "community": {
+    "criteria": [
+     {
+      "label": "Volunteer-run city chapters (e.g. Kebumen, Semarang, Yogyakarta) organising local clean-ups",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://beritajateng.tv/bermula-dari-bersih-bersih-sampah-konser-hingga-punya-puluhan-cabang-begini-sepak-terjang-trash-ranger-indonesia/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Volunteer-run city chapters (e.g. Kebumen, Semarang, Yogyakarta) organising local clean-ups",
+      "url": "https://beritajateng.tv/bermula-dari-bersih-bersih-sampah-konser-hingga-punya-puluhan-cabang-begini-sepak-terjang-trash-ranger-indonesia/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Activity news posts only; no annual report, finances or legal registration published",
+      "score": 35,
+      "weight": 1,
+      "evidence_url": "https://perstrashrangerindonesia.wordpress.com/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Activity news posts only; no annual report, finances or legal registration published",
+      "url": "https://perstrashrangerindonesia.wordpress.com/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "yayasan-indonesia-biru",
+  "name": "Yayasan Indonesia Biru (Indonesia Biru Foundation)",
+  "type": "foundation",
+  "website": "https://indonesiabiru.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": "Likupang Timur, Minahasa Utara",
+  "founded_year": 2012,
+  "summary": "Foundation founded in 2012, based in Likupang (North Minahasa), working on nature, culture and community conservation incl. the Wallace Conservation Licoupang initiative.",
+  "sectors": [
+   "oceans-coasts",
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "sulawesi-utara"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "community": {
+    "criteria": [
+     {
+      "label": "Community-based initiative (WCL) with local residents and universities described",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://indonesiabiru.org/our-projects"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Community-based initiative (WCL) with local residents and universities described",
+      "url": "https://indonesiabiru.org/our-projects"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Founders and officer roles listed; no board/independence or policies published",
+      "score": 45,
+      "weight": 1,
+      "evidence_url": "https://indonesiabiru.org/about-us"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Founders and officer roles listed; no board/independence or policies published",
+      "url": "https://indonesiabiru.org/about-us"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "waste4change",
+  "name": "Waste4Change",
+  "type": "company",
+  "website": "https://waste4change.com/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": "Bekasi, Jawa Barat",
+  "founded_year": null,
+  "summary": "Indonesian waste-management company offering collection, recycling, research and community programmes; publishes annual impact reports.",
+  "sectors": [
+   "climate-environment",
+   "water-sanitation"
+  ],
+  "regions": [
+   "indonesia",
+   "jawa-barat",
+   "dki-jakarta"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Annual impact report with tonnage diverted/recovered and CO2e avoided (self-reported)",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://waste4change.com/en/media/impact-report-waste4change-2024"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual impact report with tonnage diverted/recovered and CO2e avoided (self-reported)",
+      "url": "https://waste4change.com/en/media/impact-report-waste4change-2024"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Impact reports public; no public financial statements",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://waste4change.com/en/media/impact-report-waste4change-2024"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Impact reports public; no public financial statements",
+      "url": "https://waste4change.com/en/media/impact-report-waste4change-2024"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "kopernik",
+  "name": "Kopernik",
+  "type": "foundation",
+  "website": "https://kopernik.info/",
+  "logo_url": "https://kopernik.info/assets/images/static/kopernik-logo-white.png",
+  "country": "Indonesia",
+  "headquarters": "Bali",
+  "founded_year": 2010,
+  "summary": "Indonesia-based research and development organisation (founded 2010) testing solutions for low-income, last-mile communities.",
+  "sectors": [
+   "poverty-livelihoods",
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia",
+   "bali"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Publishes experiment results and case studies; annual reports 2010-2025",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://kopernik.info/en/about/reports-financials"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Publishes experiment results and case studies; annual reports 2010-2025",
+      "url": "https://kopernik.info/en/about/reports-financials"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "Audited financial reports published annually (Yayasan Kopernik)",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://kopernik.info/en/about/reports-financials"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Audited financial reports published annually (Yayasan Kopernik)",
+      "url": "https://kopernik.info/en/about/reports-financials"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports, audited financials, tax filings and registration documents downloadable",
+      "score": 95,
+      "weight": 1,
+      "evidence_url": "https://kopernik.info/en/about/reports-financials"
+     },
+     {
+      "label": "Legal entities disclosed",
+      "score": 90,
+      "weight": 1,
+      "evidence_url": "https://kopernik.info/en/about/legal-entities"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports, audited financials, tax filings and registration documents downloadable",
+      "url": "https://kopernik.info/en/about/reports-financials"
+     },
+     {
+      "title": "Legal entities disclosed",
+      "url": "https://kopernik.info/en/about/legal-entities"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Board of directors listed (co-founders); independence not stated",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://kopernik.info/en/about/our-team"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Board of directors listed (co-founders); independence not stated",
+      "url": "https://kopernik.info/en/about/our-team"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "ykan",
+  "name": "Yayasan Konservasi Alam Nusantara (YKAN)",
+  "type": "foundation",
+  "website": "https://www.ykan.or.id/",
+  "logo_url": "https://www.ykan.or.id/content/dam/tnc/nature/en/logos/ykan/10-PNG-Logo-YKAN-Black.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Science-based Indonesian conservation non-profit (in Indonesia since 2014) protecting land and sea as life-support systems.",
+  "sectors": [
+   "forests-biodiversity",
+   "oceans-coasts"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports and accountability page with code of ethics published",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.ykan.or.id/id/tentang-kami/akuntabilitas-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports and accountability page with code of ethics published",
+      "url": "https://www.ykan.or.id/id/tentang-kami/akuntabilitas-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Pembina, Pengawas and Pengurus named; programme and financial reports to supervisory board; code of ethics",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.ykan.or.id/id/tentang-kami/tim-kami/"
+     },
+     {
+      "label": "Accountability and code of ethics",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.ykan.or.id/id/tentang-kami/akuntabilitas-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Pembina, Pengawas and Pengurus named; programme and financial reports to supervisory board; code of ethics",
+      "url": "https://www.ykan.or.id/id/tentang-kami/tim-kami/"
+     },
+     {
+      "title": "Accountability and code of ethics",
+      "url": "https://www.ykan.or.id/id/tentang-kami/akuntabilitas-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "wwf-indonesia",
+  "name": "WWF-Indonesia (Yayasan WWF Indonesia)",
+  "type": "foundation",
+  "website": "https://www.wwf.id/",
+  "logo_url": "https://www.wwf.id/sites/default/files/WWF_Logo_Large_RGB_72dpi-min.jpg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "National conservation foundation working with government, business and communities on forests, wildlife, oceans and climate.",
+  "sectors": [
+   "forests-biodiversity",
+   "oceans-coasts",
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Annual reports describe programme results (2020-2024)",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://www.wwf.id/id/Laporan-Tahunan-2024"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports describe programme results (2020-2024)",
+      "url": "https://www.wwf.id/id/Laporan-Tahunan-2024"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "Consolidated financial statements audited by independent auditor and published (FY2023-FY2025)",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.wwf.id/id/Laporan-Keuangan-FY2023"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Consolidated financial statements audited by independent auditor and published (FY2023-FY2025)",
+      "url": "https://www.wwf.id/id/Laporan-Keuangan-FY2023"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual and audited financial reports published every year",
+      "score": 90,
+      "weight": 1,
+      "evidence_url": "https://www.wwf.id/id/Laporan-Tahunan-2024"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual and audited financial reports published every year",
+      "url": "https://www.wwf.id/id/Laporan-Tahunan-2024"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Badan Pembina, Pengurus and Pengawas named",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.wwf.id/id/about-us/our-leadership"
+     },
+     {
+      "label": "Human-rights, gender, indigenous-peoples and safeguard policies published",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.wwf.id/id/about-us/social-policy"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Badan Pembina, Pengurus and Pengawas named",
+      "url": "https://www.wwf.id/id/about-us/our-leadership"
+     },
+     {
+      "title": "Human-rights, gender, indigenous-peoples and safeguard policies published",
+      "url": "https://www.wwf.id/id/about-us/social-policy"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Indigenous peoples and safeguard principles in social policy",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://www.wwf.id/id/about-us/social-policy"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Indigenous peoples and safeguard principles in social policy",
+      "url": "https://www.wwf.id/id/about-us/social-policy"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "mongabay-indonesia",
+  "name": "Mongabay Indonesia",
+  "type": "ngo",
+  "website": "https://www.mongabay.co.id/",
+  "logo_url": "https://mongabay.co.id/wp-content/themes/mongabay_v2/img/logo/mongabay_logo_news_black.svg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian-language bureau of the non-profit environmental news organisation Mongabay (founded 1999).",
+  "sectors": [
+   "climate-environment",
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. Financial and transparency evidence is for Mongabay.org (parent), not the Indonesian bureau alone.",
+  "pillars": {
+   "financial": {
+    "criteria": [
+     {
+      "label": "Charity Navigator 100/100 rating cited by Mongabay (organisation-wide, not Indonesia-specific)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://mongabay.org/id/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Charity Navigator 100/100 rating cited by Mongabay (organisation-wide, not Indonesia-specific)",
+      "url": "https://mongabay.org/id/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports 2012-2025 and tax filings downloadable (Mongabay.org level)",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://mongabay.org/id/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports 2012-2025 and tax filings downloadable (Mongabay.org level)",
+      "url": "https://mongabay.org/id/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Published editorial standards and code of ethics",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://mongabay.org/id/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Published editorial standards and code of ethics",
+      "url": "https://mongabay.org/id/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "rekosistem",
+  "name": "Rekosistem",
+  "type": "company",
+  "website": "https://www.rekosistem.com/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": "Jakarta",
+  "founded_year": 2021,
+  "summary": "Jakarta climate-tech company (founded 2021) running waste collection, sorting and recovery through an app, waste stations and hubs.",
+  "sectors": [
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia",
+   "dki-jakarta"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Waste-recovery platform recognised by WSA; tonnage figures self-reported",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://wsa-global.org/winner/reko-waste-recovery-platform-from-waste-to-worth-building-sustainable-cities-through-empowerment-and-technology/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Waste-recovery platform recognised by WSA; tonnage figures self-reported",
+      "url": "https://wsa-global.org/winner/reko-waste-recovery-platform-from-waste-to-worth-building-sustainable-cities-through-empowerment-and-technology/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Company overview in press kit; no impact or financial reports found",
+      "score": 45,
+      "weight": 1,
+      "evidence_url": "https://www.rekosistem.com/press-kits"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Company overview in press kit; no impact or financial reports found",
+      "url": "https://www.rekosistem.com/press-kits"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "duitin",
+  "name": "Duitin",
+  "type": "company",
+  "website": "https://www.duitin.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Recycling platform connecting households and businesses with collectors and recovery facilities, with traceable recycling.",
+  "sectors": [
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Impact page tracks waste diverted and CO2e prevented (self-reported, method not detailed)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://www.duitin.id/impact"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Impact page tracks waste diverted and CO2e prevented (self-reported, method not detailed)",
+      "url": "https://www.duitin.id/impact"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Impact dashboard public; no financial or annual reports",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://www.duitin.id/impact"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Impact dashboard public; no financial or annual reports",
+      "url": "https://www.duitin.id/impact"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "kitabisa",
+  "name": "Kitabisa (Yayasan Kita Bisa)",
+  "type": "foundation",
+  "website": "https://kitabisa.com/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian online donation and crowdfunding platform run by Yayasan Kita Bisa.",
+  "sectors": [
+   "humanitarian-aid",
+   "health",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "financial": {
+    "criteria": [
+     {
+      "label": "Financial statements independently audited by a public accounting firm and published",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://laporan.kitabisa.com/"
+     },
+     {
+      "label": "Independent audit explained",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://blog.kitabisa.com/2026/06/16/apakah-kitabisa-diaudit-secara-independen/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Financial statements independently audited by a public accounting firm and published",
+      "url": "https://laporan.kitabisa.com/"
+     },
+     {
+      "title": "Independent audit explained",
+      "url": "https://blog.kitabisa.com/2026/06/16/apakah-kitabisa-diaudit-secara-independen/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Dedicated financial-report portal",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://laporan.kitabisa.com/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Dedicated financial-report portal",
+      "url": "https://laporan.kitabisa.com/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "dompet-dhuafa",
+  "name": "Dompet Dhuafa",
+  "type": "foundation",
+  "website": "https://www.dompetdhuafa.org/",
+  "logo_url": "https://www.dompetdhuafa.org/wp-content/uploads/2022/09/logo-dompet-dhuafa.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "National zakat and philanthropy institution working on health, education, economy, social and humanitarian programmes.",
+  "sectors": [
+   "poverty-livelihoods",
+   "health",
+   "humanitarian-aid",
+   "education"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Programme pages give beneficiary counts for health/relief work (self-reported)",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://www.dompetdhuafa.org/program/kesehatan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Programme pages give beneficiary counts for health/relief work (self-reported)",
+      "url": "https://www.dompetdhuafa.org/program/kesehatan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Public reports (Laporan Publik) and financial reports portal linked",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.dompetdhuafa.org/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Public reports (Laporan Publik) and financial reports portal linked",
+      "url": "https://www.dompetdhuafa.org/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "GCG and sharia principles, code of ethics, whistleblowing system and ISO 37001 anti-bribery certificate",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.dompetdhuafa.org/"
+     },
+     {
+      "label": "Values, code of ethics and organisation structure",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.dompetdhuafa.org/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "GCG and sharia principles, code of ethics, whistleblowing system and ISO 37001 anti-bribery certificate",
+      "url": "https://www.dompetdhuafa.org/"
+     },
+     {
+      "title": "Values, code of ethics and organisation structure",
+      "url": "https://www.dompetdhuafa.org/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "borneo-nature-foundation",
+  "name": "Borneo Nature Foundation (Yayasan Borneo Nature Indonesia)",
+  "type": "foundation",
+  "website": "https://www.borneonaturefoundation.org/",
+  "logo_url": "https://borneonaturefoundation.org/wp-content/uploads/2025/05/LogoBorneo-orizontal-500-300x146.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Research-led conservation NGO protecting and restoring Borneo peat-swamp rainforest with local communities.",
+  "sectors": [
+   "forests-biodiversity",
+   "climate-environment"
+  ],
+  "regions": [
+   "kalimantan-tengah",
+   "kalimantan-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Annual impact reports with restoration outputs (trees, dams, hectares)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://borneonaturefoundation.org/news/2025-impact-report-out-now/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual impact reports with restoration outputs (trees, dams, hectares)",
+      "url": "https://borneonaturefoundation.org/news/2025-impact-report-out-now/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports & finances published 2017-2025",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://borneonaturefoundation.org/annual-reports/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports & finances published 2017-2025",
+      "url": "https://borneonaturefoundation.org/annual-reports/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Indonesian foundation boards (Pembina, Pengurus, Pengawas) and senior team named; policies page",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://borneonaturefoundation.org/about-us/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Indonesian foundation boards (Pembina, Pengurus, Pengawas) and senior team named; policies page",
+      "url": "https://borneonaturefoundation.org/about-us/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Communities sow, grow, plant and monitor reforestation",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.borneonaturefoundation.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Communities sow, grow, plant and monitor reforestation",
+      "url": "https://www.borneonaturefoundation.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "socp",
+  "name": "Sumatran Orangutan Conservation Programme (SOCP)",
+  "type": "ngo",
+  "website": "https://www.sumatranorangutan.org/",
+  "logo_url": "https://sumatranorangutan.org/wp-content/uploads/2022/05/cropped-logo-socp--100x100.png.webp",
+  "country": "Indonesia",
+  "headquarters": "Medan, Sumatera Utara",
+  "founded_year": null,
+  "summary": "Rescues, rehabilitates and reintroduces Sumatran orangutans, establishing new wild populations (Jantho, Bukit Tigapuluh); run with Yayasan Ekosistem Lestari.",
+  "sectors": [
+   "forests-biodiversity",
+   "animal-welfare"
+  ],
+  "regions": [
+   "sumatera-utara",
+   "aceh",
+   "jambi"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Outcome data: 15 reintroduced in 2023, 132 at Jantho since 2011, post-release monitoring and range estimates",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://sumatranorangutan.org/wp-content/uploads/2024/09/Annual_Report_YEL_2023.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Outcome data: 15 reintroduced in 2023, 132 at Jantho since 2011, post-release monitoring and range estimates",
+      "url": "https://sumatranorangutan.org/wp-content/uploads/2024/09/Annual_Report_YEL_2023.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports published (2019, 2023 viewed)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://sumatranorangutan.org/wp-content/uploads/2024/09/Annual_Report_YEL_2023.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports published (2019, 2023 viewed)",
+      "url": "https://sumatranorangutan.org/wp-content/uploads/2024/09/Annual_Report_YEL_2023.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "coral-triangle-center",
+  "name": "Coral Triangle Center",
+  "type": "foundation",
+  "website": "https://coraltrianglecenter.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Bali-based foundation supporting marine protected areas, notably Nusa Penida MPA, plus reef restoration and training.",
+  "sectors": [
+   "oceans-coasts"
+  ],
+  "regions": [
+   "bali"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Adopt-a-Coral results: fragments transplanted, area restored and ~80% survival reported",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://coraltrianglecenter.org/adopt-a-coral-program-five-years-of-coral-restoration-in-bali/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Adopt-a-Coral results: fragments transplanted, area restored and ~80% survival reported",
+      "url": "https://coraltrianglecenter.org/adopt-a-coral-program-five-years-of-coral-restoration-in-bali/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Supports community-involved MPA management at Nusa Penida",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://coraltrianglecenter.org/nusa-penida-mpa/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Supports community-involved MPA management at Nusa Penida",
+      "url": "https://coraltrianglecenter.org/nusa-penida-mpa/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "divers-clean-action",
+  "name": "Divers Clean Action",
+  "type": "foundation",
+  "website": "https://diverscleanaction.org/",
+  "logo_url": "https://www.diverscleanaction.org/dca-logo.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Youth-led marine-debris foundation running clean-ups, citizen-science (marinedebris.id) and community waste programmes.",
+  "sectors": [
+   "oceans-coasts",
+   "children-youth"
+  ],
+  "regions": [
+   "indonesia",
+   "dki-jakarta"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Reach figures (locations, kg debris, volunteers) and annual impact reports",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://diverscleanaction.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Reach figures (locations, kg debris, volunteers) and annual impact reports",
+      "url": "https://diverscleanaction.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports 2023-2024 and finances page; registered foundation",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://diverscleanaction.org/about-us/reports"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports 2023-2024 and finances page; registered foundation",
+      "url": "https://diverscleanaction.org/about-us/reports"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Advisory board and team listed",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://diverscleanaction.org/about-us/team"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Advisory board and team listed",
+      "url": "https://diverscleanaction.org/about-us/team"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "SOSIS community waste programme with local stakeholders in Kepulauan Seribu since 2018",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://diverscleanaction.org/our-programs/community-development-1"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "SOSIS community waste programme with local stakeholders in Kepulauan Seribu since 2018",
+      "url": "https://diverscleanaction.org/our-programs/community-development-1"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "sustainable-indonesia",
+  "name": "Sustainable Indonesia (SustaIN, PT Mitra Juang Mandiri)",
+  "type": "company",
+  "website": "https://sustain.id/",
+  "logo_url": "https://sustain.id/wp-content/uploads/2024/09/Logo-Sustain-EDIT.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2016,
+  "summary": "Consulting company (est. 2016) on integrity, anti-corruption (ISO 37001), compliance and sustainability; runs a CSR anti-corruption mentorship for philanthropy organisations.",
+  "sectors": [
+   "human-rights"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. Identified as the \"Sustainable Indonesia\" brand at sustain.id; confirm this is the intended organisation. Sector fit is approximate (governance/integrity).",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Services, team and activities described; no impact or financial reports",
+      "score": 45,
+      "weight": 1,
+      "evidence_url": "https://sustain.id/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Services, team and activities described; no impact or financial reports",
+      "url": "https://sustain.id/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "gringgo",
+  "name": "Gringgo Indonesia Foundation",
+  "type": "foundation",
+  "website": "https://gringgo.org/",
+  "logo_url": "https://gringgo.co/logo.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Tech-powered non-profit building waste-management tools and data systems with communities and governments in Bali.",
+  "sectors": [
+   "climate-environment"
+  ],
+  "regions": [
+   "bali"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Google.org-supported pilot reported a 35% recycling-rate improvement in Sanur Kaja within a year",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/reduce-plastic-waste-indonesia/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Google.org-supported pilot reported a 35% recycling-rate improvement in Sanur Kaja within a year",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/reduce-plastic-waste-indonesia/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Works with informal waste collectors and villages",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://gringgo.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Works with informal waste collectors and villages",
+      "url": "https://gringgo.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "blue-forests",
+  "name": "Blue Forests (Yayasan Hutan Biru)",
+  "type": "foundation",
+  "website": "https://blue-forests.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": "Makassar",
+  "founded_year": null,
+  "summary": "Makassar-based NGO practising community-based ecological mangrove rehabilitation (CBEMR).",
+  "sectors": [
+   "oceans-coasts",
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "sulawesi-selatan",
+   "sulawesi-tenggara",
+   "riau"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Field monitoring results (e.g. mangrove density after 27 months) and restored-area figures",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://blue-forests.org/id/mangrove-hijau-dan-hutan-biru/ruang-berita/cerita-dari-lapangan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Field monitoring results (e.g. mangrove density after 27 months) and restored-area figures",
+      "url": "https://blue-forests.org/id/mangrove-hijau-dan-hutan-biru/ruang-berita/cerita-dari-lapangan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Community-based ecological mangrove rehabilitation methodology",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://blue-forests.org/en/knowledge/resources-publications/community-based-ecological-mangrove-rehabilitation-cbemr-in-indonesia/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Community-based ecological mangrove rehabilitation methodology",
+      "url": "https://blue-forests.org/en/knowledge/resources-publications/community-based-ecological-mangrove-rehabilitation-cbemr-in-indonesia/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "pandu-laut-nusantara",
+  "name": "Pandu Laut Nusantara",
+  "type": "ngo",
+  "website": "https://www.pandulaut.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2018,
+  "summary": "Independent volunteer ocean movement founded 2018 (Pangandaran/Jakarta) running coastal clean-ups, mangrove planting and marine-policy advocacy.",
+  "sectors": [
+   "oceans-coasts"
+  ],
+  "regions": [
+   "indonesia",
+   "jawa-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Activity counts published (volunteers, mangroves, corals, boats); outputs not outcomes",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://www.pandulaut.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Activity counts published (volunteers, mangroves, corals, boats); outputs not outcomes",
+      "url": "https://www.pandulaut.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Volunteer-based, open collective with coastal partner networks",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://www.pandulaut.org/en/kegiatan"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Volunteer-based, open collective with coastal partner networks",
+      "url": "https://www.pandulaut.org/en/kegiatan"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "greenpeace-indonesia",
+  "name": "Greenpeace Indonesia",
+  "type": "foundation",
+  "website": "https://www.greenpeace.org/indonesia/",
+  "logo_url": "https://www.greenpeace.org/indonesia/wp-content/themes/planet4-master-theme/images/gp-logo.svg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Independent campaigning organisation on forests, climate and energy, oceans and urban issues; funded by individual donations.",
+  "sectors": [
+   "climate-environment",
+   "forests-biodiversity",
+   "oceans-coasts"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "financial": {
+    "criteria": [
+     {
+      "label": "Independent auditor reports published for multiple years",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.greenpeace.org/indonesia/laporan-tahunan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Independent auditor reports published for multiple years",
+      "url": "https://www.greenpeace.org/indonesia/laporan-tahunan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual and audited financial reports page; independence from government/corporate funding stated",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.greenpeace.org/indonesia/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual and audited financial reports page; independence from government/corporate funding stated",
+      "url": "https://www.greenpeace.org/indonesia/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Dewan Pengawas and Badan Pengurus named, meeting rules described",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.greenpeace.org/indonesia/tentang-kami/tim-greenpeace/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Dewan Pengawas and Badan Pengurus named, meeting rules described",
+      "url": "https://www.greenpeace.org/indonesia/tentang-kami/tim-greenpeace/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "walhi",
+  "name": "WALHI (Wahana Lingkungan Hidup Indonesia)",
+  "type": "ngo",
+  "website": "https://www.walhi.or.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesia's largest environmental forum/network, advocating ecological justice and agrarian reform.",
+  "sectors": [
+   "climate-environment",
+   "human-rights"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Publishes advocacy analysis; national financial/audit documents not found on site",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://www.walhi.or.id/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Publishes advocacy analysis; national financial/audit documents not found on site",
+      "url": "https://www.walhi.or.id/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "econusa",
+  "name": "Yayasan EcoNusa",
+  "type": "foundation",
+  "website": "https://econusa.id/",
+  "logo_url": "https://econusa.id/wp-content/uploads/2021/03/EcoNusa_Logo_Primer_White-medium.png",
+  "country": "Indonesia",
+  "headquarters": "Sorong",
+  "founded_year": 2017,
+  "summary": "Sorong-based foundation (2017) supporting forests, oceans and livelihoods with Indigenous Peoples and local communities in Eastern Indonesia.",
+  "sectors": [
+   "forests-biodiversity",
+   "oceans-coasts",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "papua-barat-daya",
+   "papua",
+   "maluku",
+   "maluku-utara"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Annual reports 2019-2025 documenting programme results",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://econusa.id/en/publication/econusa-annual-report-2025-nurturing-hope-safeguarding-source-of-livelihoods/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports 2019-2025 documenting programme results",
+      "url": "https://econusa.id/en/publication/econusa-annual-report-2025-nurturing-hope-safeguarding-source-of-livelihoods/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports public; EcoFund grant criteria require audited partner finances",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://econusa.id/en/ecofund/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports public; EcoFund grant criteria require audited partner finances",
+      "url": "https://econusa.id/en/ecofund/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Board of trustees and supervisor named, incl. Papuan community leader",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://econusa.id/en/about-us/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Board of trustees and supervisor named, incl. Papuan community leader",
+      "url": "https://econusa.id/en/about-us/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Grants to 202 local partners since 2020; IPLC-led approach",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://econusa.id/en/ecofund/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Grants to 202 local partners since 2020; IPLC-led approach",
+      "url": "https://econusa.id/en/ecofund/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "seasoldier",
+  "name": "Seasoldier",
+  "type": "ngo",
+  "website": "https://seasoldier.org/",
+  "logo_url": "https://seasoldier.org/wp-content/uploads/2024/09/SEASOLDIER-LOGO-putih-01.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2015,
+  "summary": "Volunteer ocean-conservation movement founded 2015 by Nadine Chandrawinata and Dinni Septianingrum, active in 21 regions.",
+  "sectors": [
+   "oceans-coasts"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Activity counts (volunteers, mangroves, corals, trash kg) updated 2026; outputs, self-reported",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://seasoldier.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Activity counts (volunteers, mangroves, corals, trash kg) updated 2026; outputs, self-reported",
+      "url": "https://seasoldier.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Organisation profile PDF published; no financial reports",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://seasoldier.org/wp-content/uploads/2026/09/PROFILE-SEASOLDIER-2026-Update-August-2026.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Organisation profile PDF published; no financial reports",
+      "url": "https://seasoldier.org/wp-content/uploads/2026/09/PROFILE-SEASOLDIER-2026-Update-August-2026.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "23,927 volunteers across 21 regional groups",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://seasoldier.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "23,927 volunteers across 21 regional groups",
+      "url": "https://seasoldier.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "bye-bye-plastic-bags",
+  "name": "Bye Bye Plastic Bags",
+  "type": "ngo",
+  "website": "https://byebyeplasticbags.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Youth-driven movement against single-use plastic bags, started in Bali; an NGO since 2018 under Yayasan Bumi Indah.",
+  "sectors": [
+   "climate-environment",
+   "children-youth"
+  ],
+  "regions": [
+   "bali"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Reach counts (teams, students spoken to); outputs only",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://byebyeplasticbags.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Reach counts (teams, students spoken to); outputs only",
+      "url": "https://byebyeplasticbags.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Youth-led, with local teams started by young people",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://byebyeplasticbags.org/about/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Youth-led, with local teams started by young people",
+      "url": "https://byebyeplasticbags.org/about/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "du-anyam",
+  "name": "Du Anyam",
+  "type": "company",
+  "website": "https://duanyam.com/",
+  "logo_url": "https://duanyam.com/wp-content/uploads/2020/11/Du-Anyam-Master-Logo_compress@2x.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2014,
+  "summary": "Social enterprise (2014) empowering rural women weavers through crafts in NTT, South Kalimantan and Papua.",
+  "sectors": [
+   "women-gender-equality",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "nusa-tenggara-timur",
+   "kalimantan-selatan",
+   "papua"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Reports 1,600+ women weavers in 54+ villages and a 40% income increase (self-reported)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://duanyam.com/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Reports 1,600+ women weavers in 54+ villages and a 40% income increase (self-reported)",
+      "url": "https://duanyam.com/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Works with village women weavers",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://duanyam.com/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Works with village women weavers",
+      "url": "https://duanyam.com/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "lindungihutan",
+  "name": "LindungiHutan",
+  "type": "company",
+  "website": "https://lindungihutan.com/",
+  "logo_url": "https://lindungihutan.com/public/img-redesign/logo_lindungihutan.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2016,
+  "summary": "Crowdplanting and corporate tree-planting platform (since 2016) working with farmer groups across Indonesia.",
+  "sectors": [
+   "forests-biodiversity",
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia",
+   "jawa-tengah"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Impact dashboard: trees planted, sites, CO2 estimates; self-reported",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://lindungihutan.com/dampak"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Impact dashboard: trees planted, sites, CO2 estimates; self-reported",
+      "url": "https://lindungihutan.com/dampak"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual and financial reports published yearly (2021-2025)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://lindungihutan.com/laporan-keuangan"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual and financial reports published yearly (2021-2025)",
+      "url": "https://lindungihutan.com/laporan-keuangan"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "40+ farmer groups engaged through crowdplanting",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://lindungihutan.com/dampak"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "40+ farmer groups engaged through crowdplanting",
+      "url": "https://lindungihutan.com/dampak"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "jejakin",
+  "name": "Jejakin",
+  "type": "company",
+  "website": "https://www.jejakin.com/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2018,
+  "summary": "Climate-tech company (2018) offering carbon accounting, reforestation monitoring and climate-contribution platforms.",
+  "sectors": [
+   "climate-environment",
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "indonesia",
+   "kalimantan-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Reports trees planted and hectares covered; monitoring tools described (self-reported)",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://jejakin.com/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Reports trees planted and hectares covered; monitoring tools described (self-reported)",
+      "url": "https://jejakin.com/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "efishery",
+  "name": "eFishery",
+  "type": "company",
+  "website": "https://efishery.com/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Aquaculture technology company; in 2025 an internal investigation reported large-scale inflation of revenue under former management.",
+  "sectors": [
+   "food-agriculture"
+  ],
+  "regions": [
+   "indonesia",
+   "jawa-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. Official site did not respond when checked; evidence from reputable press.",
+  "pillars": {
+   "financial": {
+    "criteria": [
+     {
+      "label": "Reported revenue inflated by hundreds of millions of USD per investigation",
+      "score": 10,
+      "weight": 1,
+      "evidence_url": "https://www.thejakartapost.com/business/2025/01/22/efishery-reportedly-inflated-revenue-by-millions-of-dollars"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Reported revenue inflated by hundreds of millions of USD per investigation",
+      "url": "https://www.thejakartapost.com/business/2025/01/22/efishery-reportedly-inflated-revenue-by-millions-of-dollars"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Forensic review found fabricated transactions and dual books; governance failure",
+      "score": 10,
+      "weight": 1,
+      "evidence_url": "https://www.dealstreetasia.com/stories/efishery-unravelling-426188"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Forensic review found fabricated transactions and dual books; governance failure",
+      "url": "https://www.dealstreetasia.com/stories/efishery-unravelling-426188"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "bos-foundation",
+  "name": "BOS Foundation (Borneo Orangutan Survival)",
+  "type": "foundation",
+  "website": "https://www.orangutan.or.id/",
+  "logo_url": "https://www.orangutan.or.id/cfind/source/images/logo.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 1991,
+  "summary": "Orangutan rescue, rehabilitation, release and habitat-protection foundation working since 1991.",
+  "sectors": [
+   "forests-biodiversity",
+   "animal-welfare"
+  ],
+  "regions": [
+   "kalimantan-tengah",
+   "kalimantan-timur"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "financial": {
+    "criteria": [
+     {
+      "label": "Externally audited; annual reports include audited financial report",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.orangutan.or.id/reports"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Externally audited; annual reports include audited financial report",
+      "url": "https://www.orangutan.or.id/reports"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual + financial reports downloadable",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.orangutan.or.id/reports"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual + financial reports downloadable",
+      "url": "https://www.orangutan.or.id/reports"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "rumah-zakat",
+  "name": "Rumah Zakat",
+  "type": "foundation",
+  "website": "https://www.rumahzakat.org/",
+  "logo_url": "https://www.rumahzakat.org/wp-content/uploads/2023/09/cropped-logo-rumah-zakat-png-1.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "National zakat institution (LAZNAS since 2007; origin 1998) running empowerment programmes in villages across Indonesia.",
+  "sectors": [
+   "poverty-livelihoods",
+   "health",
+   "education"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Beneficiary and village counts published (self-reported)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://www.rumahzakat.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Beneficiary and village counts published (self-reported)",
+      "url": "https://www.rumahzakat.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "Audit results published; WTP audit opinion noted repeatedly",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.rumahzakat.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Audit results published; WTP audit opinion noted repeatedly",
+      "url": "https://www.rumahzakat.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Governance section: legal documents, audit results, guidelines, Z-Report",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.rumahzakat.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Governance section: legal documents, audit results, guidelines, Z-Report",
+      "url": "https://www.rumahzakat.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Board of directors, trustees and sharia council; whistleblowing system",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.rumahzakat.org/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Board of directors, trustees and sharia council; whistleblowing system",
+      "url": "https://www.rumahzakat.org/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "wahana-visi-indonesia",
+  "name": "Wahana Visi Indonesia",
+  "type": "foundation",
+  "website": "https://wahanavisi.org/",
+  "logo_url": "https://wahanavisi.org/assets/images/wvi-logo.svg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Child-focused development and humanitarian foundation working in 500+ villages on education, health, child protection and livelihoods.",
+  "sectors": [
+   "children-youth",
+   "education",
+   "health"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Achievements page reports programme reach (self-reported)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://wahanavisi.org/id/tentang-wvi/kerja-kami/pencapaian-kami"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Achievements page reports programme reach (self-reported)",
+      "url": "https://wahanavisi.org/id/tentang-wvi/kerja-kami/pencapaian-kami"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "USAID OIG closeout audit (independent firm) of WVI-managed awards",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://oig.usaid.gov/sites/default/files/2025-12/5-497-26-004-R.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "USAID OIG closeout audit (independent firm) of WVI-managed awards",
+      "url": "https://oig.usaid.gov/sites/default/files/2025-12/5-497-26-004-R.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual, child well-being and financial reports with fund allocation",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://wahanavisi.org/en/about-wvi/annual-report"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual, child well-being and financial reports with fund allocation",
+      "url": "https://wahanavisi.org/en/about-wvi/annual-report"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "save-the-children-indonesia",
+  "name": "Save the Children Indonesia",
+  "type": "foundation",
+  "website": "https://savethechildren.or.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Child-rights foundation (formerly Yayasan Sayangi Tunas Cilik) working on education, health, protection and humanitarian response.",
+  "sectors": [
+   "children-youth",
+   "education",
+   "health",
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "2023 annual report shows targets vs achievements per programme",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "2023 annual report shows targets vs achievements per programme",
+      "url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "Independent auditor report included in annual report; spending split published",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Independent auditor report included in annual report; spending split published",
+      "url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports published (2020, 2023 viewed)",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://savethechildren.or.id/pustaka/laporan-tahunan-2020"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports published (2020, 2023 viewed)",
+      "url": "https://savethechildren.or.id/pustaka/laporan-tahunan-2020"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Pembina, Pengawas and Pengurus addressed in audit report",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Pembina, Pengawas and Pengurus addressed in audit report",
+      "url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Children engaged strategically, e.g. village child forums",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Children engaged strategically, e.g. village child forums",
+      "url": "https://savethechildren.or.id/wp-content/uploads/2024/09/Laporan-Tahunan-2023-Yayasan-Save-the-Children-Indonesia.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "plan-indonesia",
+  "name": "Yayasan Plan International Indonesia",
+  "type": "foundation",
+  "website": "https://planindonesia.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Child-rights and girls' equality foundation working with communities and youth networks.",
+  "sectors": [
+   "children-youth",
+   "women-gender-equality"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Reports reach: communities, direct participants, youth engaged (self-reported)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://planindonesia.org/en/annuly-reports/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Reports reach: communities, direct participants, youth engaged (self-reported)",
+      "url": "https://planindonesia.org/en/annuly-reports/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports 2019-2025 downloadable",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://planindonesia.org/en/annuly-reports/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports 2019-2025 downloadable",
+      "url": "https://planindonesia.org/en/annuly-reports/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "iesr",
+  "name": "Institute for Essential Services Reform (IESR)",
+  "type": "ngo",
+  "website": "https://iesr.or.id/",
+  "logo_url": "https://iesr.or.id/wp-content/uploads/2019/04/cropped-IESR_logo-icon-color-hires.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Energy and environment think-tank advocating a just energy transition in Indonesia.",
+  "sectors": [
+   "clean-energy",
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual impact reports published yearly (2024, 2025)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://iesr.or.id/laporan-tahunan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual impact reports published yearly (2024, 2025)",
+      "url": "https://iesr.or.id/laporan-tahunan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Executive board members named with backgrounds",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://iesr.or.id/about-us/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Executive board members named with backgrounds",
+      "url": "https://iesr.or.id/about-us/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "yayasan-kehati",
+  "name": "Yayasan KEHATI",
+  "type": "foundation",
+  "website": "https://kehati.or.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian biodiversity grant-making foundation.",
+  "sectors": [
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. Official site content mostly failed to load when checked; reports could not be verified.",
+  "pillars": {
+   "governance": {
+    "criteria": [
+     {
+      "label": "Whistleblowing channel linked on website",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://kehati.or.id/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Whistleblowing channel linked on website",
+      "url": "https://kehati.or.id/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "burung-indonesia",
+  "name": "Burung Indonesia",
+  "type": "ngo",
+  "website": "https://www.burung.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2002,
+  "summary": "BirdLife partner association (founded 2002) conserving wild birds and habitats, incl. Hutan Harapan restoration.",
+  "sectors": [
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "indonesia",
+   "gorontalo",
+   "nusa-tenggara-timur",
+   "jambi"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports listed under publications",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://www.burung.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports listed under publications",
+      "url": "https://www.burung.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Membership association with elected Dewan Pengurus and Dewan Pengawas",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://burung.org/tentang-kami/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Membership association with elected Dewan Pengurus and Dewan Pengawas",
+      "url": "https://burung.org/tentang-kami/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Landscape programmes with forest-edge villages (e.g. 31 villages in Sumba)",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://burung.org/program/program-sumba/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Landscape programmes with forest-edge villages (e.g. 31 villages in Sumba)",
+      "url": "https://burung.org/program/program-sumba/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "alam-sehat-lestari",
+  "name": "Alam Sehat Lestari (ASRI)",
+  "type": "foundation",
+  "website": "https://alamsehatlestari.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Planetary-health foundation linking affordable healthcare with rainforest protection around Gunung Palung National Park.",
+  "sectors": [
+   "health",
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "kalimantan-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Outcome data incl. PNAS 2020 study on forest-loss reduction; health visits and hectares reforested",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://alamsehatlestari.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Outcome data incl. PNAS 2020 study on forest-loss reduction; health visits and hectares reforested",
+      "url": "https://alamsehatlestari.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports 2020-2025, financial and impact reports published",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://alamsehatlestari.org/story/publication"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports 2020-2025, financial and impact reports published",
+      "url": "https://alamsehatlestari.org/story/publication"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Programmes designed from community input; farmer groups and widows' livelihoods",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.alamsehatlestari.org/program/alternative-livelihoods"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Programmes designed from community input; farmer groups and widows' livelihoods",
+      "url": "https://www.alamsehatlestari.org/program/alternative-livelihoods"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "indonesia-mengajar",
+  "name": "Indonesia Mengajar",
+  "type": "foundation",
+  "website": "https://indonesiamengajar.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Education movement placing young teachers (Pengajar Muda) in remote districts and mobilising public participation.",
+  "sectors": [
+   "education"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "financial": {
+    "criteria": [
+     {
+      "label": "Financial statements audited pro bono by PwC Indonesia, unqualified (WTP) opinion",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://indonesiamengajar.org/kabar/pwc-indonesia-beri-opini-wtp-untuk-indonesia-menga"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Financial statements audited pro bono by PwC Indonesia, unqualified (WTP) opinion",
+      "url": "https://indonesiamengajar.org/kabar/pwc-indonesia-beri-opini-wtp-untuk-indonesia-menga"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual report 2024 published",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://indonesiamengajar.org/publikasi/annual-report-2024"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual report 2024 published",
+      "url": "https://indonesiamengajar.org/publikasi/annual-report-2024"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "rumah-energi",
+  "name": "Yayasan Rumah Energi",
+  "type": "foundation",
+  "website": "https://www.rumahenergi.org/",
+  "logo_url": "https://www.rumahenergi.org/wp-content/uploads/2020/06/yre-logo.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Renewable-energy foundation (incl. BIRU biogas programme) supporting households, cooperatives and women in energy.",
+  "sectors": [
+   "clean-energy",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Beneficiaries, biogas units and tCO2e reductions reported by programme",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://rumahenergi.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Beneficiaries, biogas units and tCO2e reductions reported by programme",
+      "url": "https://rumahenergi.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Impact reports 2021-2025 published",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.rumahenergi.org/laporan"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Impact reports 2021-2025 published",
+      "url": "https://www.rumahenergi.org/laporan"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Advisory, supervisory and executive boards named",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.rumahenergi.org/tentang-rumah-energi/tim-kami"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Advisory, supervisory and executive boards named",
+      "url": "https://www.rumahenergi.org/tentang-rumah-energi/tim-kami"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "koaksi-indonesia",
+  "name": "Koaksi Indonesia",
+  "type": "foundation",
+  "website": "https://coaction.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Foundation for research, advocacy and campaigns on sustainable energy and green jobs.",
+  "sectors": [
+   "clean-energy",
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Headline outputs (projects, research, funds managed); outputs only",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://coaction.id/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Headline outputs (projects, research, funds managed); outputs only",
+      "url": "https://coaction.id/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Dewan Pembina, Dewan Pengawas and director named",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://coaction.id/tentang-kami-coaction-indonesia/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Dewan Pembina, Dewan Pengawas and director named",
+      "url": "https://coaction.id/tentang-kami-coaction-indonesia/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "xurya",
+  "name": "Xurya Daya Indonesia",
+  "type": "company",
+  "website": "https://xurya.com/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Commercial and industrial rooftop-solar developer with zero-upfront financing.",
+  "sectors": [
+   "clean-energy"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "196 MWp installed and ~87,586 tCO2e avoided per investor impact snapshot",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://adi.fund/wp-content/uploads/2025/11/Xurya-Impact-Snapshot_OCT2025.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "196 MWp installed and ~87,586 tCO2e avoided per investor impact snapshot",
+      "url": "https://adi.fund/wp-content/uploads/2025/11/Xurya-Impact-Snapshot_OCT2025.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Proportion of women on board 43% (investor impact snapshot)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://adi.fund/wp-content/uploads/2025/11/Xurya-Impact-Snapshot_OCT2025.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Proportion of women on board 43% (investor impact snapshot)",
+      "url": "https://adi.fund/wp-content/uploads/2025/11/Xurya-Impact-Snapshot_OCT2025.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "javara",
+  "name": "Javara",
+  "type": "company",
+  "website": "https://javara.co.id/",
+  "logo_url": "https://javara.co.id/wp-content/uploads/2020/03/cropped-Logo-Javara_Black-Box-1_Update-100x100.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2008,
+  "summary": "Food company (2008) bringing indigenous and biodiverse Indonesian food products from small producers to market.",
+  "sectors": [
+   "food-agriculture",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "community": {
+    "criteria": [
+     {
+      "label": "Works with small food producers; Sekolah Seniman Pangan for local entrepreneurs",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://javara.co.id/our-journey/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Works with small food producers; Sekolah Seniman Pangan for local entrepreneurs",
+      "url": "https://javara.co.id/our-journey/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "ecoton",
+  "name": "ECOTON",
+  "type": "ngo",
+  "website": "https://ecoton.or.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "River and wetland conservation group (Brantas river) known for citizen-science microplastic monitoring.",
+  "sectors": [
+   "water-sanitation",
+   "climate-environment"
+  ],
+  "regions": [
+   "jawa-timur"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Publishes monitoring data and manuals (e.g. Brantas microplastic expedition)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://ecoton.or.id/wp-content/uploads/2022/06/Microplastic-Manual.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Publishes monitoring data and manuals (e.g. Brantas microplastic expedition)",
+      "url": "https://ecoton.or.id/wp-content/uploads/2022/06/Microplastic-Manual.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Publications page with research outputs",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://ecoton.or.id/publication/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Publications page with research outputs",
+      "url": "https://ecoton.or.id/publication/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "reef-check-indonesia",
+  "name": "Reef Check Indonesia",
+  "type": "foundation",
+  "website": "https://reefcheck.or.id/",
+  "logo_url": "https://reefcheck.or.id/wp-content/uploads/2025/02/cropped-Logo-RC-Dengan-Kata.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2005,
+  "summary": "Coral-reef monitoring and coastal-community foundation founded 2005, part of the Reef Check network.",
+  "sectors": [
+   "oceans-coasts"
+  ],
+  "regions": [
+   "indonesia",
+   "bali"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Reports section exists; no annual or financial report viewed",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://reefcheck.or.id/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Reports section exists; no annual or financial report viewed",
+      "url": "https://reefcheck.or.id/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "yayasan-bakti",
+  "name": "Yayasan BaKTI",
+  "type": "foundation",
+  "website": "https://bakti.or.id/",
+  "logo_url": "https://bakti.or.id/sites/default/files/LOGO%20BaKTI_Horizontal_0_0.png",
+  "country": "Indonesia",
+  "headquarters": "Makassar",
+  "founded_year": null,
+  "summary": "Knowledge-exchange foundation for development in Eastern Indonesia, based in Makassar.",
+  "sectors": [
+   "poverty-livelihoods",
+   "women-gender-equality"
+  ],
+  "regions": [
+   "sulawesi-selatan"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual report and audit report sections published",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://bakti.or.id/tentang-bakti"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual report and audit report sections published",
+      "url": "https://bakti.or.id/tentang-bakti"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Dewan Pembina & team page",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://bakti.or.id/tentang-bakti"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Dewan Pembina & team page",
+      "url": "https://bakti.or.id/tentang-bakti"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "auriga-nusantara",
+  "name": "Auriga Nusantara",
+  "type": "ngo",
+  "website": "https://auriga.or.id/",
+  "logo_url": "https://auriga.or.id/assets/images/logo2.jpg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Research and advocacy NGO on natural resources, deforestation and supply chains.",
+  "sectors": [
+   "forests-biodiversity",
+   "human-rights"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Research reports published",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://auriga.or.id/resources/report"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Research reports published",
+      "url": "https://auriga.or.id/resources/report"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "forest-watch-indonesia",
+  "name": "Forest Watch Indonesia",
+  "type": "ngo",
+  "website": "https://fwi.or.id/",
+  "logo_url": "https://fwi.or.id/wp-content/uploads/2020/09/Logo-FWI-2020.png",
+  "country": "Indonesia",
+  "headquarters": "Bogor",
+  "founded_year": null,
+  "summary": "Independent forest-monitoring network based in Bogor.",
+  "sectors": [
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "indonesia",
+   "jawa-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "governance": {
+    "criteria": [
+     {
+      "label": "Dewan Pengawas named; whistleblowing policy published",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://fwi.or.id/tentang-kami-forest-watcher/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Dewan Pengawas named; whistleblowing policy published",
+      "url": "https://fwi.or.id/tentang-kami-forest-watcher/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "wcs-indonesia",
+  "name": "Wildlife Conservation Society - Indonesia Program",
+  "type": "ngo",
+  "website": "https://indonesia.wcs.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 1991,
+  "summary": "Wildlife and marine conservation programme working in Indonesia since 1965 (formal country programme since 1991).",
+  "sectors": [
+   "forests-biodiversity",
+   "oceans-coasts",
+   "animal-welfare"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "About page and programme info; no Indonesia-specific reports viewed",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://indonesia.wcs.org/en-us/Top-Navigation/About-Us.aspx"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "About page and programme info; no Indonesia-specific reports viewed",
+      "url": "https://indonesia.wcs.org/en-us/Top-Navigation/About-Us.aspx"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "icel",
+  "name": "Indonesian Center for Environmental Law (ICEL)",
+  "type": "ngo",
+  "website": "https://icel.or.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Environmental-law research and advocacy organisation.",
+  "sectors": [
+   "human-rights",
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. Official site gave little readable content; no pillar rated.",
+  "pillars": {}
+ }
+]

@@ -19,7 +19,7 @@ class Organisation extends Model
 
     public const TYPES = [
         'ngo' => 'NGO', 'charity' => 'Charity', 'social_enterprise' => 'Social enterprise',
-        'foundation' => 'Foundation', 'cooperative' => 'Cooperative',
+        'foundation' => 'Foundation', 'cooperative' => 'Cooperative', 'company' => 'Company',
     ];
 
     public function getRouteKeyName(): string
