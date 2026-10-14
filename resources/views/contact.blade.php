@@ -1,15 +1,14 @@
 <x-layouts.app title="Contact — Kuartal Impact">
-    <x-page-hero eyebrow="Contact" code="C" title="Open a channel">
+    <x-page-hero eyebrow="Contact" title="Get in touch">
         Founders, partners, communities, investors and press: write to the right inbox and we'll route it.
     </x-page-hero>
     <section class="k-section">
-        <div class="k-container-wide grid gap-5 md:grid-cols-3">
+        <div class="k-container grid gap-6 md:grid-cols-3">
             @foreach ($contacts as $c)
-                <div class="k-panel k-ticks flex flex-col gap-4">
-                    <span class="k-index">CH-{{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                <div class="k-card flex flex-col gap-3">
                     <h2 class="text-2xl">{{ $c['label'] }}</h2>
-                    <p class="text-sm k-muted">{{ $c['body'] }}</p>
-                    <a href="mailto:{{ $c['email'] }}" class="k-mono mt-auto break-all text-sm hover:underline">{{ $c['email'] }}</a>
+                    <p class="text-sm text-gray-muted dark:text-white/65">{{ $c['body'] }}</p>
+                    <a href="mailto:{{ $c['email'] }}" class="mt-auto break-all font-subhead text-sm font-medium text-navy hover:underline dark:text-green-400">{{ $c['email'] }}</a>
                 </div>
             @endforeach
         </div>

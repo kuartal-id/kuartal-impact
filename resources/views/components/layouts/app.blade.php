@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,21 @@
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}?v=ki2">
     <link rel="icon" href="{{ asset('favicon.ico') }}?v=ki2" sizes="any">
     <link rel="apple-touch-icon" href="{{ asset('favicon-180.png') }}?v=ki2">
-    <meta name="theme-color" content="#050505">
-    {{-- Before first paint: pick neon / dark / neutral. Shares 'kuartal-theme' (light/dark) with every
-         Kuartal property; with no stored choice Kuartal Impact opens dark. Logic: resources/js/theme-boot.js --}}
-    <script>{!! file_get_contents(resource_path('js/theme-boot.js')) !!}
-        (function (T) {
+    {{-- Before first paint: light/dark, exactly as on kuartal.id. Same localStorage key ('kuartal-theme')
+         as every Kuartal site, so a visitor's choice follows them across properties; first visit follows the OS. --}}
+    <script>
+        (function () {
             try {
-                T.apply(document, T.resolveValues(localStorage.getItem('kuartal-impact-theme'), localStorage.getItem('kuartal-theme'), localStorage.getItem('kuartal-impact-light')));
+                var stored = localStorage.getItem('kuartal-theme');
+                var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var theme = stored === 'dark' || stored === 'light' ? stored : (prefersDark ? 'dark' : 'light');
+                document.documentElement.classList.toggle('dark', theme === 'dark');
+                document.documentElement.setAttribute('data-theme', theme);
             } catch (e) {}
-        })(window.kuartalImpactThemes);
+        })();
     </script>
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <meta property="og:site_name" content="Kuartal Impact">
     <meta property="og:title" content="{{ $title ?? 'Kuartal Impact' }}">
     <meta property="og:description" content="{{ $description ?? 'Capital, AI, technology and grassroots solutions for climate, environment and society.' }}">

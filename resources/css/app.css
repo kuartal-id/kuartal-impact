@@ -1,223 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
-/* Class-based dark mode, synced across Kuartal properties (localStorage 'kuartal-theme'). */
+/* Class-based dark mode, shared with every Kuartal site via localStorage 'kuartal-theme'. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 /*
- * Kuartal Impact. Kuartal type system (Poppins headings, Arial body) on a
- * harsher palette: near-black + neon lime #9eff1f, plus a monospace for data
- * labels. Lime is only ever text on dark, or a fill under black text (on light
- * grounds lime text fails contrast, so light mode uses --k-accent-ink).
+ * Kuartal Impact, styled exactly like kuartal.id (layout, type, cards, pills,
+ * sticky see-through header, grey social strip, big-logo footer). Copied from
+ * kuartal-id/kuartal-id via kuartal-id/kuartalgroup; ONLY the colours change,
+ * to the Kuartal Impact logo palette:
+ *   black #000, white #fff, neon #9eff1f, deep forest #1a4e41, cream #f3eee3.
+ * Token names are kuartal.id's so markup ports 1:1:
+ *   navy  -> deep forest (headings, dark text)      green-400 -> neon (fills, with black text)
+ *   green-500/600 -> forest (accent TEXT on light)  green-300 -> neon (accent text on dark)
+ *   gray-bg -> cream (alternate sections)          surface-dark -> black, -alt -> dark forest
+ * Contrast (WCAG AA): neon is never text on light grounds; on light, accent
+ * text is forest #1a4e41 (9.6:1 on white, 8.3:1 on cream). On black, neon text is 16:1.
  */
 @theme {
     --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
     --font-subhead: 'Poppins', ui-sans-serif, system-ui, sans-serif;
     --font-sans: 'Arial Nova', Arial, Helvetica, ui-sans-serif, system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
-    --color-lime: #9eff1f;
-    --color-lime-ink: #3a6600;
-    --color-void: #050605;
+    --color-navy-50: #eef4f2;
+    --color-navy-100: #d4e3de;
+    --color-navy-200: #a9c6bd;
+    --color-navy-300: #7aa597;
+    --color-navy-400: #4d8070;
+    --color-navy-500: #2d6455;
+    --color-navy-600: #215848;
+    --color-navy-700: #1a4e41;
+    --color-navy-800: #133a30;
+    --color-navy-900: #000000;
+    --color-navy: #1a4e41;
+    --color-navy-deep: #000000;
 
-    /* Legacy Kuartal token names kept so the shared admin/newsroom views keep working. */
-    --color-navy-50: #f1f3ef; --color-navy-100: #dfe3dc; --color-navy-200: #b9c0b5;
-    --color-navy-300: #8e978b; --color-navy-400: #667063; --color-navy-500: #475046;
-    --color-navy-600: #30372f; --color-navy-700: #1d221c; --color-navy-800: #111410;
-    --color-navy-900: #050605; --color-navy: #111410; --color-navy-deep: #050605;
-    --color-green-50: #f3ffe3; --color-green-100: #e2ffbd; --color-green-200: #c9ff85;
-    --color-green-300: #b3ff52; --color-green-400: #9eff1f; --color-green-500: #4f8a00;
-    --color-green-600: #3a6600; --color-green-700: #2d4f00; --color-green-800: #223c00;
-    --color-green-900: #172800; --color-green: #9eff1f;
-    --color-gray-bg: #f4f6f1; --color-gray-border: #d9ded5; --color-gray-muted: #535b52; --color-gray-muted-dark: #4a5249;
-    --color-surface: #f4f6f1; --color-surface-light: #ffffff; --color-surface-dark: #050605; --color-surface-dark-alt: #0d100d;
+    --color-green-50: #f4ffe6;
+    --color-green-100: #e4ffc2;
+    --color-green-200: #cdff8a;
+    --color-green-300: #b6ff57;
+    --color-green-400: #9eff1f;
+    --color-green-500: #1a4e41;
+    --color-green-600: #1a4e41;
+    --color-green-700: #133a30;
+    --color-green-800: #0e2c24;
+    --color-green-900: #091d18;
+    --color-green: #9eff1f;
+    --color-neon: #9eff1f;
+    --color-forest: #1a4e41;
+    --color-cream: #f3eee3;
 
-    --radius-card: 2px;
-    --radius-pill: 2px;
-    --shadow-card: none;
-    --shadow-card-dark: none;
+    --color-gray-bg: #f3eee3;
+    --color-gray-border: #e2dccd;
+    --color-gray-muted: #4d5a54;
+    --color-gray-muted-dark: #43504a;
+
+    --color-surface: #ffffff;
+    --color-surface-light: #ffffff;
+    --color-surface-dark: #000000;
+    --color-surface-dark-alt: #0c2620;
+
+    --radius-card: 14px;
+    --radius-pill: 999px;
+
+    --shadow-card: 0 2px 10px rgba(26, 78, 65, 0.07);
+    --shadow-card-dark: 0 2px 14px rgba(0, 0, 0, 0.45);
 }
 
-:root, [data-theme="dark"] {
-    /* Dark: black canvas, neon accents. */
-    --k-bg: #050505; --k-panel: #0c0d0b; --k-panel-2: #131511;
-    --k-ink: #f2f2ee; --k-muted: #a9ada3; --k-line: rgba(158, 255, 31, .15); --k-line-strong: rgba(158, 255, 31, .4);
-    --k-accent: #9eff1f; --k-accent-fill: #9eff1f; --k-on-accent: #050505;
-    --k-mark: #9eff1f;           /* corner ticks, index numbers, motif highlights */
-    --k-motif: rgba(158, 255, 31, .34); /* nature line work */
-    --k-motif-soft: rgba(158, 255, 31, .12);
-    --k-grid: rgba(158, 255, 31, .05);
-    --k-band: #1a4e41; --k-on-band: #f3eee3; --k-band-accent: #9eff1f; /* forest band */
-    color-scheme: dark;
-}
-[data-theme="neon"] {
-    /* Neon: lime is the site colour; black type and logo; white surfaces for reading. */
-    --k-bg: #9eff1f; --k-panel: #ffffff; --k-panel-2: #c9ff85;
-    --k-ink: #000000; --k-muted: #233808; --k-line: rgba(0, 0, 0, .2); --k-line-strong: rgba(0, 0, 0, .55);
-    --k-accent: #1a4e41; --k-accent-fill: #000000; --k-on-accent: #9eff1f;
-    --k-mark: #000000;
-    --k-motif: rgba(0, 0, 0, .42);
-    --k-motif-soft: rgba(0, 0, 0, .12);
-    --k-grid: rgba(0, 0, 0, .07);
-    --k-band: #000000; --k-on-band: #ffffff; --k-band-accent: #9eff1f;
-    color-scheme: light;
-}
-[data-theme="neutral"] {
-    /* Neutral: warm cream and deep forest; lime only as small marks on forest/black. */
-    --k-bg: #f3eee3; --k-panel: #fbf9f4; --k-panel-2: #e8e1d2;
-    --k-ink: #0d1a16; --k-muted: #3f4e48; --k-line: rgba(26, 78, 65, .18); --k-line-strong: rgba(26, 78, 65, .5);
-    --k-accent: #1a4e41; --k-accent-fill: #1a4e41; --k-on-accent: #f3eee3;
-    --k-mark: #1a4e41;
-    --k-motif: rgba(26, 78, 65, .4);
-    --k-motif-soft: rgba(26, 78, 65, .12);
-    --k-grid: rgba(26, 78, 65, .065);
-    --k-band: #1a4e41; --k-on-band: #f3eee3; --k-band-accent: #9eff1f;
-    color-scheme: light;
-}
+/* A few semantic vars for the rare inline style (charts, admin). */
+:root { --k-accent: #1a4e41; --k-line: #e2dccd; --k-ink: #000; --k-muted: #4d5a54; --k-bg: #fff; color-scheme: light; }
+.dark { --k-accent: #9eff1f; --k-line: rgba(255,255,255,.1); --k-ink: #fff; --k-muted: rgba(255,255,255,.65); --k-bg: #000; color-scheme: dark; }
 
 @layer base {
     html { scroll-behavior: smooth; }
-    body { background: var(--k-bg); color: var(--k-ink); @apply font-sans antialiased; }
-    h1, h2, h3, h4 { @apply font-display font-semibold tracking-tight; color: var(--k-ink); }
-    a { text-underline-offset: 3px; }
-    ::selection { background: var(--k-accent-fill); color: var(--k-on-accent); }
+    body { @apply bg-white text-black font-sans antialiased transition-colors duration-200; }
+    .dark body { @apply bg-surface-dark text-white; }
+    h1, h2, h3, h4 { @apply font-display font-semibold text-navy tracking-tight; }
+    h5, h6 { @apply font-subhead font-semibold text-navy; }
+    blockquote { @apply font-subhead text-lg italic text-navy/90; }
+    .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 { @apply text-white; }
+    .dark blockquote { @apply text-white/85; }
+    ::selection { @apply bg-green-400 text-black; }
     :focus-visible { outline: 2px solid var(--k-accent); outline-offset: 3px; }
 }
 
 @layer components {
-    .k-container { @apply mx-auto w-full max-w-6xl px-5 md:px-8; }
-    .k-container-wide { @apply mx-auto w-full max-w-7xl px-5 md:px-8; }
-    .k-section { @apply py-20 md:py-28; position: relative; }
-    .k-skip { @apply sr-only; }
-    .k-skip:focus { @apply not-sr-only fixed left-4 top-4 z-[100] px-4 py-2 font-mono text-sm; background: var(--k-accent-fill); color: var(--k-on-accent); }
+    .k-container { @apply mx-auto w-full px-6 md:px-10; max-width: 1440px; }
+    .k-container-wide { @apply mx-auto w-full px-6 md:px-10; max-width: 1720px; }
+    .k-section { @apply py-16 md:py-24; }
+    .k-band { @apply bg-gray-bg dark:bg-surface-dark-alt; }
+    .k-skip { @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-pill focus:bg-green-400 focus:px-4 focus:py-2 focus:text-black; }
 
-    /* Monospace data label: "// 01 · CLIMATE" */
-    .k-eyebrow, .k-mono { @apply font-mono text-[11px] font-medium uppercase tracking-[0.18em]; color: var(--k-accent); }
-    .k-mono-muted { @apply font-mono text-[11px] uppercase tracking-[0.16em]; color: var(--k-muted); }
-    .k-lead { @apply text-lg leading-relaxed md:text-xl; color: var(--k-muted); }
-    .k-muted { color: var(--k-muted); }
-    .k-accent { color: var(--k-accent); }
-
-    .k-btn-primary, .k-btn-outline, .k-btn-ghost {
-        @apply inline-flex items-center justify-center gap-2 px-5 py-3 font-mono text-xs font-medium uppercase tracking-[0.14em] transition-colors;
-        clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+    .k-btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               bg-green-400 text-black hover:-translate-y-0.5 hover:bg-green-300 shadow-sm hover:shadow-card;
     }
-    .k-btn-primary { background: var(--k-accent-fill); color: var(--k-on-accent); }
-    .k-btn-primary:hover { background: var(--k-ink); color: var(--k-bg); }
-    .k-btn-outline { box-shadow: inset 0 0 0 1px var(--k-line-strong); color: var(--k-ink); }
-    .k-btn-outline:hover { box-shadow: inset 0 0 0 1px var(--k-accent); color: var(--k-accent); }
-    .k-btn-ghost { color: var(--k-muted); }
-    .k-btn-ghost:hover { color: var(--k-accent); }
+    .k-btn-outline {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               border border-navy/25 text-navy hover:border-navy hover:bg-navy hover:text-white
+               dark:border-white/25 dark:text-white dark:hover:border-green-400 dark:hover:bg-transparent dark:hover:text-green-400;
+    }
+    .k-btn-ghost {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               text-navy/80 hover:text-navy dark:text-white/70 dark:hover:text-white;
+    }
+    .k-btn-white {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               bg-white text-black hover:bg-green-400 hover:-translate-y-0.5 shadow-sm hover:shadow-card;
+    }
+    .k-btn-outline-white {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               border border-white/60 text-white hover:border-green-400 hover:text-green-400;
+    }
 
-    .k-navlink { @apply underline decoration-1; color: var(--k-ink); }
-    .k-navlink:hover { color: var(--k-accent); }
+    .k-card, .k-panel {
+        @apply rounded-card border border-gray-border bg-white p-6 shadow-card transition-colors duration-200
+               dark:border-white/10 dark:bg-surface-dark-alt dark:shadow-card-dark;
+    }
+    a.k-card { @apply hover:border-navy/40 dark:hover:border-green-400/60; }
 
-    /* Panels with corner ticks (sharp geometry, no rounded cards). */
-    .k-card, .k-panel { @apply relative p-6 md:p-8; background: var(--k-panel); border: 1px solid var(--k-line); }
-    .k-ticks::before, .k-ticks::after { content: ''; position: absolute; width: 10px; height: 10px; pointer-events: none; }
-    .k-ticks::before { top: -1px; left: -1px; border-top: 2px solid var(--k-mark); border-left: 2px solid var(--k-mark); }
-    .k-ticks::after { bottom: -1px; right: -1px; border-bottom: 2px solid var(--k-mark); border-right: 2px solid var(--k-mark); }
-    a.k-card:hover, a.k-panel:hover { border-color: var(--k-line-strong); }
+    .k-eyebrow, .k-kicker { @apply font-subhead text-xs font-bold text-navy dark:text-green-400; }
+    .k-navlink { @apply font-subhead text-sm font-medium text-black/80 hover:text-navy transition-colors dark:text-white/80 dark:hover:text-green-400; }
+    .k-rule { @apply border-t border-gray-border dark:border-white/10; }
+    .k-muted { @apply text-gray-muted dark:text-white/65; }
+    .k-lead { @apply text-lg text-gray-muted dark:text-white/65; }
+    .k-accent { @apply text-navy dark:text-green-400; }
+    .k-meta { @apply font-subhead text-xs text-gray-muted dark:text-white/55; }
 
-    .k-rule { border-top: 1px solid var(--k-line); }
-    .k-grid-bg { background-image: linear-gradient(var(--k-grid) 1px, transparent 1px), linear-gradient(90deg, var(--k-grid) 1px, transparent 1px); background-size: 48px 48px; }
-    .k-scan { position: relative; }
-    .dark .k-scan::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px); }
+    .k-hero-bg {
+        @apply absolute inset-0 -z-10;
+        background: radial-gradient(ellipse at 20% 20%, rgba(158, 255, 31, 0.28), transparent 55%),
+                    radial-gradient(ellipse at 85% 80%, rgba(26, 78, 65, 0.6), transparent 50%),
+                    linear-gradient(120deg, #000 0%, #07120f 60%, #1a4e41 100%);
+        background-size: 200% 200%;
+        animation: k-hero-drift 18s ease-in-out infinite;
+    }
+    .k-hero-overlay { @apply absolute inset-0 -z-10 bg-black/50; }
 
-    .k-input { @apply w-full px-3 py-2 text-sm; background: var(--k-panel); color: var(--k-ink); border: 1px solid var(--k-line-strong); }
-    .k-input:focus { outline: 2px solid var(--k-accent); outline-offset: 0; }
-    .k-label { @apply mb-1 block font-mono text-[11px] uppercase tracking-[0.14em]; color: var(--k-muted); }
-    .k-table { @apply w-full text-sm; }
-    .k-table th { @apply py-2 pr-4 text-left font-mono text-[11px] uppercase tracking-[0.14em]; color: var(--k-muted); border-bottom: 1px solid var(--k-line); }
-    .k-table td { @apply py-2 pr-4 align-top; border-bottom: 1px solid var(--k-line); }
-    .k-pill { @apply inline-block px-2 py-0.5 font-mono text-xs; }
-    .k-chip { @apply inline-flex px-3 py-1 font-mono text-[11px] uppercase tracking-[0.12em]; border: 1px solid var(--k-line-strong); color: var(--k-ink); }
-    .k-chip:hover { border-color: var(--k-accent); color: var(--k-accent); }
-    .k-chip.is-active { background: var(--k-accent-fill); border-color: var(--k-accent-fill); color: var(--k-on-accent); }
-    .k-stat { @apply p-5; background: var(--k-panel); border: 1px solid var(--k-line); }
-    .k-empty { @apply flex flex-col items-start gap-2 px-6 py-8 font-mono text-sm; border: 1px dashed var(--k-line-strong); background: var(--k-panel); }
-    .k-empty h3 { @apply font-mono text-xs uppercase tracking-[0.14em]; color: var(--k-accent); }
-    .k-empty p { @apply max-w-xl font-sans text-sm; color: var(--k-muted); }
-    .k-placeholder { background: var(--k-panel-2); }
-    .k-placeholder.k-grid-bg { background-color: var(--k-panel-2); }
+    /* Inner-page opener, as on kuartal.id/about: centred title on the soft (cream) band. */
+    .k-page-hero { @apply relative border-b border-gray-border bg-gray-bg text-navy dark:border-white/10 dark:bg-surface-dark-alt dark:text-white; }
 
-    .k-page-hero { @apply relative overflow-hidden; border-bottom: 1px solid var(--k-line); }
+    .k-placeholder { @apply bg-gray-bg dark:bg-white/5; }
+    .k-icon-badge { @apply flex h-12 w-12 items-center justify-center rounded-xl bg-green-400 text-black; }
+    .k-info-tile {
+        @apply flex flex-col items-center gap-3 rounded-card border border-gray-border bg-white px-6 py-8
+               text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-navy/40
+               dark:border-white/10 dark:bg-surface-dark-alt dark:shadow-card-dark dark:hover:border-green-400/60;
+    }
+    .k-list-card {
+        @apply flex items-center justify-between gap-4 rounded-card border border-gray-border bg-white px-5 py-4 shadow-card
+               transition-colors hover:border-navy/40 dark:border-white/10 dark:bg-surface-dark-alt dark:shadow-card-dark dark:hover:border-green-400/60;
+    }
+    .k-list-card + .k-list-card { @apply mt-3; }
+
+    .k-chip {
+        @apply inline-flex items-center gap-1 rounded-pill border border-gray-border px-3 py-1 text-xs font-subhead font-medium text-black/80
+               hover:border-navy hover:text-navy transition-colors dark:border-white/15 dark:text-white/80 dark:hover:border-green-400 dark:hover:text-green-400;
+    }
+    .k-chip.is-active { @apply border-green-400 bg-green-400 text-black; }
+    .k-empty {
+        @apply flex flex-col items-center gap-2 rounded-card border border-dashed border-gray-border bg-white px-6 py-10 text-center
+               dark:border-white/15 dark:bg-surface-dark-alt;
+    }
+    .k-empty h3 { @apply font-subhead text-base font-semibold; }
+    .k-empty p { @apply max-w-md text-sm text-gray-muted dark:text-white/65; }
+    .k-stat { @apply rounded-card border border-gray-border bg-white p-5 dark:border-white/10 dark:bg-surface-dark-alt; }
+
+    .k-prose { @apply text-base leading-relaxed text-black/90 dark:text-white/85; }
+    .k-prose > * + * { margin-top: 1.1em; }
+    .k-prose h2 { @apply text-2xl mt-10; }
+    .k-prose h3 { @apply text-xl mt-8; }
+    .k-prose a { @apply text-navy underline underline-offset-2 dark:text-green-400; }
+    .k-prose ul { @apply list-disc pl-6; }
+    .k-prose ol { @apply list-decimal pl-6; }
+    .k-prose blockquote { @apply border-l-4 border-green-400 pl-5; }
+    .k-prose img { @apply rounded-card; max-width: 100%; height: auto; }
+    .k-prose pre { @apply overflow-x-auto rounded-lg bg-gray-bg p-4 text-sm dark:bg-white/5; }
+    .k-prose table { @apply w-full text-sm; }
+    .k-prose th, .k-prose td { @apply border-b border-gray-border px-2 py-1 text-left dark:border-white/10; }
+
+    /* Logo: black artwork in light mode, neon in dark (see components/wordmark). */
     .k-wordmark img { display: block; }
-
-    /* Data readout: label / value rows like a terminal. */
-    .k-readout { @apply font-mono text-xs; }
-    .k-readout div { @apply flex justify-between gap-4 py-2; border-bottom: 1px dashed var(--k-line); }
-    .k-readout dt { color: var(--k-muted); @apply uppercase tracking-[0.12em]; }
-    .k-readout dd { color: var(--k-ink); @apply text-right; }
-
-    .k-index { @apply font-mono text-xs tabular-nums; color: var(--k-accent); }
-    .k-cursor::after { content: '_'; color: var(--k-mark); margin-left: .1em; }
-    @media (prefers-reduced-motion: no-preference) { .k-cursor::after { animation: k-blink 1.1s steps(1) infinite; } }
-
-    /* Rich text (newsroom, fund pages). */
-    .k-prose { @apply max-w-none text-base leading-relaxed md:text-lg; color: var(--k-ink); }
-    .k-prose p, .k-prose ul, .k-prose ol, .k-prose blockquote { @apply my-5; }
-    .k-prose h2 { @apply mt-12 mb-4 text-2xl; } .k-prose h3 { @apply mt-8 mb-3 text-xl; }
-    .k-prose a { color: var(--k-accent); @apply underline; }
-    .k-prose ul { @apply list-disc pl-6; } .k-prose ol { @apply list-decimal pl-6; }
-    .k-prose blockquote { @apply pl-5 italic; border-left: 2px solid var(--k-accent); color: var(--k-muted); }
-    .k-prose img { @apply my-8 w-full; }
+    .k-wordmark .k-logo-dark { display: none; }
+    .dark .k-wordmark .k-logo-light { display: none; }
+    .dark .k-wordmark .k-logo-dark { display: block; }
 }
 
-@keyframes k-blink { 50% { opacity: 0; } }
-
-/* Header + mobile panel. The panel scrolls itself (body is locked while open). */
-.k-header { background: var(--k-bg); border-bottom: 1px solid var(--k-line); }
-.k-mobile-panel { max-height: calc(100dvh - 4rem); overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; background: var(--k-bg); border-bottom: 1px solid var(--k-line); }
-html.k-nav-locked, html.k-nav-locked body { overflow: hidden; }
-.k-nav-item { @apply font-mono text-[12px] uppercase tracking-[0.14em]; color: var(--k-ink); }
-.k-nav-item:hover, .k-nav-item[aria-current="page"] { color: var(--k-accent); }
-.k-dropdown { background: var(--k-panel); border: 1px solid var(--k-line-strong); }
-
-/* Logo per theme: lime artwork on the dark canvas, black artwork on neon and neutral. */
-.k-logo-lime { display: none; }
-[data-theme="dark"] .k-logo-lime { display: block; }
-[data-theme="dark"] .k-logo-black { display: none; }
-
-/* Theme switcher: three square swatches, pressed one gets a frame. */
-.k-theme-switch { @apply items-center gap-1; }
-.k-theme-switch button { @apply inline-flex items-center gap-2 px-1.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.14em]; color: var(--k-ink); box-shadow: inset 0 0 0 1px transparent; }
-.k-theme-switch button:hover { box-shadow: inset 0 0 0 1px var(--k-line-strong); }
-.k-theme-switch button[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--k-ink); }
-.k-swatch { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--k-ink); }
-.k-swatch-neon { background: #9eff1f; }
-.k-swatch-dark { background: linear-gradient(135deg, #050505 0 62%, #9eff1f 62%); }
-.k-swatch-neutral { background: linear-gradient(135deg, #f3eee3 0 62%, #1a4e41 62%); }
-
-/* Nature line work (resources/views/components/motif.blade.php). Strokes only, theme coloured. */
-.k-motif { color: var(--k-motif); fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }
-.k-motif .k-m-hi { color: var(--k-mark); }
-.k-motif .k-m-soft { color: var(--k-motif-soft); }
-.k-motif .k-m-dot { fill: currentColor; stroke: none; }
-.k-motif .k-m-dash { stroke-dasharray: 2 6; }
-@media (prefers-reduced-motion: no-preference) {
-    .k-motif.is-growing .k-m-grow { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: k-grow 2.6s cubic-bezier(.4, 0, .2, 1) forwards; animation-delay: var(--d, 0s); }
-    .k-motif.is-growing .k-m-dot { opacity: 0; animation: k-fade .6s ease forwards; animation-delay: calc(var(--d, 0s) + 1.8s); }
+/* Admin (layouts/portal.blade.php) */
+@layer components {
+    .k-input { @apply w-full rounded-lg border border-gray-border bg-white px-3 py-2 text-sm text-black focus:border-navy focus:outline-none focus:ring-2 focus:ring-green-400/40; }
+    .k-label { @apply block text-xs font-subhead font-medium text-gray-muted mb-1; }
+    .k-table { @apply w-full text-sm; }
+    .k-table th { @apply text-left text-xs font-subhead font-semibold text-gray-muted border-b border-gray-border py-2 pr-4; }
+    .k-table td { @apply border-b border-gray-border/60 py-2 pr-4 align-top; }
+    .k-pill { @apply inline-block rounded-full px-2 py-0.5 text-xs font-medium; }
+    .k-editor { @apply min-h-[320px] rounded-b-lg border border-gray-border bg-white p-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-400/40; }
+    .k-editor-bar { @apply flex flex-wrap gap-1 rounded-t-lg border border-b-0 border-gray-border bg-gray-bg p-1; }
+    .k-editor-bar button { @apply rounded px-2 py-1 text-xs font-subhead hover:bg-white; }
 }
-@keyframes k-grow { to { stroke-dashoffset: 0; } }
-@keyframes k-fade { to { opacity: 1; } }
 
-/* Topographic contour background (static SVG, tinted by theme through a mask). */
-.k-topo { position: relative; isolation: isolate; }
-.k-topo::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: var(--k-motif-soft); -webkit-mask: url('/images/motifs/contours.svg') center / 1400px auto repeat; mask: url('/images/motifs/contours.svg') center / 1400px auto repeat; }
+@keyframes k-hero-drift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
 
-/* Forest band: a full-bleed section in deep forest (black on neon). */
-.k-band { background: var(--k-band); color: var(--k-on-band); --k-ink: var(--k-on-band); --k-muted: color-mix(in srgb, var(--k-on-band) 78%, var(--k-band)); --k-accent: var(--k-band-accent); --k-mark: var(--k-band-accent); --k-line: rgba(243, 238, 227, .18); --k-line-strong: rgba(243, 238, 227, .45); --k-motif: rgba(158, 255, 31, .4); --k-motif-soft: rgba(243, 238, 227, .1); --k-grid: rgba(243, 238, 227, .06); --k-accent-fill: #9eff1f; --k-on-accent: #050505; --k-panel: color-mix(in srgb, var(--k-band) 88%, #000); }
-
-/* Hero contour canvas sits behind content; reduced motion draws one still frame. */
-.k-field { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) {
+    .k-hero-bg { animation: none; }
     html { scroll-behavior: auto; }
-    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
 
-/* Admin keeps a calm light skin (portal layout). */
-.k-admin { --k-bg: #f4f6f1; --k-panel: #fff; --k-ink: #050605; --k-muted: #4a5249; --k-line: rgba(5,6,5,.12); --k-line-strong: rgba(5,6,5,.3); --k-accent: #3a6600; color-scheme: light; }
+/* Mobile nav panel (kuartal-id PR #5 fix): the header is sticky, so the open
+   panel scrolls itself, capped at the viewport below the 4rem bar. */
+.k-mobile-panel {
+    max-height: calc(100vh - 4rem);
+    max-height: calc(100dvh - 4rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+}
+html.k-nav-locked, html.k-nav-locked body { overflow: hidden; }
+
+/* Admin keeps a calm light skin. */
+.k-admin { color-scheme: light; }

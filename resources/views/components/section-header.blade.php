@@ -1,6 +1,6 @@
-@props(['eyebrow' => null, 'title', 'index' => null])
-<div {{ $attributes->merge(['class' => 'mb-10 flex flex-col gap-3 md:mb-14']) }}>
-    @if ($eyebrow)<p class="k-eyebrow">{{ $index ? $index.' / ' : '' }}{{ $eyebrow }}</p>@endif
-    <h2 class="max-w-3xl text-3xl leading-tight md:text-5xl">{{ $title }}</h2>
-    @if (trim($slot) !== '')<div class="k-lead max-w-2xl">{{ $slot }}</div>@endif
+@props(['eyebrow' => null, 'title', 'index' => null, 'align' => 'left'])
+<div {{ $attributes->merge(['class' => ($align === 'center' ? 'mx-auto text-center ' : '').'mb-10 max-w-2xl']) }}>
+    @if ($eyebrow)<p class="k-eyebrow mb-3">{{ $eyebrow }}</p>@endif
+    <h2 class="text-3xl md:text-4xl">{{ $title }}</h2>
+    @if (trim($slot) !== '')<p class="mt-4 text-lg text-gray-muted dark:text-white/65">{{ $slot }}</p>@endif
 </div>
