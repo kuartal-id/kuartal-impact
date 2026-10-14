@@ -1,5 +1,17 @@
 # Handoff log
 
+## 2026-10-14: Impact Index import command + first 50 organisations (Grok Bot)
+- New `php artisan index:import <file.json> [--dry-run]` (`app/Console/Commands/ImportImpactIndex.php`): validates
+  everything first (types, sector/region slugs, pillar keys, URLs, "rated pillar needs a criterion + evidence"), then
+  upserts by slug in one transaction, replaces pillar scores/criteria/evidence, and calls `recalculate()`.
+- New organisation type `company` (some listed organisations are companies, e.g. CarbonEthics, Waste4Change).
+- Data: `database/data/impact-index-2026-10.json`: 50 Indonesia-relevant organisations researched from public
+  sources only (each criterion links the page used). Pillars without adequate public evidence are left unrated,
+  so 33 have fewer than 3 rated pillars and show "Not yet rated". Reviewer notes mark all as public-information
+  assessments by Kuartal Impact, Oct 2026, checked 2026-10-14.
+- Not done here: loading production. After merge + deploy: back up the SQLite DB, then run the import on the server.
+- Tests: `tests/Feature/ImportImpactIndexTest.php`.
+
 ## 2026-10-14: restyle to the kuartal.id website style (Grok Bot)
 - Owner: scrap the custom sci-fi look; follow kuartal.id exactly, only recolour to the Kuartal Impact logos.
 - `resources/css/app.css` is kuartal.id's stylesheet (via kuartal-id/kuartalgroup PR #7-#9) with the same token
