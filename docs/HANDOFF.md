@@ -72,3 +72,8 @@
 - Admin (`/admin/index/...`): organisations (profile, sectors, regions, spending split, financials + documents as `a | b | c` lines), scores & evidence per pillar, campaigns (active/retired, dates, linked orgs), settings (weights must sum to 100 + methodology version; recalculates all; sectors; regions tree).
 - Migration `2026_10_15_000100` seeds reference data only: 5 pillars (30/20/20/15/15), v1.0, 16 sectors, Indonesia + 38 provinces, Palestine, 4 campaign shells (neutral intro, give-safely note). **No organisations or scores seeded.**
 - No i18n in the site, so strings are English. Tests: `tests/Feature/ImpactIndexTest.php`.
+
+## 2026-10-14 — Campaign organisations (Grok Bot)
+- `index:import` now accepts `campaigns: [slug,...]` on items (attached with syncWithoutDetaching) and link-only items `{slug, link_only: true, campaigns}` for existing organisations (nothing else changed). Unknown campaign slugs fail validation. Test added.
+- Data: `database/data/impact-index-2026-10-campaigns.json`: 21 new orgs (20 linked to campaigns; ACT is profiled but deliberately NOT linked to Palestine because its 2022 PUB permit was revoked) and 8 link-only existing orgs. Public information, assessed by Kuartal Impact, Oct 2026, checked 2026-10-14.
+- Note: the "with an overall score" count in the import summary also counts link-only orgs.

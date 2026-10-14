@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Index\Campaign;
 use App\Models\Index\Organisation;
 use App\Models\Index\Pillar;
 use App\Models\Index\Region;
@@ -20,11 +21,14 @@ use Throwable;
  *   name, slug?, type (Organisation::TYPES key), website?, logo_url?, country?, headquarters?, founded_year?,
  *   summary?, theory_of_change?, funding_sources?, reviewer_notes?, last_reviewed_at? (Y-m-d), status? (draft|published),
  *   sectors: [sector slug], regions: [region slug],
+ *   campaigns?: [campaign slug]  (added to the organisation's campaigns; existing links are kept),
  *   pillars: { <pillar key>: { notes?, reviewed_at?, criteria: [{label, score 0-100, weight? 1-10, evidence_url?}],
  *                              evidence: [{title, url}] } }
  *
  * Rules (same as the admin): a pillar listed in the file is published only if it has at least one criterion and one
- * evidence source; pillars not listed stay unrated. Organisations are matched by slug and updated in place; their
+ * evidence source; pillars not listed stay unrated.
+ * Link-only items {"slug": ..., "link_only": true, "campaigns": [...]} attach an EXISTING organisation to campaigns and
+ * change nothing else (no fields, no scores). Organisations are matched by slug and updated in place; their
  * pillar scores are replaced by the file's. Everything is validated first; any error aborts with nothing written.
  */
 class ImportImpactIndex extends Command
@@ -51,10 +55,30 @@ class ImportImpactIndex extends Command
         $pillars = Pillar::ordered()->keyBy('key');
         $sectors = Sector::pluck('id', 'slug');
         $regions = Region::pluck('id', 'slug');
+        $campaigns = Campaign::pluck('id', 'slug');
         $errors = [];
         $slugs = [];
         foreach ($items as $i => $it) {
-            $at = '#'.($i + 1).' '.($it['name'] ?? '?');
+            $at = '#'.($i + 1).' '.($it['name'] ?? $it['slug'] ?? '?');
+            foreach ((array) ($it['campaigns'] ?? []) as $c) {
+                if (! isset($campaigns[$c])) {
+                    $errors[] = "{$at}: unknown campaign \"{$c}\".";
+                }
+            }
+            if (! empty($it['link_only'])) {
+                $slug = (string) ($it['slug'] ?? '');
+                if (! Organisation::where('slug', $slug)->exists()) {
+                    $errors[] = "{$at}: link_only needs the slug of an existing organisation.";
+                } elseif (empty($it['campaigns'])) {
+                    $errors[] = "{$at}: link_only item has no campaigns.";
+                }
+                if (isset($slugs[$slug])) {
+                    $errors[] = "{$at}: duplicate slug {$slug}.";
+                }
+                $slugs[$slug] = true;
+
+                continue;
+            }
             if (! filled($it['name'] ?? null)) {
                 $errors[] = "{$at}: name is required.";
             }
@@ -124,10 +148,17 @@ class ImportImpactIndex extends Command
             return self::SUCCESS;
         }
 
-        $created = $updated = 0;
+        $created = $updated = $linked = 0;
         try {
-            DB::transaction(function () use ($items, $pillars, $sectors, $regions, &$created, &$updated) {
+            DB::transaction(function () use ($items, $pillars, $sectors, $regions, $campaigns, &$created, &$updated, &$linked) {
                 foreach ($items as $it) {
+                    if (! empty($it['link_only'])) {
+                        Organisation::where('slug', $it['slug'])->first()->campaigns()
+                            ->syncWithoutDetaching(array_map(fn ($c) => $campaigns[$c], $it['campaigns']));
+                        $linked++;
+
+                        continue;
+                    }
                     $slug = $it['slug'] ?? \Illuminate\Support\Str::slug($it['name']);
                     $org = Organisation::firstOrNew(['slug' => $slug]);
                     $org->exists ? $updated++ : $created++;
@@ -137,6 +168,7 @@ class ImportImpactIndex extends Command
                     $org->save();
                     $org->sectors()->sync(array_map(fn ($s) => $sectors[$s], (array) ($it['sectors'] ?? [])));
                     $org->regions()->sync(array_map(fn ($r) => $regions[$r], (array) ($it['regions'] ?? [])));
+                    $org->campaigns()->syncWithoutDetaching(array_map(fn ($c) => $campaigns[$c], (array) ($it['campaigns'] ?? [])));
                     $org->pillarScores()->delete();
                     foreach ((array) ($it['pillars'] ?? []) as $key => $p) {
                         $ps = $org->pillarScores()->create(['pillar_id' => $pillars[$key]->id, 'published' => true,
@@ -159,7 +191,7 @@ class ImportImpactIndex extends Command
         }
 
         $rated = Organisation::whereIn('slug', array_keys($slugs))->whereNotNull('overall_score')->count();
-        $this->info("Imported: {$created} created, {$updated} updated; {$rated} with an overall score.");
+        $this->info("Imported: {$created} created, {$updated} updated, {$linked} linked only; {$rated} with an overall score.");
 
         return self::SUCCESS;
     }
