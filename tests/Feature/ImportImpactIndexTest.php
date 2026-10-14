@@ -48,6 +48,30 @@ class ImportImpactIndexTest extends TestCase
         $this->assertSame(2, Organisation::count());
     }
 
+    public function test_campaign_links_and_link_only_items(): void
+    {
+        $this->artisan('index:import', ['file' => $this->file([
+            ['name' => 'Peat Org', 'type' => 'ngo', 'campaigns' => ['save-kalimantan'], 'pillars' => ['impact' => $this->pillar(70)]],
+        ])])->assertSuccessful();
+        $org = Organisation::where('slug', 'peat-org')->first();
+        $before = $org->pillarScores()->count();
+
+        $this->artisan('index:import', ['file' => $this->file([
+            ['slug' => 'peat-org', 'link_only' => true, 'campaigns' => ['save-sumatera']],
+        ])])->assertSuccessful();
+
+        $org->refresh();
+        $this->assertEqualsCanonicalizing(['save-kalimantan', 'save-sumatera'], $org->campaigns->pluck('slug')->all());
+        $this->assertSame($before, $org->pillarScores()->count());
+        $this->assertSame('Peat Org', $org->name);
+
+        $this->artisan('index:import', ['file' => $this->file([
+            ['slug' => 'missing', 'link_only' => true, 'campaigns' => ['palestine']],
+            ['name' => 'X', 'type' => 'ngo', 'campaigns' => ['no-such-campaign']],
+        ])])->assertFailed();
+        $this->assertSame(1, Organisation::count());
+    }
+
     public function test_invalid_file_writes_nothing(): void
     {
         $f = $this->file([

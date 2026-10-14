@@ -1,0 +1,1528 @@
+[
+ {
+  "campaigns": [
+   "save-kalimantan",
+   "save-sumatera"
+  ],
+  "slug": "pantau-gambut",
+  "name": "Pantau Gambut",
+  "type": "ngo",
+  "website": "https://pantaugambut.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Peatland research, advocacy and campaign network monitoring peat restoration and fire risk across nine provinces.",
+  "sectors": [
+   "forests-biodiversity",
+   "climate-environment"
+  ],
+  "regions": [
+   "riau",
+   "jambi",
+   "sumatera-selatan",
+   "kalimantan-tengah",
+   "kalimantan-barat",
+   "kalimantan-selatan"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "transparency": {
+    "criteria": [
+     {
+      "label": "About page describes network and open-data monitoring; no annual or financial reports found",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://pantaugambut.id/tentang-pantau-gambut"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "About page describes network and open-data monitoring; no annual or financial reports found",
+      "url": "https://pantaugambut.id/tentang-pantau-gambut"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Network of regional member organisations (simpul) in peat provinces",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://pantaugambut.id/tentang-pantau-gambut"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Network of regional member organisations (simpul) in peat provinces",
+      "url": "https://pantaugambut.id/tentang-pantau-gambut"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "save-kalimantan",
+   "save-sumatera"
+  ],
+  "slug": "madani-berkelanjutan",
+  "name": "Yayasan Madani Berkelanjutan",
+  "type": "foundation",
+  "website": "https://madaniberkelanjutan.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Policy research foundation on forests, land use and climate; publishes analysis of the 2026 forest and land fire crisis.",
+  "sectors": [
+   "forests-biodiversity",
+   "climate-environment"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Fire-crisis analysis and policy recommendations (advocacy outputs, not measured outcomes)",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://madaniberkelanjutan.id/news-event/dark-august-1.3-million-hectares-scorched-in-state-forests-that-are-not-yet-independent"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Fire-crisis analysis and policy recommendations (advocacy outputs, not measured outcomes)",
+      "url": "https://madaniberkelanjutan.id/news-event/dark-august-1.3-million-hectares-scorched-in-state-forests-that-are-not-yet-independent"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Whistleblowing channel published",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://madaniberkelanjutan.id/about/approuch"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Whistleblowing channel published",
+      "url": "https://madaniberkelanjutan.id/about/approuch"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "save-kalimantan",
+   "save-sumatera"
+  ],
+  "slug": "wetlands-international-indonesia",
+  "name": "Wetlands International Indonesia",
+  "type": "foundation",
+  "website": "https://indonesia.wetlands.org/",
+  "logo_url": "https://indonesia.wetlands.org/wp-content/uploads/sites/10/2024/08/cropped-Wetlands-International-logo-RGB-High-res-1-150x150.jpg",
+  "country": "Indonesia",
+  "headquarters": "Bogor",
+  "founded_year": null,
+  "summary": "Bogor-based wetlands organisation working on peatlands, mangroves and peat-fire risk; part of Wetlands International.",
+  "sectors": [
+   "forests-biodiversity",
+   "climate-environment",
+   "oceans-coasts"
+  ],
+  "regions": [
+   "indonesia",
+   "kalimantan-tengah",
+   "riau"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Peatland programme and 2026 peat-fire risk white paper (outputs only)",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://indonesia.wetlands.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Peatland programme and 2026 peat-fire risk white paper (outputs only)",
+      "url": "https://indonesia.wetlands.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Team and organisation history published; no Indonesia annual/financial report viewed",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://indonesia.wetlands.org/about-us/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Team and organisation history published; no Indonesia annual/financial report viewed",
+      "url": "https://indonesia.wetlands.org/about-us/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "save-kalimantan"
+  ],
+  "slug": "save-our-borneo",
+  "name": "Save Our Borneo",
+  "type": "ngo",
+  "website": "https://saveourborneo.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2005,
+  "summary": "Kalimantan environmental association (Perkumpulan, founded 2005 by four regional WALHI executives) campaigning on deforestation, fires and indigenous rights.",
+  "sectors": [
+   "forests-biodiversity",
+   "human-rights"
+  ],
+  "regions": [
+   "kalimantan-tengah"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Publishes fire and deforestation advocacy (karhutla, peat); no outcome data",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://saveourborneo.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Publishes fire and deforestation advocacy (karhutla, peat); no outcome data",
+      "url": "https://saveourborneo.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Registered association; founders named; no board or policies published",
+      "score": 50,
+      "weight": 1,
+      "evidence_url": "https://saveourborneo.org/tentang-sob/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Registered association; founders named; no board or policies published",
+      "url": "https://saveourborneo.org/tentang-sob/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "save-kalimantan"
+  ],
+  "slug": "yiari",
+  "name": "Yayasan IAR Indonesia (YIARI)",
+  "type": "foundation",
+  "website": "https://www.internationalanimalrescue.or.id/",
+  "logo_url": "https://yiari.or.id/wp-content/uploads/2024/05/logo-default.webp",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Wildlife rescue and rehabilitation foundation (orangutans, slow lorises) that publishes forest-fire situation and wildlife-rescue updates.",
+  "sectors": [
+   "animal-welfare",
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "kalimantan-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "2026 karhutla situation updates on wildlife rescue; peat-restoration explainer (outputs only)",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://www.internationalanimalrescue.or.id/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "2026 karhutla situation updates on wildlife rescue; peat-restoration explainer (outputs only)",
+      "url": "https://www.internationalanimalrescue.or.id/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "save-sumatera"
+  ],
+  "slug": "jikalahari",
+  "name": "Jikalahari (Jaringan Kerja Penyelamat Hutan Riau)",
+  "type": "ngo",
+  "website": "https://jikalahari.or.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": "Pekanbaru",
+  "founded_year": null,
+  "summary": "Riau forest-rescue network monitoring hotspots, haze and corporate peat fires, and reporting alleged fire crimes to authorities.",
+  "sectors": [
+   "forests-biodiversity",
+   "human-rights"
+  ],
+  "regions": [
+   "riau"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Hotspot monitoring and legal reports on corporate karhutla (e.g. 583 ha peat burned in concessions)",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://jikalahari.or.id/category/database/publikasi-jikalahari/laporan-jikalahari/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Hotspot monitoring and legal reports on corporate karhutla (e.g. 583 ha peat burned in concessions)",
+      "url": "https://jikalahari.or.id/category/database/publikasi-jikalahari/laporan-jikalahari/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Dewan Pengawas dan Pertimbangan and management periods published",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://jikalahari.or.id/category/tentang-kami/kepengurusan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Dewan Pengawas dan Pertimbangan and management periods published",
+      "url": "https://jikalahari.or.id/category/tentang-kami/kepengurusan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Membership network of local Riau organisations",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://jikalahari.or.id/category/tentang-kami/anggota/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Membership network of local Riau organisations",
+      "url": "https://jikalahari.or.id/category/tentang-kami/anggota/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "save-sumatera"
+  ],
+  "slug": "kki-warsi",
+  "name": "KKI Warsi (Komunitas Konservasi Indonesia Warsi)",
+  "type": "ngo",
+  "website": "https://warsi.or.id/",
+  "logo_url": "https://warsi.or.id/wp-content/uploads/2026/09/cropped-warsi_logo.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 1992,
+  "summary": "Sumatra conservation organisation (since 1992) on community forestry, peatland management and fire prevention, and Orang Rimba rights.",
+  "sectors": [
+   "forests-biodiversity",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "jambi",
+   "sumatera-barat"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Programmes incl. sustainable peatland management and fire prevention; documented Orang Rimba health/education access",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://warsi.or.id/profil/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Programmes incl. sustainable peatland management and fire prevention; documented Orang Rimba health/education access",
+      "url": "https://warsi.or.id/profil/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Community-based forest management and work with Orang Rimba",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://warsi.or.id/profil/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Community-based forest management and work with Orang Rimba",
+      "url": "https://warsi.or.id/profil/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "save-sumatera"
+  ],
+  "slug": "haka",
+  "name": "Yayasan HAkA (Hutan, Alam dan Lingkungan Aceh)",
+  "type": "foundation",
+  "website": "https://haka.or.id/",
+  "logo_url": "https://haka.or.id/wp-content/uploads/2025/03/logo_-HAkA.svg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Aceh foundation protecting the Leuser Ecosystem, including its lowland rainforest and carbon-rich peat swamps.",
+  "sectors": [
+   "forests-biodiversity"
+  ],
+  "regions": [
+   "aceh"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Annual report 2025 describes protection work on rivers, peatland and wildlife corridors",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://haka.or.id/laporan-tahunan-haka-2025/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual report 2025 describes protection work on rivers, peatland and wildlife corridors",
+      "url": "https://haka.or.id/laporan-tahunan-haka-2025/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports 2024 and 2025 published",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://haka.or.id/kategori/laporan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports 2024 and 2025 published",
+      "url": "https://haka.or.id/kategori/laporan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Works alongside Acehnese communities defending their landscape",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://haka.or.id/laporan-tahunan-haka-2025/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Works alongside Acehnese communities defending their landscape",
+      "url": "https://haka.or.id/laporan-tahunan-haka-2025/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "ntt-recovery"
+  ],
+  "slug": "pmi",
+  "name": "Palang Merah Indonesia (PMI)",
+  "type": "ngo",
+  "website": "https://pmi.or.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian Red Cross; responded to the Aug 2026 Flores M7.7 earthquake with logistics, health, water and family-tracing services.",
+  "sectors": [
+   "disaster-relief-recovery",
+   "health",
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "indonesia",
+   "nusa-tenggara-timur"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Flores 2026 response outputs: logistics, health services, clean water, emergency tents",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://www.antaranews.com/berita/5699709/pmi-siapkan-operasi-kemanusiaan-skala-besar-respons-gempa-ntt"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Flores 2026 response outputs: logistics, health services, clean water, emergency tents",
+      "url": "https://www.antaranews.com/berita/5699709/pmi-siapkan-operasi-kemanusiaan-skala-besar-respons-gempa-ntt"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Response led with PMI NTT provincial HQ across seven Flores districts, moving to early recovery",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://rri.co.id/nasional/2707875/pmi-mulai-alihkan-penanganan-gempa-ntt-ke-fase-pemulihan"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Response led with PMI NTT provincial HQ across seven Flores districts, moving to early recovery",
+      "url": "https://rri.co.id/nasional/2707875/pmi-mulai-alihkan-penanganan-gempa-ntt-ke-fase-pemulihan"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "ntt-recovery"
+  ],
+  "slug": "yayasan-pikul",
+  "name": "Yayasan PIKUL",
+  "type": "foundation",
+  "website": "https://pikul.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": "Kupang",
+  "founded_year": null,
+  "summary": "Kupang-based foundation strengthening local communities' resilience to disasters and climate extremes, incl. post-Seroja assessments.",
+  "sectors": [
+   "disaster-relief-recovery",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "nusa-tenggara-timur"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Post-Seroja (2021) assessment report for Semau Island",
+      "score": 55,
+      "weight": 1,
+      "evidence_url": "https://pikul.id/2021/05/10/laporan-assessment-semau-pasca-seroja-april-2021/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Post-Seroja (2021) assessment report for Semau Island",
+      "url": "https://pikul.id/2021/05/10/laporan-assessment-semau-pasca-seroja-april-2021/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Village-level disaster-resilience programmes with local governments and farmer families",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://pikul.id/2022/06/08/festival-keluarga-tangguh-bencana-belajar-ketangguhan-dan-merayakan-pangan-lokal/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Village-level disaster-resilience programmes with local governments and farmer families",
+      "url": "https://pikul.id/2022/06/08/festival-keluarga-tangguh-bencana-belajar-ketangguhan-dan-merayakan-pangan-lokal/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "ntt-recovery"
+  ],
+  "slug": "cis-timor",
+  "name": "CIS Timor",
+  "type": "ngo",
+  "website": "https://cistimor.org/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": "Kupang",
+  "founded_year": null,
+  "summary": "Kupang humanitarian NGO; responded to Cyclone Seroja (water, psychosocial support) and heads NTT's disaster-risk-reduction forums.",
+  "sectors": [
+   "disaster-relief-recovery",
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "nusa-tenggara-timur"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Seroja 2021 response logged on BNPB volunteer desk (water filtration, child trauma healing)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://deskrelawanpb.bnpb.go.id/banjir-ntt/reports/view/439"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Seroja 2021 response logged on BNPB volunteer desk (water filtration, child trauma healing)",
+      "url": "https://deskrelawanpb.bnpb.go.id/banjir-ntt/reports/view/439"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "community": {
+    "criteria": [
+     {
+      "label": "Heads provincial and Kupang DRR forums; trains local youth groups",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://siapsiaga.or.id/wp-content/uploads/2024/05/9.-ENG-Lessons-Learned-Report-No.-4-Seroja-Tropical-Cyclone-Participatory-Review-Aug-2021-ENG.pdf"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Heads provincial and Kupang DRR forums; trains local youth groups",
+      "url": "https://siapsiaga.or.id/wp-content/uploads/2024/05/9.-ENG-Lessons-Learned-Report-No.-4-Seroja-Tropical-Cyclone-Participatory-Review-Aug-2021-ENG.pdf"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "ntt-recovery"
+  ],
+  "slug": "lazismu",
+  "name": "Lazismu",
+  "type": "foundation",
+  "website": "https://lazismu.org/",
+  "logo_url": "https://lazismu.org/wp-content/uploads/2025/05/lazismu-logo-png_seeklogo-476136.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": 2002,
+  "summary": "Muhammadiyah's national zakat institution (2002); with MDMC runs the Muhammadiyah response to the 2026 NTT earthquake.",
+  "sectors": [
+   "disaster-relief-recovery",
+   "poverty-livelihoods",
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "indonesia",
+   "nusa-tenggara-timur"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "NTT earthquake response and recovery programme with MDMC (outputs)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://lazismu.org/dashboard/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "NTT earthquake response and recovery programme with MDMC (outputs)",
+      "url": "https://lazismu.org/dashboard/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "States unqualified (WTP) audit opinion on financial statements each year",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://lazismu.org/tentang/penghargaan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "States unqualified (WTP) audit opinion on financial statements each year",
+      "url": "https://lazismu.org/tentang/penghargaan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Financial-report and annual-report pages published",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://lazismu.org/laporan-keuangan/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Financial-report and annual-report pages published",
+      "url": "https://lazismu.org/laporan-keuangan/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "baznas",
+  "name": "BAZNAS (Badan Amil Zakat Nasional)",
+  "type": "charity",
+  "website": "https://baznas.go.id/",
+  "logo_url": "https://baznas.go.id/assets/images/baznas_logo_putih.jpg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesia's state-established national zakat agency; channels Indonesian donations to Gaza (food, shelter camp, health services) via local partners.",
+  "sectors": [
+   "humanitarian-aid",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "indonesia",
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. Government-established non-structural agency; listed under \"Charity\" as the closest type.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Gaza 2026: free health services and Kampung Cahaya Zakat shelter camp (self-reported outputs)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://baznas.go.id/news-show/Masyarakat_Indonesia_melalui_BAZNAS_dan_Kitabisa_Bangun_Kampung_Cahaya_Zakat_di_Palestina/3994"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Gaza 2026: free health services and Kampung Cahaya Zakat shelter camp (self-reported outputs)",
+      "url": "https://baznas.go.id/news-show/Masyarakat_Indonesia_melalui_BAZNAS_dan_Kitabisa_Bangun_Kampung_Cahaya_Zakat_di_Palestina/3994"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Financial reports and PPID public-information section linked",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://baznas.go.id/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Financial reports and PPID public-information section linked",
+      "url": "https://baznas.go.id/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Organisational structure published (state agency)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://baznas.go.id/struktur-baznas"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Organisational structure published (state agency)",
+      "url": "https://baznas.go.id/struktur-baznas"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "mer-c",
+  "name": "MER-C (Medical Emergency Rescue Committee)",
+  "type": "ngo",
+  "website": "https://mer-c.org/",
+  "logo_url": "https://mer-c.org/wp-content/uploads/2026/03/logo-mer-c.jpg",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian medical humanitarian organisation that built and supports the Indonesia Hospital in Gaza, funded by Indonesian donations.",
+  "sectors": [
+   "health",
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "indonesia",
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Indonesia Hospital, Gaza built from Indonesian public donations",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://mer-c.org/rs-indonesia-palestina/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Indonesia Hospital, Gaza built from Indonesian public donations",
+      "url": "https://mer-c.org/rs-indonesia-palestina/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Campaign totals shown on donation page; no independent audited statements found",
+      "score": 45,
+      "weight": 1,
+      "evidence_url": "https://mer-c.org/donasi-2/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Campaign totals shown on donation page; no independent audited statements found",
+      "url": "https://mer-c.org/donasi-2/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "bsmi",
+  "name": "Bulan Sabit Merah Indonesia (BSMI)",
+  "type": "ngo",
+  "website": "https://bsmi.or.id/",
+  "logo_url": "https://bsmi.or.id/_astro/logo-12.BZt-7Gmc.png",
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian humanitarian medical NGO running a clinic in Gaza and orphan support, funded by Indonesian donations.",
+  "sectors": [
+   "health",
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "indonesia",
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Klinik Indonesia in Rafah opened by a BSMI-scholarship Gaza doctor (outputs)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://bsmi.or.id/blog/dokter-gaza-lulusan-beasiswa-bsmi-buka-klinik-indonesia-di-rafah/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Klinik Indonesia in Rafah opened by a BSMI-scholarship Gaza doctor (outputs)",
+      "url": "https://bsmi.or.id/blog/dokter-gaza-lulusan-beasiswa-bsmi-buka-klinik-indonesia-di-rafah/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Activity news only; no audited financial statements found",
+      "score": 45,
+      "weight": 1,
+      "evidence_url": "https://bsmi.or.id/palestina"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Activity news only; no audited financial statements found",
+      "url": "https://bsmi.or.id/palestina"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "unrwa",
+  "name": "UNRWA (UN Relief and Works Agency for Palestine Refugees)",
+  "type": "ngo",
+  "website": "https://www.unrwa.org/",
+  "logo_url": null,
+  "country": "International",
+  "headquarters": "Amman / Gaza",
+  "founded_year": 1949,
+  "summary": "UN agency (est. 1949) providing education, health, relief and emergency aid to Palestine refugees, incl. Gaza.",
+  "sectors": [
+   "humanitarian-aid",
+   "health",
+   "education"
+  ],
+  "regions": [
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. UN agency; listed under \"NGO\" as the closest available type. Governance grade reflects the 2024 OIOS findings and Independent Review.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Sitrep #236 (Oct 2026): 19.8m health visits since Oct 2023, 106k children in learning spaces, water to 800k/day",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Sitrep #236 (Oct 2026): 19.8m health visits since Oct 2023, 106k children in learning spaces, water to 800k/day",
+      "url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Regular public situation reports with operational data",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Regular public situation reports with operational data",
+      "url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "OIOS (2024): evidence could indicate 9 staff may have been involved in 7 Oct attacks; contracts terminated",
+      "score": 45,
+      "weight": 1,
+      "evidence_url": "https://www.unrwa.org/newsroom/official-statements/investigation-completed-allegations-unrwa-staff-participation-7-october"
+     },
+     {
+      "label": "Independent (Colonna) review: developed neutrality framework, with recommendations",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://www.un.org/unispal/document/report-independent-review-group-on-unrwa-22april2024/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "OIOS (2024): evidence could indicate 9 staff may have been involved in 7 Oct attacks; contracts terminated",
+      "url": "https://www.unrwa.org/newsroom/official-statements/investigation-completed-allegations-unrwa-staff-participation-7-october"
+     },
+     {
+      "title": "Independent (Colonna) review: developed neutrality framework, with recommendations",
+      "url": "https://www.un.org/unispal/document/report-independent-review-group-on-unrwa-22april2024/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "palestine-red-crescent",
+  "name": "Palestine Red Crescent Society (PRCS)",
+  "type": "ngo",
+  "website": "https://www.palestinercs.org/en",
+  "logo_url": null,
+  "country": "Palestine",
+  "headquarters": null,
+  "founded_year": 1968,
+  "summary": "Palestinian national Red Crescent society (1968) providing ambulance, health and emergency services in Gaza and the West Bank.",
+  "sectors": [
+   "humanitarian-aid",
+   "health"
+  ],
+  "regions": [
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Gaza humanitarian response reports (e.g. since Oct 2025 ceasefire)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.palestinercs.org/en/Category/48/humanitarian-response-reports"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Gaza humanitarian response reports (e.g. since Oct 2025 ceasefire)",
+      "url": "https://www.palestinercs.org/en/Category/48/humanitarian-response-reports"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports 2021-2025 and violations reports published",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.palestinercs.org/en/Category/22/reports"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports 2021-2025 and violations reports published",
+      "url": "https://www.palestinercs.org/en/Category/22/reports"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Officially recognised independent national society, part of the Red Cross/Red Crescent Movement",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://www.palestinercs.org/en/Article/10997/overview"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Officially recognised independent national society, part of the Red Cross/Red Crescent Movement",
+      "url": "https://www.palestinercs.org/en/Article/10997/overview"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "msf",
+  "name": "Médecins Sans Frontières (MSF)",
+  "type": "ngo",
+  "website": "https://www.msf.org/",
+  "logo_url": "https://www.msf.org/themes/custom/msf_theme/src/kss/components/icons/assets/logo-white-en.svg",
+  "country": "International",
+  "headquarters": "Geneva",
+  "founded_year": 1971,
+  "summary": "International independent medical humanitarian organisation (1971) with medical operations in Gaza and the West Bank.",
+  "sectors": [
+   "health",
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "International activity report 2025 with medical output data",
+      "score": 80,
+      "weight": 1,
+      "evidence_url": "https://www.msf.org/international-activity-report-2025"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "International activity report 2025 with medical output data",
+      "url": "https://www.msf.org/international-activity-report-2025"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "Audited combined international financial statements published yearly",
+      "score": 90,
+      "weight": 1,
+      "evidence_url": "https://www.msf.org/reports-and-finances"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Audited combined international financial statements published yearly",
+      "url": "https://www.msf.org/reports-and-finances"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Activity and financial reports public; Palestine operations page",
+      "score": 90,
+      "weight": 1,
+      "evidence_url": "https://www.msf.org/reports-and-finances"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Activity and financial reports public; Palestine operations page",
+      "url": "https://www.msf.org/reports-and-finances"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Self-governed, member-based association; principles of independence and neutrality",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.msf.org/who-we-are"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Self-governed, member-based association; principles of independence and neutrality",
+      "url": "https://www.msf.org/who-we-are"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "islamic-relief",
+  "name": "Islamic Relief Worldwide",
+  "type": "charity",
+  "website": "https://islamic-relief.org/",
+  "logo_url": "https://islamic-relief.org/wp-content/uploads/2025/02/cropped-1200x1200px-IR-logo-1.jpg",
+  "country": "International",
+  "headquarters": "Birmingham, UK",
+  "founded_year": null,
+  "summary": "UK-based international humanitarian charity with Gaza emergency and orphan-sponsorship programmes.",
+  "sectors": [
+   "humanitarian-aid",
+   "poverty-livelihoods"
+  ],
+  "regions": [
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "Gaza programmes incl. orphan sponsorship (no outcome data viewed)",
+      "score": 60,
+      "weight": 1,
+      "evidence_url": "https://islamic-relief.org/orphan-sponsorship-programme/sponsor-an-orphan-in-gaza/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Gaza programmes incl. orphan sponsorship (no outcome data viewed)",
+      "url": "https://islamic-relief.org/orphan-sponsorship-programme/sponsor-an-orphan-in-gaza/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual reports, trustees, directors and governance pages linked",
+      "score": 70,
+      "weight": 1,
+      "evidence_url": "https://islamic-relief.org/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual reports, trustees, directors and governance pages linked",
+      "url": "https://islamic-relief.org/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Core Humanitarian Standard commitment page",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://islamic-relief.org/about-us/core-humanitarian-standard/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Core Humanitarian Standard commitment page",
+      "url": "https://islamic-relief.org/about-us/core-humanitarian-standard/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [
+   "palestine"
+  ],
+  "slug": "anera",
+  "name": "Anera",
+  "type": "ngo",
+  "website": "https://www.anera.org/",
+  "logo_url": "https://www.anera.org/wp-content/uploads/2019/11/anera-logo.svg",
+  "country": "International",
+  "headquarters": "Washington, DC",
+  "founded_year": null,
+  "summary": "US non-profit delivering relief and development in Palestine (Gaza, West Bank), Lebanon and Jordan with local staff.",
+  "sectors": [
+   "humanitarian-aid",
+   "health",
+   "education"
+  ],
+  "regions": [
+   "palestine"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated.",
+  "pillars": {
+   "impact": {
+    "criteria": [
+     {
+      "label": "2025: $171m of assistance delivered in Palestine, Lebanon and Jordan (outputs)",
+      "score": 75,
+      "weight": 1,
+      "evidence_url": "https://www.anera.org/resources/annual-report/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "2025: $171m of assistance delivered in Palestine, Lebanon and Jordan (outputs)",
+      "url": "https://www.anera.org/resources/annual-report/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "financial": {
+    "criteria": [
+     {
+      "label": "Archive of audited financial statements published",
+      "score": 85,
+      "weight": 1,
+      "evidence_url": "https://www.anera.org/who-we-are/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Archive of audited financial statements published",
+      "url": "https://www.anera.org/who-we-are/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "transparency": {
+    "criteria": [
+     {
+      "label": "Annual report and audited financial statements published",
+      "score": 90,
+      "weight": 1,
+      "evidence_url": "https://www.anera.org/who-we-are/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Annual report and audited financial statements published",
+      "url": "https://www.anera.org/who-we-are/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Leadership and board named",
+      "score": 65,
+      "weight": 1,
+      "evidence_url": "https://www.anera.org/who-we-are/leadership/"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Leadership and board named",
+      "url": "https://www.anera.org/who-we-are/leadership/"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "campaigns": [],
+  "slug": "act-aksi-cepat-tanggap",
+  "name": "ACT (Aksi Cepat Tanggap)",
+  "type": "foundation",
+  "website": "https://act.id/",
+  "logo_url": null,
+  "country": "Indonesia",
+  "headquarters": null,
+  "founded_year": null,
+  "summary": "Indonesian humanitarian foundation whose public money-and-goods collection permit (PUB) was revoked by the Social Affairs Ministry in July 2022; former leaders were convicted in 2023 of embezzling Boeing compensation funds.",
+  "sectors": [
+   "humanitarian-aid"
+  ],
+  "regions": [
+   "indonesia"
+  ],
+  "last_reviewed_at": "2026-10-14",
+  "status": "published",
+  "reviewer_notes": "Based on public information only (official website, published reports, registries, reputable press). Assessed by Kuartal Impact, Oct 2026. Sources checked 14 Oct 2026. Pillars without adequate public evidence are left unrated. Not linked to the Palestine campaign: ACT may not collect public donations (Kemensos, 2022) and Palestine donation posters in its name were fact-checked as hoaxes (merdeka.com cek fakta). Official site did not respond when checked.",
+  "pillars": {
+   "financial": {
+    "criteria": [
+     {
+      "label": "Kemensos revoked PUB permit: average 13.7% of donations taken for operations vs 10% legal cap",
+      "score": 15,
+      "weight": 1,
+      "evidence_url": "https://news.detik.com/berita/d-6164336/ini-alasan-kemensos-cabut-izin-pengumpulan-uang-dan-barang-act"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Kemensos revoked PUB permit: average 13.7% of donations taken for operations vs 10% legal cap",
+      "url": "https://news.detik.com/berita/d-6164336/ini-alasan-kemensos-cabut-izin-pengumpulan-uang-dan-barang-act"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   },
+   "governance": {
+    "criteria": [
+     {
+      "label": "Founder Ahyudin sentenced to 3.5 years for embezzling Lion Air JT-610 victims' Boeing funds",
+      "score": 10,
+      "weight": 1,
+      "evidence_url": "https://www.bbc.com/indonesia/indonesia-62046881"
+     },
+     {
+      "label": "Ex-president Ibnu Khajar sentenced to 3 years in the same case",
+      "score": 10,
+      "weight": 1,
+      "evidence_url": "https://nasional.kompas.com/read/2023/01/24/17473501/kasus-penggelapan-dana-boeing-eks-presiden-act-ibnu-khajar-divonis-3-tahun"
+     }
+    ],
+    "evidence": [
+     {
+      "title": "Founder Ahyudin sentenced to 3.5 years for embezzling Lion Air JT-610 victims' Boeing funds",
+      "url": "https://www.bbc.com/indonesia/indonesia-62046881"
+     },
+     {
+      "title": "Ex-president Ibnu Khajar sentenced to 3 years in the same case",
+      "url": "https://nasional.kompas.com/read/2023/01/24/17473501/kasus-penggelapan-dana-boeing-eks-presiden-act-ibnu-khajar-divonis-3-tahun"
+     }
+    ],
+    "reviewed_at": "2026-10-14"
+   }
+  }
+ },
+ {
+  "slug": "bos-foundation",
+  "link_only": true,
+  "campaigns": [
+   "save-kalimantan"
+  ]
+ },
+ {
+  "slug": "borneo-nature-foundation",
+  "link_only": true,
+  "campaigns": [
+   "save-kalimantan"
+  ]
+ },
+ {
+  "slug": "wwf-indonesia",
+  "link_only": true,
+  "campaigns": [
+   "save-kalimantan"
+  ]
+ },
+ {
+  "slug": "walhi",
+  "link_only": true,
+  "campaigns": [
+   "save-kalimantan",
+   "save-sumatera"
+  ]
+ },
+ {
+  "slug": "wahana-visi-indonesia",
+  "link_only": true,
+  "campaigns": [
+   "ntt-recovery"
+  ]
+ },
+ {
+  "slug": "rumah-zakat",
+  "link_only": true,
+  "campaigns": [
+   "ntt-recovery",
+   "palestine"
+  ]
+ },
+ {
+  "slug": "dompet-dhuafa",
+  "link_only": true,
+  "campaigns": [
+   "ntt-recovery",
+   "palestine"
+  ]
+ },
+ {
+  "slug": "save-the-children-indonesia",
+  "link_only": true,
+  "campaigns": [
+   "ntt-recovery"
+  ]
+ }
+]
