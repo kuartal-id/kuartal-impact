@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\SiteEntry;
+use Illuminate\Http\Response;
 use Illuminate\View\View;
 
 /**
@@ -69,6 +70,22 @@ class SiteController extends Controller
             'posts' => Post::live()->whereJsonContains('tags', $fund->slug)->latest('published_at')->limit(3)->get(),
             'others' => $funds->reject(fn ($f) => $f->is($fund))->values(),
         ]);
+    }
+
+    /** XML sitemap of public pages, published funds and live newsroom posts. */
+    public function sitemap(): Response
+    {
+        $urls = collect(['/', '/about', '/focus-areas', '/portfolio', '/programmes', '/newsroom', '/contact'])
+            ->map(fn ($p) => ['loc' => url($p), 'lastmod' => null]);
+        foreach (SiteEntry::funds() as $fund) {
+            $urls->push(['loc' => route('programmes.show', $fund->slug), 'lastmod' => $fund->updated_at]);
+        }
+        foreach (Post::live()->latest('published_at')->get(['slug', 'updated_at']) as $post) {
+            $urls->push(['loc' => route('newsroom.show', $post), 'lastmod' => $post->updated_at]);
+        }
+
+        return response()->view('sitemap', ['urls' => $urls], 200)
+            ->header('Content-Type', 'application/xml; charset=UTF-8');
     }
 
     public function contact(): View

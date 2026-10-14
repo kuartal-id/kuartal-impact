@@ -109,7 +109,7 @@ class SiteContentTest extends TestCase
 
     public function test_contact_emails_and_legacy_redirects(): void
     {
-        $this->get(self::MAIN.'/contact')->assertSee('hello@kuartalimpact.org')->assertSee('ir@kuartal.id')->assertSee('media@kuartal.id');
+        $this->get(self::MAIN.'/contact')->assertSee('hello@kuartal.id')->assertSee('ir@kuartal.id')->assertSee('media@kuartal.id');
         $this->get(self::MAIN.'/how-we-invest')->assertRedirect();
         $this->get(self::MAIN.'/our-team')->assertRedirect();
     }
@@ -120,5 +120,25 @@ class SiteContentTest extends TestCase
         $this->assertStringContainsString('data-nav-toggle', $html);
         $this->assertStringContainsString('aria-controls="k-mobile-nav"', $html);
         $this->assertStringContainsString("localStorage.getItem('kuartal-theme')", $html);
+    }
+
+    public function test_sitemap_robots_and_404(): void
+    {
+        $this->get(self::MAIN.'/sitemap.xml')->assertOk()
+            ->assertHeader('Content-Type', 'application/xml; charset=UTF-8')
+            ->assertSee('<urlset', false)->assertSee(self::MAIN.'/about', false);
+        $this->get(self::MAIN.'/no-such-page')->assertNotFound()
+            ->assertSee("We couldn&#039;t find that page", false)->assertSee('Back to home');
+        $this->assertStringContainsString('Sitemap: https://kuartalimpact.org/sitemap.xml', file_get_contents(public_path('robots.txt')));
+    }
+
+    public function test_no_cream_full_width_bands_in_light_mode(): void
+    {
+        $css = file_get_contents(resource_path('css/app.css'));
+        $this->assertMatchesRegularExpression('/\.k-band \{ @apply [^}]*\bbg-white\b/', $css);
+        $this->assertMatchesRegularExpression('/\.k-page-hero \{ @apply [^}]*\bbg-white\b/', $css);
+        foreach (glob(resource_path('views/{,*/,*/*/}*.blade.php'), GLOB_BRACE) as $view) {
+            $this->assertDoesNotMatchRegularExpression('/<(section|footer|body|div class="border-t)[^>]*\bbg-(gray-bg|cream)\b/', file_get_contents($view), $view);
+        }
     }
 }

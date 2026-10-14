@@ -46,3 +46,10 @@
   navy wordmark (alpha kept). Replace with owner artwork when available. Favicon is a placeholder ⊗ mark.
 - Unfinished: Kuartal ID client + entitlement (owner), hPanel Git cutover (owner; see docs/DEPLOY.md), fund
   texts/figures/projects, team, partners, Kuartal Impact social accounts (footer uses Kuartal's).
+
+## 2026-10-14 — Grok: no cream bands, sitemap, 404, contact mailbox
+- Light mode: `.k-band`, `.k-page-hero`, the footer social strip, newsroom "more posts" and the admin body are white (hairline borders mark section changes). Cream `#f3eee3` is now only a container surface (`.k-surface`, `.k-placeholder`, cards/tags). Dark mode unchanged. A test guards against cream full-width bands.
+- `/sitemap.xml` (Laravel route: pages, published funds, live posts); root `.htaccess` FilesMatch now exempts exactly `sitemap.xml` from the `.xml` deny (other .xml still 403). robots.txt points to it and disallows /admin, /auth/.
+- Styled 404 (`resources/views/errors/404.blade.php`), og:image size/alt + twitter tags (OG image is the logo card).
+- General contact defaults to hello@kuartal.id (hello@kuartalimpact.org not confirmed by owner); ir@/media@kuartal.id unchanged.
+- Screenshots: /workspace/kimpact-shots4/ (box).

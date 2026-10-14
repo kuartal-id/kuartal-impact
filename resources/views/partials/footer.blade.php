@@ -4,8 +4,8 @@
     $kContactEmail = config('kuartal.contact_email');
     $kHref = fn ($u) => str_starts_with($u, 'http') ? $u : url($u);
 @endphp
-{{-- Social strip, as on kuartal.id: soft band (cream here) above the footer. --}}
-<div class="border-t border-gray-border bg-gray-bg dark:border-white/10 dark:bg-surface-dark-alt">
+{{-- Social strip, as on kuartal.id: white strip (cream is never a full-width band) above the footer. --}}
+<div class="border-t border-gray-border bg-white dark:border-white/10 dark:bg-surface-dark-alt">
     <div class="k-container-wide flex flex-col gap-4 py-6 md:flex-row md:items-center md:justify-between">
         <div class="flex items-center gap-4">
             <span class="text-sm text-gray-muted dark:text-white/65">Follow us on social media</span>

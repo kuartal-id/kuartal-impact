@@ -51,7 +51,7 @@
     </article>
 
     @if ($related->isNotEmpty())
-        <section class="k-section bg-gray-bg dark:bg-surface-dark-alt">
+        <section class="k-section k-band">
             <div class="k-container">
                 <h2 class="text-2xl mb-6">More in {{ $post->categoryLabel() }}</h2>
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">@foreach ($related as $r)<x-post-card :post="$r" />@endforeach</div>

@@ -1,5 +1,5 @@
 @props(['eyebrow', 'title', 'code' => null, 'icon' => null])
-{{-- Page opener in kuartal.id's style: centred title and lead on the soft (cream) band. --}}
+{{-- Page opener in kuartal.id's style: centred title and lead on a white band. --}}
 <section class="k-page-hero">
     <div class="k-container py-16 text-center md:py-20">
         <p class="k-eyebrow mb-4">{{ $eyebrow }}</p>

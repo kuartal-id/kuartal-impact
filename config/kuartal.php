@@ -9,11 +9,11 @@ return [
     'site_name' => env('KUARTAL_SITE_NAME', 'Kuartal Impact'),
     'site_tag' => env('KUARTAL_SITE_TAG', 'Impact'),
 
-    // General enquiries: the address the previous kuartalimpact.org listed.
-    'contact_email' => env('KUARTAL_CONTACT_EMAIL', 'hello@kuartalimpact.org'),
+    // General enquiries go to the Kuartal Group mailbox (hello@kuartalimpact.org is not confirmed).
+    'contact_email' => env('KUARTAL_CONTACT_EMAIL', 'hello@kuartal.id'),
 
     'contacts' => [
-        ['key' => 'general', 'label' => 'General enquiries', 'email' => env('KUARTAL_CONTACT_EMAIL', 'hello@kuartalimpact.org'),
+        ['key' => 'general', 'label' => 'General enquiries', 'email' => env('KUARTAL_CONTACT_EMAIL', 'hello@kuartal.id'),
             'body' => 'Founders, partners, communities and anyone with a question about Kuartal Impact.'],
         ['key' => 'investors', 'label' => 'Investors', 'email' => env('KUARTAL_IR_EMAIL', 'ir@kuartal.id'),
             'body' => 'Co-investment and limited-partner enquiries across Kuartal Group.'],

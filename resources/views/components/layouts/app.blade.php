@@ -29,7 +29,12 @@
     <meta property="og:type" content="{{ $ogType ?? 'website' }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ $ogImage ?? asset('images/og-kuartal-impact.png') }}">
+    @unless (isset($ogImage))<meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">@endunless
+    <meta property="og:image:alt" content="Kuartal Impact">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title ?? 'Kuartal Impact' }}">
+    <meta name="twitter:image" content="{{ $ogImage ?? asset('images/og-kuartal-impact.png') }}">
     <link rel="canonical" href="{{ url()->current() }}">
     <link rel="alternate" type="application/rss+xml" title="Kuartal Impact Newsroom" href="{{ route('newsroom.feed') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])

@@ -21,7 +21,8 @@ Options -Indexes -MultiViews
 </IfModule>
 
 # Data and config files by name, in any directory (also covers public/).
-<FilesMatch "(^\.|\.(env|log|sqlite|sqlite3|db|sql|md|lock|bak|backup|old|orig|save|swp|dist|sh|yml|yaml|neon|xml|key|pem|ini)$|^(composer|package|package-lock)\.json$|^(artisan|phpunit\.xml|vite\.config\.js|error_log)$)">
+# .xml is refused except the app's /sitemap.xml route (served by Laravel, not a file).
+<FilesMatch "(^\.|^(?!sitemap\.xml$).*\.(env|log|sqlite|sqlite3|db|sql|md|lock|bak|backup|old|orig|save|swp|dist|sh|yml|yaml|neon|xml|key|pem|ini)$|^(composer|package|package-lock)\.json$|^(artisan|phpunit\.xml|vite\.config\.js|error_log)$)">
     <IfModule mod_authz_core.c>
         Require all denied
     </IfModule>
