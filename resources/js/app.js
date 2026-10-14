@@ -1,8 +1,11 @@
 import './theme-toggle';
-import { initField } from './field';
+import './search-panel';
 
+/**
+ * Mobile nav toggle, shared across Kuartal properties (scrolling-panel fix from kuartal-id PR #5).
+ * Trigger [data-nav-toggle], panel [data-nav-panel]. Desktop dropdowns: button[data-dd].
+ */
 document.addEventListener('DOMContentLoaded', function () {
-    // Mobile nav: [data-nav-toggle] opens [data-nav-panel]; the panel scrolls, the page is locked.
     const trigger = document.querySelector('[data-nav-toggle]');
     const panel = document.querySelector('[data-nav-panel]');
     if (trigger && panel) {
@@ -21,10 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
         window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
     }
 
-    // Desktop dropdowns: button[data-dd] toggles its sibling [data-dd-panel]; Esc / outside click closes.
-    // Desktop dropdowns: button[data-dd] toggles the [data-dd-panel] in its <li>; Esc / outside click closes.
     document.querySelectorAll('[data-dd]').forEach((btn) => {
-        const wrap = btn.closest('li') || btn.parentElement;
+        const wrap = btn.closest('[data-dd-wrap]') || btn.parentElement;
         const menu = wrap.querySelector('[data-dd-panel]');
         if (!menu) return;
         const set = (open) => { menu.classList.toggle('hidden', !open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); };
@@ -33,6 +34,4 @@ document.addEventListener('DOMContentLoaded', function () {
         document.addEventListener('click', (e) => { if (!wrap.contains(e.target)) set(false); });
         wrap.addEventListener('focusout', (e) => { if (!wrap.contains(e.relatedTarget)) set(false); });
     });
-
-    document.querySelectorAll('[data-field]').forEach(initField);
 });

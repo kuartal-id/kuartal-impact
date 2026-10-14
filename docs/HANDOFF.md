@@ -1,5 +1,22 @@
 # Handoff log
 
+## 2026-10-14: restyle to the kuartal.id website style (Grok Bot)
+- Owner: scrap the custom sci-fi look; follow kuartal.id exactly, only recolour to the Kuartal Impact logos.
+- `resources/css/app.css` is kuartal.id's stylesheet (via kuartal-id/kuartalgroup PR #7-#9) with the same token
+  names, remapped: navy -> forest #1a4e41, green-400 -> neon #9eff1f (fills under black text only), green-500/600 ->
+  forest (accent text on light), gray-bg -> cream #f3eee3, surface-dark -> black, -alt -> dark forest #0c2620.
+  axe colour-contrast: 0 violations (home, Mangrow fund, about, contact; light + dark).
+- Chrome as on kuartal.id: sticky see-through header, round search + dark-mode buttons, slide-over search
+  (`resources/js/search-panel.js`, indexes nav links + funds), scrolling mobile menu (kuartal-id PR #5 fix),
+  cream social strip + big-logo footer, centred title band (`x-page-hero`) on inner pages, Poppins/Arial.
+- Theme: light/dark only, shared `kuartal-theme` key, first visit follows the OS (as kuartal.id). Removed the
+  neon/dark/neutral switcher, `theme-boot.js`, contour canvas (`field.js`), `x-motif` line drawings, contour SVG and
+  `fund_motifs` config. Logo: black in light, neon in dark, white over the hero footage.
+- Home hero: kuartal.id's Rinjani footage, streamed from https://kuartal.id/videos/kuartal-hero.mp4, with the poster
+  frame `public/images/hero-poster.jpg` (same file kuartalgroup uses). No stock media.
+- Fund cards: kuartal.id-style rounded cards (fund photo from admin, or a plain forest panel with the name).
+- Tests: `ThemeSwitcherTest` replaced by `ThemeToggleTest`.
+
 ## 2026-10-14: real logos, three themes, nature line work (Grok Bot)
 - Logos: owner artwork (neon + black) trimmed to 1283×713, exported PNG + lossless WebP; white version = black
   recoloured. Old navy-derived wordmark and placeholder favicon removed. Favicons (ico/svg/16–512 png) are the

@@ -50,7 +50,7 @@
                     <a href="{{ route('newsroom.show', $lead) }}" class="group mb-10 grid overflow-hidden k-panel !p-0 md:grid-cols-2 hover:border-green-400 dark:border-white/10 dark:bg-surface-dark-alt">
                         <div class="aspect-[16/10] overflow-hidden">
                             @if ($lead->cover)<img src="{{ $lead->cover->url() }}" alt="{{ $lead->cover->alt_text ?? '' }}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]">
-                            @else<div class="k-placeholder k-grid-bg flex h-full w-full items-center justify-center"><span class="k-mono">{{ $lead->categoryLabel() }}</span></div>@endif
+                            @else<div class="k-placeholder flex h-full w-full items-center justify-center"><span class="k-eyebrow">{{ $lead->categoryLabel() }}</span></div>@endif
                         </div>
                         <div class="flex flex-col justify-center p-8">
                             <p class="k-eyebrow mb-3">{{ $lead->categoryLabel() }} · Latest</p>
