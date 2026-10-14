@@ -1,0 +1,142 @@
+name: Build deploy branch
+
+# Hostinger Git deploy (see docs/DEPLOY.md). Groundwork for kuartalimpact.org: until hPanel Git is
+# connected to the `deploy` branch, nothing deploys kuartalimpact.org (WordPress stays live) and
+# the wait step below is skipped. Set repo variable HOSTINGER_GIT_DEPLOY=true at cutover. Hostinger has no Node, so on every push to
+# main this builds the release tree (Vite assets + production vendor/) and commits it to
+# the `deploy` branch. hPanel > Git deploys `deploy` into public_html on its webhook; the
+# hPanel cron `php artisan app:post-deploy` then migrates and rebuilds caches.
+#
+# Uses only GITHUB_TOKEN (contents: write). No SSH, no other secrets.
+on:
+  push:
+    branches: [main]
+  # Pull requests run the whole build and the Apache web-root check, but never publish.
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# One build at a time, in push order, so `deploy` never goes backwards.
+concurrency:
+  group: ${{ github.event_name == 'pull_request' && format('build-deploy-pr-{0}', github.ref) || 'build-deploy-branch' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  DEPLOY_BRANCH: deploy
+  # The live site Hostinger deploys `deploy` to (checked after each release).
+  SITE_URL: https://kuartalimpact.org
+  # The hPanel Git deployment of `deploy`; a release is live when it serves it.
+  SITE_URLS: https://kuartalimpact.org
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          path: src
+          persist-credentials: false
+
+      - name: Set up PHP 8.4 (same as production)
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: mbstring, pdo_sqlite, sqlite3, fileinfo, dom, intl, zip
+          tools: composer:v2
+          coverage: none
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src/package-lock.json
+
+      - name: Deploy-safety tests (web root rules, post-deploy command)
+        working-directory: src
+        run: |
+          composer install --no-interaction --no-progress
+          cp .env.example .env && php artisan key:generate --no-interaction
+          php artisan test --filter='WebRootHtaccessTest|PostDeployCommandTest'
+
+      - name: Build release tree
+        run: src/deploy/build-release.sh src release "$GITHUB_SHA" "$GITHUB_RUN_ID"
+
+      - name: Web root check against real Apache
+        run: sudo src/deploy/test-webroot-apache.sh release
+
+      - name: Publish to the deploy branch (one orphan commit, force-pushed)
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          url="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          # `deploy` is a build artefact, not history: every release is ONE parentless commit
+          # (the full tree), force-pushed. The branch never grows, so any clone of it (Hostinger
+          # clones --depth 1; people and fallbacks may not) costs exactly one release tree.
+          # The lease refuses to overwrite a `deploy` that changed since we looked.
+          old=$(git ls-remote --heads "$url" "$DEPLOY_BRANCH" | cut -f1)
+          git init --quiet -b "$DEPLOY_BRANCH" out
+          cp -a release/. out/
+          cd out
+          git remote add origin "$url"
+          # -f: vendor packages ship their own .gitignore files; the release tree is
+          # already clean (build-release.sh refuses .env, *.sqlite, *.key, *.log).
+          git add -A -f .
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit --quiet -m "Release ${GITHUB_SHA::12} (run ${GITHUB_RUN_ID})" -m "Built from ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
+          git push --quiet --force-with-lease="refs/heads/${DEPLOY_BRANCH}:${old}" origin "HEAD:refs/heads/${DEPLOY_BRANCH}"
+          {
+            echo "### Released \`${GITHUB_SHA::12}\` to \`${DEPLOY_BRANCH}\`"
+            echo "Deploy commit: \`$(git rev-parse --short HEAD)\` (orphan, $(du -sh --exclude=.git . | cut -f1) tree). Hostinger deploys it on the webhook; the app:post-deploy cron finishes it within a minute."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Wait for Hostinger to publish it (re-push on a failed clone)
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.HOSTINGER_GIT_DEPLOY == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          # Hostinger's server -> GitHub path drops ~5-20% of HTTPS connections (they stall after a
+          # few KB and are reset ~5 minutes later), whatever the repository size: hPanel then logs
+          # "Cloning failed (~300s) ... early EOF / invalid index-pack output" and keeps the old
+          # release live. A new push fires the webhook again, so: watch the live release marker
+          # (public/deploy-release.txt, written by build-release.sh) and re-push the same tree
+          # (a new orphan commit) when it doesn't appear. The unique query string defeats hcdn.
+          cd out
+          want="run_id=${GITHUB_RUN_ID}"
+          for attempt in 1 2 3; do
+            for i in $(seq 1 26); do   # 26 x 15 s = 6.5 min > Hostinger's ~5 min clone timeout
+              sleep 15
+              live=0; total=0
+              for url in $SITE_URLS; do
+                total=$((total+1))
+                body=$(curl -fsS --max-time 20 -H 'Cache-Control: no-cache' \
+                         "${url}/deploy-release.txt?run=${GITHUB_RUN_ID}-${attempt}-${i}" 2>/dev/null || true)
+                grep -qx "$want" <<<"$body" && live=$((live+1))
+              done
+              if [ "$live" = "$total" ]; then
+                echo "Live on ${SITE_URLS} after attempt ${attempt} (~$((i*15)) s)."
+                echo "Live on ${SITE_URLS} (attempt ${attempt})." >> "$GITHUB_STEP_SUMMARY"
+                exit 0
+              fi
+            done
+            [ "$attempt" = 3 ] && break
+            cur=$(git ls-remote --heads origin "$DEPLOY_BRANCH" | cut -f1)
+            if [ "$cur" != "$(git rev-parse HEAD)" ]; then
+              echo "::warning::${DEPLOY_BRANCH} moved on to ${cur}; not re-pushing an older release."; exit 0
+            fi
+            echo "::warning::Release not live after attempt ${attempt}; re-pushing the same tree to retrigger Hostinger."
+            new=$(git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit-tree "HEAD^{tree}" -m "Release ${GITHUB_SHA::12} (run ${GITHUB_RUN_ID}, deploy retry ${attempt})" \
+              -m "Built from ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}")
+            git push --quiet --force-with-lease="refs/heads/${DEPLOY_BRANCH}:${cur}" origin "${new}:refs/heads/${DEPLOY_BRANCH}"
+            git reset --quiet --soft "$new"
+          done
+          echo "::error::${SITE_URLS} not all on run ${GITHUB_RUN_ID} after 3 pushes. Read ~/domains/<domain>/.builds/logs/git/*/deploy.log on the server, then press Deploy in hPanel > Git."
+          exit 1

@@ -1,0 +1,21 @@
+# Protected paths — changes need the owner's approval (PR label "owner-approved").
+# One glob per line. Checked by .ai/check.py in CI.
+
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.ai/**
+.github/**
+deploy/**
+composer.json
+composer.lock
+package.json
+package-lock.json
+.env.example
+bootstrap/app.php
+bootstrap/providers.php
+config/auth.php
+config/session.php
+config/services.php
+public/index.php
+public/.htaccess
