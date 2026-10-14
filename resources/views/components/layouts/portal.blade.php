@@ -10,7 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}?v=4">
     @vite(['resources/css/app.css', 'resources/js/admin.js'])
 </head>
-<body class="k-admin min-h-screen flex flex-col bg-gray-bg text-navy-900">
+<body class="k-admin min-h-screen flex flex-col bg-white text-navy-900">
     <a href="#main" class="k-skip">Skip to content</a>
     <header class="sticky top-0 z-50 border-b border-gray-border bg-white/90 backdrop-blur">
         <div class="k-container-wide flex flex-wrap items-center gap-x-6 gap-y-2 min-h-16 py-3">

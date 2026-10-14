@@ -28,6 +28,7 @@ Route::get('/programmes', [SiteController::class, 'programmes'])->name('programm
 Route::get('/programmes/{slug}', [SiteController::class, 'programme'])->where('slug', '[A-Za-z0-9_-]+')->name('programmes.show');
 Route::redirect('/funds', '/programmes', 301);
 Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
+Route::get('/sitemap.xml', [SiteController::class, 'sitemap'])->name('sitemap');
 
 // Old WordPress links (dead on the previous site) land somewhere useful.
 Route::redirect('/how-we-invest', '/about#how-we-invest', 301);

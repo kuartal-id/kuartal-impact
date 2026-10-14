@@ -62,7 +62,7 @@ class WebRootHtaccessTest extends TestCase
             'storage/logs/laravel.log', 'storage/app/private/resumes/cv.pdf', 'storage/app/deployed_sha',
             'storage/framework/sessions/abc', 'Storage/logs/laravel.log', 'vendor/autoload.php', 'Vendor/autoload.php',
             'node_modules/vite/package.json', 'laravel.log', 'public/laravel.log', 'error_log', 'public/error_log',
-            'backup.sql', 'db.sqlite', 'database.sqlite3', 'x.env', 'id_rsa.pem', 'oauth-private.key', '.env%00',
+            'backup.sql', 'db.sqlite', 'database.sqlite3', 'x.env', 'id_rsa.pem', 'oauth-private.key', '.env%00', 'other.xml', 'public/feed.xml', 'sitemap.xml.bak',
         ];
 
         return array_combine($paths, array_map(fn ($p) => [$p], $paths));
@@ -79,7 +79,7 @@ class WebRootHtaccessTest extends TestCase
         $paths = [
             '', 'jobs', 'jobs/senior-engineer', 'jobs/senior-engineer/apply', 'portal', 'admin/applications/1/resume',
             'auth/kuartal-id/callback', 'up', 'favicon.ico', 'favicon-32.png', 'images/logo.svg',
-            'build/manifest.json', 'build/assets/app-D_8d2bBI.js', 'build/assets/app-abc.css', 'robots.txt',
+            'build/manifest.json', 'build/assets/app-D_8d2bBI.js', 'build/assets/app-abc.css', 'robots.txt', 'sitemap.xml',
             'apply/1/thank-you', 'faq', 'teams', 'contact', 'why-kuartal', 'life-at-kuartal', 'employment-info',
             '.well-known/acme-challenge/token123',
         ];

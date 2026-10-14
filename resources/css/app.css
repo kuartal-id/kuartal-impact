@@ -16,7 +16,7 @@
  * Token names are kuartal.id's so markup ports 1:1:
  *   navy  -> deep forest (headings, dark text)      green-400 -> neon (fills, with black text)
  *   green-500/600 -> forest (accent TEXT on light)  green-300 -> neon (accent text on dark)
- *   gray-bg -> cream (alternate sections)          surface-dark -> black, -alt -> dark forest
+ *   gray-bg -> cream (container surfaces only, never full-width bands)          surface-dark -> black, -alt -> dark forest
  * Contrast (WCAG AA): neon is never text on light grounds; on light, accent
  * text is forest #1a4e41 (9.6:1 on white, 8.3:1 on cream). On black, neon text is 16:1.
  */
@@ -91,7 +91,11 @@
     .k-container { @apply mx-auto w-full px-6 md:px-10; max-width: 1440px; }
     .k-container-wide { @apply mx-auto w-full px-6 md:px-10; max-width: 1720px; }
     .k-section { @apply py-16 md:py-24; }
-    .k-band { @apply bg-gray-bg dark:bg-surface-dark-alt; }
+    /* Alternate sections stay white in light mode (cream is a container surface only: cards, panels,
+       callouts, form boxes, tags); a hairline marks the change of section. Dark mode unchanged. */
+    .k-band { @apply border-y border-gray-border bg-white dark:border-transparent dark:bg-surface-dark-alt; }
+    /* Cream container surface for use on white. */
+    .k-surface { @apply rounded-card bg-cream dark:bg-surface-dark-alt; }
     .k-skip { @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-pill focus:bg-green-400 focus:px-4 focus:py-2 focus:text-black; }
 
     .k-btn-primary {
@@ -145,8 +149,8 @@
     }
     .k-hero-overlay { @apply absolute inset-0 -z-10 bg-black/50; }
 
-    /* Inner-page opener, as on kuartal.id/about: centred title on the soft (cream) band. */
-    .k-page-hero { @apply relative border-b border-gray-border bg-gray-bg text-navy dark:border-white/10 dark:bg-surface-dark-alt dark:text-white; }
+    /* Inner-page opener, as on kuartal.id/about: centred title on a white band (never cream). */
+    .k-page-hero { @apply relative border-b border-gray-border bg-white text-navy dark:border-white/10 dark:bg-surface-dark-alt dark:text-white; }
 
     .k-placeholder { @apply bg-gray-bg dark:bg-white/5; }
     .k-icon-badge { @apply flex h-12 w-12 items-center justify-center rounded-xl bg-green-400 text-black; }

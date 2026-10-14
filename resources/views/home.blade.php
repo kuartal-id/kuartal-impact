@@ -1,7 +1,7 @@
 {{--
     Kuartal Impact home, in kuartal.id's layout: full-screen hero over the real
     Rinjani / Segara Anak footage kuartal.id uses (streamed from kuartal.id; poster
-    frame stored here), then alternating white / cream sections of rounded cards.
+    frame stored here), then white sections (cream only on cards and panels) of rounded cards.
     Lists are admin-managed with plain empty states. Nothing invented.
 --}}
 <x-layouts.app title="Kuartal Impact — capital and technology for humanity's biggest threats">
