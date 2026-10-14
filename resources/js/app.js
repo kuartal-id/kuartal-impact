@@ -22,13 +22,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Desktop dropdowns: button[data-dd] toggles its sibling [data-dd-panel]; Esc / outside click closes.
+    // Desktop dropdowns: button[data-dd] toggles the [data-dd-panel] in its <li>; Esc / outside click closes.
     document.querySelectorAll('[data-dd]').forEach((btn) => {
-        const menu = btn.parentElement.querySelector('[data-dd-panel]');
+        const wrap = btn.closest('li') || btn.parentElement;
+        const menu = wrap.querySelector('[data-dd-panel]');
+        if (!menu) return;
         const set = (open) => { menu.classList.toggle('hidden', !open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); };
         btn.addEventListener('click', () => set(menu.classList.contains('hidden')));
-        btn.parentElement.addEventListener('keydown', (e) => { if (e.key === 'Escape') { set(false); btn.focus(); } });
-        document.addEventListener('click', (e) => { if (!btn.parentElement.contains(e.target)) set(false); });
-        btn.parentElement.addEventListener('focusout', (e) => { if (!btn.parentElement.contains(e.relatedTarget)) set(false); });
+        wrap.addEventListener('keydown', (e) => { if (e.key === 'Escape') { set(false); btn.focus(); } });
+        document.addEventListener('click', (e) => { if (!wrap.contains(e.target)) set(false); });
+        wrap.addEventListener('focusout', (e) => { if (!wrap.contains(e.relatedTarget)) set(false); });
     });
 
     document.querySelectorAll('[data-field]').forEach(initField);

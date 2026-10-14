@@ -14,7 +14,7 @@
         </div>
     </section>
 
-    <section id="how-we-invest" class="k-section k-grid-bg scroll-mt-20 border-y" style="border-color: var(--k-line)">
+    <section id="how-we-invest" class="k-section k-band k-topo scroll-mt-20">
         <div class="k-container-wide grid gap-12 lg:grid-cols-[1fr_2fr]">
             <div><p class="k-eyebrow">02 / How we invest</p><h2 class="mt-3 text-3xl md:text-4xl">Partnering with the people doing the work</h2></div>
             <div>

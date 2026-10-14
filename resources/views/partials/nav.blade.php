@@ -5,7 +5,7 @@
 <header class="k-header sticky top-0 z-50">
     <div class="k-container-wide flex h-16 items-center gap-6">
         <a href="{{ url('/') }}" class="shrink-0" aria-label="Kuartal Impact home">
-            <x-wordmark size="h-6 md:h-7" />
+            <x-wordmark size="h-9 md:h-10" />
         </a>
         <span class="k-mono-muted hidden 2xl:inline">// a kuartal company</span>
 
@@ -35,10 +35,8 @@
         </nav>
 
         <div class="ml-auto flex items-center gap-2 lg:ml-4">
-            <button type="button" data-theme-toggle aria-pressed="true" class="k-btn-ghost !px-2 !py-2" title="Toggle light / dark">
-                <span class="sr-only">Toggle dark mode</span>
-                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" /><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
-            </button>
+            <x-theme-switcher :labels="false" class="inline-flex xl:hidden" />
+            <x-theme-switcher class="hidden xl:inline-flex" />
             <a href="{{ url('/contact') }}" class="k-btn-primary hidden !py-2 sm:inline-flex">Get in touch</a>
             <button type="button" class="k-btn-outline !px-3 !py-2 lg:hidden" data-nav-toggle aria-expanded="false" aria-controls="k-mobile-nav">
                 <span class="sr-only">Menu</span>
@@ -63,6 +61,7 @@
                     @endif
                 </li>
             @endforeach
+            <li class="k-rule py-4"><p class="k-mono-muted mb-3">Theme</p><x-theme-switcher /></li>
             <li class="pt-4"><a href="{{ url('/contact') }}" class="k-btn-primary w-full">Get in touch</a></li>
         </ul>
     </nav>

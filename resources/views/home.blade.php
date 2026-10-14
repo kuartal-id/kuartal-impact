@@ -1,5 +1,5 @@
 <x-layouts.app title="Kuartal Impact — capital and technology for humanity's biggest threats">
-    {{-- Hero: static grid always; the drifting point field is progressive and motion-safe. --}}
+    {{-- Hero: tech grid + live contour map (one still frame for reduced motion). --}}
     <section class="k-grid-bg k-scan relative overflow-hidden border-b" style="border-color: var(--k-line)">
         <canvas class="k-field" data-field aria-hidden="true"></canvas>
         <div class="k-container-wide relative grid min-h-[78vh] items-end gap-12 py-20 md:py-28 lg:grid-cols-[1.6fr_1fr]">
@@ -14,8 +14,8 @@
                     <a href="{{ route('about') }}" class="k-btn-outline">Our thesis</a>
                 </div>
             </div>
-            <aside class="k-panel k-ticks hidden lg:block" aria-label="Kuartal Impact at a glance">
-                <p class="k-mono mb-4">sys.status</p>
+            <aside class="k-panel k-ticks relative hidden self-start lg:block" aria-label="Kuartal Impact at a glance">
+                <p class="k-mono mb-4">field.readout</p>
                 <dl class="k-readout">
                     <div><dt>Entity</dt><dd>Kuartal Impact</dd></div>
                     <div><dt>Parent</dt><dd>Kuartal Group</dd></div>
@@ -44,12 +44,12 @@
     </section>
 
     {{-- Thesis / focus areas --}}
-    <section class="k-section k-grid-bg border-y" style="border-color: var(--k-line)">
+    <section class="k-section k-band k-topo">
         <div class="k-container-wide">
             <x-section-header eyebrow="Thesis" index="02" title="Where we point capital" />
             <ol class="grid gap-px sm:grid-cols-2 lg:grid-cols-5" style="background: var(--k-line)">
                 @foreach (config('kuartalimpact.focus_areas') as $key => $fa)
-                    <li class="flex flex-col gap-4 p-6" style="background: var(--k-bg)">
+                    <li class="flex flex-col gap-4 p-6" style="background: var(--k-band)">
                         <span class="k-index">{{ $fa['code'] }}</span>
                         <h3 class="text-xl">{{ $fa['label'] }}</h3>
                         <p class="text-sm k-muted">{{ $fa['body'] }}</p>
@@ -100,7 +100,7 @@
         </div>
     </section>
 
-    <section class="k-section k-grid-bg border-t" style="border-color: var(--k-line)">
+    <section class="k-section k-grid-bg k-topo border-t" style="border-color: var(--k-line)">
         <div class="k-container-wide flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <h2 class="max-w-2xl text-3xl md:text-5xl">For founders and investors who want to do more.</h2>
             <a href="{{ route('contact') }}" class="k-btn-primary">Get in touch</a>

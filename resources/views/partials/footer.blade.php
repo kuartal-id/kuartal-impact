@@ -7,7 +7,7 @@
     <div class="k-container-wide py-14">
         <div class="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
             <div>
-                <x-wordmark size="h-9" />
+                <x-wordmark size="h-16" />
                 <p class="mt-5 max-w-sm text-sm k-muted">The Kuartal arm for social, environmental and climate causes: capital, AI, technology and grassroots solutions for humanity's biggest threats.</p>
                 <p class="k-mono mt-6"><a class="hover:underline" href="mailto:{{ $kContactEmail }}">{{ $kContactEmail }}</a></p>
                 <ul class="mt-6 flex items-center gap-4" aria-label="Kuartal on social media">
@@ -31,7 +31,8 @@
         </div>
         <div class="k-rule mt-14 flex flex-col gap-4 pt-6 md:flex-row md:items-center md:justify-between">
             <p class="k-mono-muted">&copy; {{ date('Y') }} Kuartal Group. All rights reserved.</p>
-            <div class="flex items-center gap-5">
+            <div class="flex flex-wrap items-center gap-5">
+                <x-theme-switcher />
                 <a href="{{ route('newsroom.feed') }}" class="k-mono-muted hover:underline">RSS</a>
                 @auth
                     @if (auth()->user()->isAdmin())<a href="{{ route('admin.dashboard') }}" class="k-mono-muted hover:underline">Admin</a>@endif

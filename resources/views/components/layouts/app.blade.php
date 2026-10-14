@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Kuartal Impact' }}</title>
     <meta name="description" content="{{ $description ?? 'Kuartal Impact is the Kuartal arm for social, environmental and climate causes: capital, AI, technology and grassroots solutions for humanity\'s biggest threats.' }}">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}?v=ki1">
-    <link rel="icon" href="{{ asset('favicon.ico') }}?v=ki1" sizes="any">
-    <link rel="apple-touch-icon" href="{{ asset('favicon-180.png') }}?v=ki1">
-    {{-- Before first paint: same 'kuartal-theme' key as every Kuartal property (sync).
-         With no stored choice Kuartal Impact opens dark, its native canvas. --}}
-    <script>
-        (function () {
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}?v=ki2">
+    <link rel="icon" href="{{ asset('favicon.ico') }}?v=ki2" sizes="any">
+    <link rel="apple-touch-icon" href="{{ asset('favicon-180.png') }}?v=ki2">
+    <meta name="theme-color" content="#050505">
+    {{-- Before first paint: pick neon / dark / neutral. Shares 'kuartal-theme' (light/dark) with every
+         Kuartal property; with no stored choice Kuartal Impact opens dark. Logic: resources/js/theme-boot.js --}}
+    <script>{!! file_get_contents(resource_path('js/theme-boot.js')) !!}
+        (function (T) {
             try {
-                var theme = localStorage.getItem('kuartal-theme') || 'dark';
-                document.documentElement.classList.toggle('dark', theme === 'dark');
-                document.documentElement.setAttribute('data-theme', theme);
+                T.apply(document, T.resolveValues(localStorage.getItem('kuartal-impact-theme'), localStorage.getItem('kuartal-theme'), localStorage.getItem('kuartal-impact-light')));
             } catch (e) {}
-        })();
+        })(window.kuartalImpactThemes);
     </script>
-    <meta name="theme-color" content="#050605">
     <meta property="og:site_name" content="Kuartal Impact">
     <meta property="og:title" content="{{ $title ?? 'Kuartal Impact' }}">
     <meta property="og:description" content="{{ $description ?? 'Capital, AI, technology and grassroots solutions for climate, environment and society.' }}">

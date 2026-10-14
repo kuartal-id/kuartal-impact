@@ -1,78 +1,47 @@
 /**
- * Kuartal shared light/dark mode toggle.
- * No framework dependency — plain JS, same pattern used across the
- * WordPress builds. Persists to localStorage, respects system preference
- * on first visit, and applies the theme BEFORE paint (see the inline
- * snippet in layouts/app.blade.php) to avoid a flash of wrong theme.
- *
- * Usage: any element with [data-theme-toggle] flips the theme on click.
+ * Kuartal Impact theme switcher (neon / dark / neutral).
+ * The theme is applied before paint by the inlined theme-boot.js; this wires
+ * up every [data-theme-set] button, persists the choice (see theme-boot.js for
+ * the storage keys and how it syncs light/dark with other Kuartal sites) and
+ * follows changes made in other tabs.
  */
-(function () {
-  const STORAGE_KEY = 'kuartal-theme';
+import './theme-boot';
 
-  function getStoredTheme() {
-    try {
-      return localStorage.getItem(STORAGE_KEY);
-    } catch (e) {
-      return null;
-    }
-  }
+const T = window.kuartalImpactThemes;
 
-  function storeTheme(theme) {
-    try {
-      localStorage.setItem(STORAGE_KEY, theme);
-    } catch (e) {
-      /* private-mode / storage disabled: theme just won't persist */
-    }
-  }
+function current() {
+    const t = document.documentElement.getAttribute('data-theme');
+    return T.THEMES.includes(t) ? t : 'dark';
+}
 
-  function systemPrefersDark() {
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-
-  function applyTheme(theme) {
-    const root = document.documentElement;
-    if (theme === 'dark') {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-    root.setAttribute('data-theme', theme);
-    document.querySelectorAll('[data-theme-toggle]').forEach(function (btn) {
-      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+function syncButtons() {
+    const t = current();
+    document.querySelectorAll('[data-theme-set]').forEach((btn) => {
+        btn.setAttribute('aria-pressed', btn.dataset.themeSet === t ? 'true' : 'false');
     });
-  }
+}
 
-  function currentTheme() {
-    return document.documentElement.classList.contains("dark") ? "dark" : "light";
-  }
+function set(theme) {
+    if (!T.THEMES.includes(theme)) return;
+    T.apply(document, theme);
+    T.save(localStorage, theme);
+    syncButtons();
+    document.dispatchEvent(new CustomEvent('kuartal:theme', { detail: { theme } }));
+}
 
-  function initToggleButtons() {
-    document.querySelectorAll('[data-theme-toggle]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const next = currentTheme() === 'dark' ? 'light' : 'dark';
-        applyTheme(next);
-        storeTheme(next);
-      });
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-theme-set]').forEach((btn) => {
+        btn.addEventListener('click', () => set(btn.dataset.themeSet));
     });
-  }
+    syncButtons();
+});
 
-  // Theme is applied instantly by the inline head script (see layout),
-  // this just wires up the buttons and keeps state in sync across tabs.
-  document.addEventListener('DOMContentLoaded', initToggleButtons);
-
-  window.addEventListener('storage', function (e) {
-    if (e.key === STORAGE_KEY && e.newValue) {
-      applyTheme(e.newValue);
+window.addEventListener('storage', (e) => {
+    if (e.key === T.KEY || e.key === T.SHARED) {
+        T.apply(document, T.resolve(localStorage));
+        syncButtons();
+        document.dispatchEvent(new CustomEvent('kuartal:theme', { detail: { theme: current() } }));
     }
-  });
+});
 
-  // Expose for other scripts if needed (e.g. Chart.js re-theming).
-  window.kuartalTheme = {
-    get: currentTheme,
-    set: function (theme) {
-      applyTheme(theme);
-      storeTheme(theme);
-    },
-  };
-})();
+window.kuartalTheme = { get: current, set };
