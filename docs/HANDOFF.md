@@ -53,3 +53,10 @@
 - Styled 404 (`resources/views/errors/404.blade.php`), og:image size/alt + twitter tags (OG image is the logo card).
 - General contact defaults to hello@kuartal.id (hello@kuartalimpact.org not confirmed by owner); ir@/media@kuartal.id unchanged.
 - Screenshots: /workspace/kimpact-shots4/ (box).
+
+## 2026-10-15 — Grok: Kuartal Impact Index
+- Public: `/impact-index` (search + filters: q, region incl. sub-regions, sector, type, grade, min/max score, sort; GET params = shareable URLs), `/index` → 301, `/impact-index/org/{slug}`, `/methodology`, `/rankings` (overall, `/sector/{slug}`, `/region/{slug}`), `/campaigns` (+ quiet archive), `/campaigns/{slug}` ("This campaign has ended" when retired / past end date). Nav item "Impact Index", footer links, sitemap, home banner while campaigns are active.
+- Scoring: `app/Support/ImpactIndex/Scoring.php` (pillar = weighted mean of 0–100 sub-criteria; publish needs ≥1 criterion + ≥1 evidence source; overall = weighted mean of published pillars re-normalised, needs ≥3; grades A+ ≥90, A ≥80, B ≥70, C ≥60, D; confidence from evidence completeness). Cached on `ix_organisations` via `Organisation::recalculate()`.
+- Admin (`/admin/index/...`): organisations (profile, sectors, regions, spending split, financials + documents as `a | b | c` lines), scores & evidence per pillar, campaigns (active/retired, dates, linked orgs), settings (weights must sum to 100 + methodology version; recalculates all; sectors; regions tree).
+- Migration `2026_10_15_000100` seeds reference data only: 5 pillars (30/20/20/15/15), v1.0, 16 sectors, Indonesia + 38 provinces, Palestine, 4 campaign shells (neutral intro, give-safely note). **No organisations or scores seeded.**
+- No i18n in the site, so strings are English. Tests: `tests/Feature/ImpactIndexTest.php`.
