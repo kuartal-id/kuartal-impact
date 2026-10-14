@@ -35,6 +35,20 @@
         </a>
     </section>
 
+    @if ($campaigns->isNotEmpty())
+        <div class="k-container pt-10" data-campaign-banner>
+            <div class="k-surface flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <p class="k-eyebrow mb-1">Kuartal Impact Index · Campaigns</p>
+                    <p class="font-display text-xl font-semibold">Looking to help? See rated organisations working on:</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    @foreach ($campaigns as $c)<a href="{{ route('impact-index.campaign', $c) }}" class="k-chip">{{ $c->title }}</a>@endforeach
+                </div>
+            </div>
+        </div>
+    @endif
+
     <section id="funds" class="k-section scroll-mt-16">
         <div class="k-container">
             <x-section-header eyebrow="Running programmes" title="Funds working on the ground now" align="center">

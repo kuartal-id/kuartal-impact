@@ -21,6 +21,7 @@ class SiteController extends Controller
             'quote' => SiteEntry::block('home.quote'),
             'quoteBy' => SiteEntry::block('home.quote_by'),
             'partners' => SiteEntry::listed('partner'),
+            'campaigns' => \App\Models\Index\Campaign::activeSafe(),
         ]);
     }
 
@@ -75,10 +76,16 @@ class SiteController extends Controller
     /** XML sitemap of public pages, published funds and live newsroom posts. */
     public function sitemap(): Response
     {
-        $urls = collect(['/', '/about', '/focus-areas', '/portfolio', '/programmes', '/newsroom', '/contact'])
+        $urls = collect(['/', '/about', '/focus-areas', '/portfolio', '/programmes', '/impact-index', '/impact-index/methodology', '/impact-index/rankings', '/impact-index/campaigns', '/newsroom', '/contact'])
             ->map(fn ($p) => ['loc' => url($p), 'lastmod' => null]);
         foreach (SiteEntry::funds() as $fund) {
             $urls->push(['loc' => route('programmes.show', $fund->slug), 'lastmod' => $fund->updated_at]);
+        }
+        foreach (\App\Models\Index\Organisation::published()->get(['slug', 'updated_at']) as $org) {
+            $urls->push(['loc' => route('impact-index.show', $org), 'lastmod' => $org->updated_at]);
+        }
+        foreach (\App\Models\Index\Campaign::orderBy('sort')->get(['slug', 'updated_at']) as $c) {
+            $urls->push(['loc' => route('impact-index.campaign', $c), 'lastmod' => $c->updated_at]);
         }
         foreach (Post::live()->latest('published_at')->get(['slug', 'updated_at']) as $post) {
             $urls->push(['loc' => route('newsroom.show', $post), 'lastmod' => $post->updated_at]);

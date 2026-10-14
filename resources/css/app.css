@@ -169,6 +169,12 @@
         @apply inline-flex items-center gap-1 rounded-pill border border-gray-border px-3 py-1 text-xs font-subhead font-medium text-black/80
                hover:border-navy hover:text-navy transition-colors dark:border-white/15 dark:text-white/80 dark:hover:border-green-400 dark:hover:text-green-400;
     }
+    /* Impact Index: grade badges and the spending bar. */
+    .k-grade { @apply inline-flex min-w-10 items-center justify-center rounded-lg px-2 py-1 font-display text-sm font-bold; }
+    .k-grade-top { @apply bg-green-400 text-black; }
+    .k-grade-mid { @apply bg-navy text-white dark:bg-white dark:text-black; }
+    .k-grade-low { @apply border border-black/40 text-black dark:border-white/40 dark:text-white; }
+    .k-grade-none { @apply border border-dashed border-gray-border text-gray-muted font-subhead text-xs font-medium dark:border-white/20 dark:text-white/60; }
     .k-chip.is-active { @apply border-green-400 bg-green-400 text-black; }
     .k-empty {
         @apply flex flex-col items-center gap-2 rounded-card border border-dashed border-gray-border bg-white px-6 py-10 text-center

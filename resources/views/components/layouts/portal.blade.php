@@ -20,7 +20,7 @@
             </a>
             @if ($area === 'admin')
                 <nav class="flex flex-wrap gap-4 text-sm font-subhead">
-                    @foreach (['admin.dashboard' => 'Dashboard', 'admin.posts.index' => 'Newsroom', 'admin.media.index' => 'Media', 'admin.entries.index' => 'Funds & site content'] as $r => $label)
+                    @foreach (['admin.dashboard' => 'Dashboard', 'admin.posts.index' => 'Newsroom', 'admin.media.index' => 'Media', 'admin.entries.index' => 'Funds & site content', 'admin.index.orgs.index' => 'Impact Index', 'admin.index.campaigns.index' => 'Campaigns', 'admin.index.settings' => 'Index settings'] as $r => $label)
                         <a href="{{ route($r) }}" @if(request()->routeIs(str_replace('.index', '.*', $r))) aria-current="page" @endif class="{{ request()->routeIs(str_replace('.index', '.*', $r)) ? 'text-green-500 font-medium' : 'text-navy/80 hover:text-green-400' }}">{{ $label }}</a>
                     @endforeach
                 </nav>

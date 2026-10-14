@@ -30,6 +30,12 @@ return [
         ['label' => 'Focus Areas', 'url' => '/focus-areas'],
         ['label' => 'Portfolio', 'url' => '/portfolio'],
         ['label' => 'Programmes', 'url' => '/programmes'],
+        ['label' => 'Impact Index', 'url' => '/impact-index', 'links' => [
+            ['label' => 'Search the Index', 'url' => '/impact-index'],
+            ['label' => 'Rankings', 'url' => '/impact-index/rankings'],
+            ['label' => 'Campaigns', 'url' => '/impact-index/campaigns'],
+            ['label' => 'Methodology', 'url' => '/impact-index/methodology'],
+        ]],
         ['label' => 'Newsroom', 'url' => '/newsroom'],
         ['label' => 'Contact', 'url' => '/contact'],
     ],
@@ -44,6 +50,8 @@ return [
             ['label' => 'Focus areas', 'url' => '/focus-areas'],
             ['label' => 'Portfolio', 'url' => '/portfolio'],
             ['label' => 'Programmes', 'url' => '/programmes'],
+            ['label' => 'Impact Index', 'url' => '/impact-index'],
+            ['label' => 'Index methodology', 'url' => '/impact-index/methodology'],
         ]],
         ['heading' => 'News', 'links' => [
             ['label' => 'Newsroom', 'url' => '/newsroom'],
