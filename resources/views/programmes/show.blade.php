@@ -1,19 +1,22 @@
-@php $fa = $fund->focusArea(); $code = 'F-'.str_pad($index, 2, '0', STR_PAD_LEFT); @endphp
+@php $fa = $fund->focusArea(); $motif = config('kuartalimpact.fund_motifs.'.$fund->slug, 'roots'); $code = 'F-'.str_pad($index, 2, '0', STR_PAD_LEFT); @endphp
 <x-layouts.app :title="$fund->title.' — Kuartal Impact'" :description="$fund->subtitle" :og-image="$fund->media?->url()">
-    <section class="k-page-hero k-grid-bg k-scan">
-        <div class="k-container-wide relative grid gap-10 py-16 md:py-24 lg:grid-cols-[1.6fr_1fr] lg:items-end">
+    <section class="k-page-hero k-grid-bg k-scan k-topo">
+        <div class="k-container-wide relative grid gap-10 py-16 md:py-24 lg:grid-cols-[1.4fr_1fr] lg:items-end">
             <div>
                 <nav aria-label="Breadcrumb" class="k-mono-muted mb-6"><a href="{{ route('programmes.index') }}" class="hover:underline">Programmes</a> / <span aria-current="page">{{ $fund->title }}</span></nav>
                 <p class="k-eyebrow mb-4">// {{ $code }}{{ $fa ? ' · '.$fa['label'] : '' }}</p>
                 <h1 class="text-5xl leading-[1.02] md:text-7xl">{{ $fund->title }}</h1>
                 @if ($fund->subtitle)<p class="k-lead mt-6 max-w-2xl">{{ $fund->subtitle }}</p>@endif
             </div>
+            <div>
+            <x-motif :name="$motif" grow class="mb-6 h-56 w-full md:h-64" />
             <dl class="k-panel k-ticks k-readout">
                 <div><dt>Fund</dt><dd>{{ $code }}</dd></div>
                 <div><dt>Focus</dt><dd>{{ $fa['label'] ?? '—' }}</dd></div>
                 <div><dt>Location</dt><dd>{{ $fund->location ?: '—' }}</dd></div>
                 <div><dt>Status</dt><dd class="k-accent">Running</dd></div>
             </dl>
+            </div>
         </div>
     </section>
 
@@ -40,9 +43,9 @@
         </div>
     </section>
 
-    <section class="k-section k-grid-bg border-y" style="border-color: var(--k-line)">
+    <section class="k-section k-band k-topo">
         <div class="k-container-wide grid gap-12 lg:grid-cols-[1fr_2fr]">
-            <div><p class="k-eyebrow">02 / Brief</p><h2 class="mt-3 text-3xl md:text-4xl">What the fund does</h2></div>
+            <div><p class="k-eyebrow">02 / Brief</p><h2 class="mt-3 text-3xl md:text-4xl">What the fund does</h2><x-motif :name="$motif" class="mt-10 hidden h-40 w-full max-w-xs lg:block" /></div>
             <div>
                 @if ($fund->body)<div class="k-prose">{!! nl2br(e($fund->body)) !!}</div>
                 @else<x-empty-state title="Full brief to be published">{{ $fund->subtitle }}</x-empty-state>@endif

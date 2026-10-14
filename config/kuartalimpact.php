@@ -67,4 +67,12 @@ return [
         'portfolio.intro' => 'Portfolio: framing paragraph',
         'programmes.intro' => 'Programmes: framing paragraph (funds)',
     ],
+
+    // Line-art motif per fund page (resources/views/components/motif.blade.php), keyed by fund slug.
+    'fund_motifs' => [
+        'mangrow-fund' => 'mangrove',
+        're-coral-fund' => 'coral',
+        're-energize-fund' => 'energy',
+        'healing-fund' => 'healing',
+    ],
 ];
