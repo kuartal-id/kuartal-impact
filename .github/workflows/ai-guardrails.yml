@@ -1,0 +1,28 @@
+name: AI guardrails
+
+# Checks every push and pull request for things that break Kuartal sites:
+# committed secrets, unapproved changes to protected files, edited old
+# migrations, PHP syntax errors. See AGENTS.md.
+#
+# This does NOT deploy anything. On `main` it runs alongside deploy.yml as an
+# alarm (red ✖ + email); on branches/PRs it's the gate before merging.
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+
+permissions:
+  contents: read
+
+jobs:
+  guardrails:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run guardrails
+        run: python3 .ai/check.py
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+          PR_LABELS: ${{ join(github.event.pull_request.labels.*.name, ',') }}
