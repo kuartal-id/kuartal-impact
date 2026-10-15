@@ -2,8 +2,8 @@
     <x-page-hero eyebrow="Kuartal Impact Index" title="Rankings">Only organisations with a published Impact Score appear in rankings.</x-page-hero>
     <x-index.subnav />
     <section class="k-section !pt-10">
-        <div class="k-container grid gap-10 lg:grid-cols-[1fr_340px]">
-            <div>
+        <div class="k-container grid grid-cols-1 gap-10 lg:grid-cols-[1fr_340px]">
+            <div class="min-w-0">
                 <h2 class="text-2xl mb-4">Overall leaderboard</h2>
                 @if ($leaders->isEmpty())
                     <x-empty-state title="No rated organisations yet">Rankings appear once organisations have been reviewed and scored. <a class="underline" href="{{ route('impact-index.methodology') }}">How we score</a>.</x-empty-state>
@@ -12,7 +12,7 @@
                 @endif
                 <x-index.disclaimer class="mt-10" />
             </div>
-            <aside class="space-y-6">
+            <aside class="min-w-0 space-y-6">
                 <div class="k-surface p-5"><h2 class="font-display text-lg font-semibold mb-3">By sector</h2>
                     <div class="flex flex-wrap gap-2">@foreach ($sectors as $s)<a class="k-chip" href="{{ route('impact-index.sector', $s) }}">{{ $s->name }}</a>@endforeach</div></div>
                 <div class="k-surface p-5"><h2 class="font-display text-lg font-semibold mb-3">By region</h2>

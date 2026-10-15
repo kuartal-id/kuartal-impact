@@ -15,8 +15,15 @@
     @endif
 
     <section class="k-section !pt-10">
-        <div class="k-container grid gap-10 lg:grid-cols-[300px_1fr]">
-            <form method="GET" action="{{ route('impact-index') }}" class="k-surface h-fit space-y-4 p-5" role="search" aria-label="Filter organisations">
+        @php $activeFilters = collect($params ?? [])->except(['sort', 'page'])->filter(fn ($v) => $v !== null && $v !== '')->count(); @endphp
+        <div class="k-container grid grid-cols-1 gap-6 lg:grid-cols-[300px_1fr] lg:gap-10">
+            {{-- Phones: filters fold away behind one "Filters" button so results come first. Desktop: always open. --}}
+            <details class="k-filters k-surface h-fit min-w-0" open data-filters>
+            <summary class="k-filters-toggle lg:hidden">
+                <span>Filters @if($activeFilters)<span class="k-filters-count">{{ $activeFilters }}</span>@endif</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <form method="GET" action="{{ route('impact-index') }}" class="space-y-4 p-5 pt-1 lg:pt-5" role="search" aria-label="Filter organisations">
                 <div><label class="k-label" for="ix-q">Search</label><input id="ix-q" class="k-input" name="q" value="{{ $params['q'] ?? '' }}" placeholder="Organisation name or keyword"></div>
                 <div><label class="k-label" for="ix-region">Region</label>
                     <select id="ix-region" name="region" class="k-input"><option value="">All regions</option>
@@ -36,13 +43,24 @@
                         <option value="unrated" @selected(($params['grade'] ?? '') === 'unrated')>Not yet rated</option>
                     </select></div>
                 <fieldset><legend class="k-label">Score range</legend>
-                    <div class="flex gap-2"><input class="k-input" type="number" min="0" max="100" name="min" value="{{ $params['min'] ?? '' }}" placeholder="0" aria-label="Minimum score"><input class="k-input" type="number" min="0" max="100" name="max" value="{{ $params['max'] ?? '' }}" placeholder="100" aria-label="Maximum score"></div></fieldset>
+                    <div class="grid grid-cols-2 gap-2"><input class="k-input" type="number" min="0" max="100" name="min" value="{{ $params['min'] ?? '' }}" placeholder="0" aria-label="Minimum score"><input class="k-input" type="number" min="0" max="100" name="max" value="{{ $params['max'] ?? '' }}" placeholder="100" aria-label="Maximum score"></div></fieldset>
                 <div><label class="k-label" for="ix-sort">Sort by</label>
                     <select id="ix-sort" name="sort" class="k-input">@foreach (\App\Support\ImpactIndex\OrganisationSearch::SORTS as $k => $v)<option value="{{ $k }}" @selected(($params['sort'] ?? 'score') === $k)>{{ $v }}</option>@endforeach</select></div>
-                <div class="flex gap-2"><button class="k-btn-primary">Apply</button>@if($filtered)<a href="{{ route('impact-index') }}" class="k-btn-ghost">Clear</a>@endif</div>
+                <div class="flex gap-2"><button class="k-btn-primary flex-1 lg:flex-none">Apply</button>@if($filtered)<a href="{{ route('impact-index') }}" class="k-btn-ghost">Clear</a>@endif</div>
             </form>
+            </details>
+            <script>
+                (function () {
+                    var d = document.querySelector('[data-filters]');
+                    if (!d) return;
+                    var wide = window.matchMedia('(min-width: 1024px)');
+                    var sync = function () { d.open = wide.matches; };
+                    sync();
+                    wide.addEventListener('change', sync);
+                })();
+            </script>
 
-            <div>
+            <div class="min-w-0">
                 <p class="k-meta mb-4" aria-live="polite">{{ $orgs->total() }} {{ \Illuminate\Support\Str::plural('organisation', $orgs->total()) }}{{ $filtered ? ' match' : ' listed' }}</p>
                 @if ($orgs->isEmpty())
                     @if ($total === 0)

@@ -4,15 +4,15 @@
         <div class="k-container">
             <a href="{{ route('impact-index') }}" class="k-meta underline">← All organisations</a>
             <div class="mt-6 flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-                <div class="flex items-start gap-5">
+                <div class="flex min-w-0 items-start gap-4 sm:gap-5">
                     @if ($org->logo_url)
-                        <img src="{{ $org->logo_url }}" alt="{{ $org->name }} logo" class="h-20 w-20 rounded-card border border-gray-border bg-white object-contain p-1 dark:border-white/10">
+                        <img src="{{ $org->logo_url }}" alt="{{ $org->name }} logo" class="h-16 w-16 shrink-0 rounded-card sm:h-20 sm:w-20 border border-gray-border bg-white object-contain p-1 dark:border-white/10">
                     @else
-                        <span class="k-surface flex h-20 w-20 items-center justify-center font-display text-3xl font-semibold k-accent" aria-hidden="true">{{ mb_substr($org->name, 0, 1) }}</span>
+                        <span class="k-surface flex h-16 w-16 shrink-0 items-center sm:h-20 sm:w-20 justify-center font-display text-3xl font-semibold k-accent" aria-hidden="true">{{ mb_substr($org->name, 0, 1) }}</span>
                     @endif
                     <div>
                         <p class="k-eyebrow mb-1">{{ $org->typeLabel() }}</p>
-                        <h1 class="text-3xl md:text-4xl">{{ $org->name }}</h1>
+                        <h1 class="text-2xl break-words sm:text-3xl md:text-4xl">{{ $org->name }}</h1>
                         <p class="k-meta mt-2">
                             @if($org->headquarters){{ $org->headquarters }}, @endif{{ $org->country }}
                             @if($org->founded_year) · Founded {{ $org->founded_year }}@endif
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="k-surface min-w-[260px] p-5">
+                <div class="k-surface p-5 md:min-w-[260px]">
                     <p class="k-eyebrow mb-2">Impact Score</p>
                     <x-index.grade :grade="$org->overall_grade" :score="$org->overall_score" size="lg" />
                     @if ($org->isRated())
@@ -40,8 +40,8 @@
                 </div>
             </div>
 
-            <div class="mt-12 grid gap-10 lg:grid-cols-[1fr_380px]">
-                <div class="space-y-10">
+            <div class="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_380px]">
+                <div class="min-w-0 space-y-10">
                     <div><h2 class="text-2xl mb-3">What they do</h2><div class="k-prose">{!! nl2br(e($org->summary ?: 'Not provided yet.')) !!}</div></div>
                     <div><h2 class="text-2xl mb-3">How they work</h2><p class="k-meta mb-2">Theory of change</p><div class="k-prose">{!! nl2br(e($org->theory_of_change ?: 'Not provided yet.')) !!}</div></div>
 
@@ -83,7 +83,7 @@
                     </div>
                 </div>
 
-                <aside class="space-y-6">
+                <aside class="min-w-0 space-y-6">
                     <div class="k-surface p-5">
                         <h2 class="font-display text-lg font-semibold mb-3">How money is used</h2>
                         @php $split = ['Programmes' => $org->programme_pct, 'Admin' => $org->admin_pct, 'Fundraising' => $org->fundraising_pct]; $colours = ['Programmes' => 'bg-green-400', 'Admin' => 'bg-navy', 'Fundraising' => 'bg-black/40 dark:bg-white/50']; @endphp

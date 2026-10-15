@@ -77,3 +77,18 @@
 - `index:import` now accepts `campaigns: [slug,...]` on items (attached with syncWithoutDetaching) and link-only items `{slug, link_only: true, campaigns}` for existing organisations (nothing else changed). Unknown campaign slugs fail validation. Test added.
 - Data: `database/data/impact-index-2026-10-campaigns.json`: 21 new orgs (20 linked to campaigns; ACT is profiled but deliberately NOT linked to Palestine because its 2022 PUB permit was revoked) and 8 link-only existing orgs. Public information, assessed by Kuartal Impact, Oct 2026, checked 2026-10-14.
 - Note: the "with an overall score" count in the import summary also counts link-only orgs.
+
+## 2026-10-15 — Claude: Impact Index fits phones (branch `ai/claude/impact-index-mobile`)
+- Owner report (screenshot): on phones the Impact Index search page was wider than the screen (filter boxes cut off on the right).
+- Cause: `grid gap-10 lg:grid-cols-[…]` has no base column, so below `lg` the implicit `auto` column grows to the widest
+  content (long region names in the selects, long org names). Fixed with `grid-cols-1` + `min-w-0` on `/impact-index`,
+  `/impact-index/rankings` and the org page. `.k-input` gets `min-w-0 max-w-full`, `.k-chip` `max-width: 100%`.
+- Phones: filters fold into a "Filters" button (count badge when active) so results come first; desktop keeps the panel
+  always open (inline script syncs `<details open>` to `min-width: 1024px`; without JS it stays open). Score range is a
+  2-column grid; Apply is full width on phones.
+- Org rows: names wrap to 2 lines instead of being cut to a few letters; smaller logo; "/ 100" hidden below 640px.
+  Org page header: smaller logo/title on phones, score box no longer forces 260px.
+- Verified locally (sqlite + the two `database/data` imports): all 18 public pages at 360px and 390px have no sideways
+  overflow; filters open/close on phone, always open on desktop. `php artisan test` 205 passed, `npm run build`, `.ai/check.py` OK.
+- Sandbox note: Composer installed from `composer.lock` (GitHub dists) with `--ignore-platform-reqs`; the sandbox has PHP 8.3,
+  so Symfony 8.x packages were swapped for 7.4 **locally only** to run tests. Nothing about dependencies is committed.
