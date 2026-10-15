@@ -176,6 +176,17 @@
     .k-grade-low { @apply border border-black/40 text-black dark:border-white/40 dark:text-white; }
     .k-grade-none { @apply border border-dashed border-gray-border text-gray-muted font-subhead text-xs font-medium dark:border-white/20 dark:text-white/60; }
     .k-chip.is-active { @apply border-green-400 bg-green-400 text-black; }
+    .k-chip { max-width: 100%; }
+    /* Phones: org rows keep the name readable; the score drops its "/ 100". */
+    @media (max-width: 639px) { [data-org-row] .k-grade-of { display: none; } }
+    /* Impact Index filters: a fold-out on phones, an always-open panel on desktop. */
+    .k-filters-toggle {
+        @apply flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 font-subhead text-base font-semibold text-navy dark:text-white;
+        min-height: 52px;
+    }
+    .k-filters-toggle::-webkit-details-marker { display: none; }
+    .k-filters[open] .k-filters-toggle svg { transform: rotate(180deg); }
+    .k-filters-count { @apply ml-2 inline-flex h-6 min-w-6 items-center justify-center rounded-pill bg-green-400 px-2 text-xs font-bold text-black; }
     .k-empty {
         @apply flex flex-col items-center gap-2 rounded-card border border-dashed border-gray-border bg-white px-6 py-10 text-center
                dark:border-white/15 dark:bg-surface-dark-alt;
@@ -206,7 +217,7 @@
 
 /* Admin (layouts/portal.blade.php) */
 @layer components {
-    .k-input { @apply w-full rounded-lg border border-gray-border bg-white px-3 py-2 text-sm text-black focus:border-navy focus:outline-none focus:ring-2 focus:ring-green-400/40; }
+    .k-input { @apply w-full min-w-0 max-w-full rounded-lg border border-gray-border bg-white px-3 py-2 text-sm text-black focus:border-navy focus:outline-none focus:ring-2 focus:ring-green-400/40; }
     .k-label { @apply block text-xs font-subhead font-medium text-gray-muted mb-1; }
     .k-table { @apply w-full text-sm; }
     .k-table th { @apply text-left text-xs font-subhead font-semibold text-gray-muted border-b border-gray-border py-2 pr-4; }
