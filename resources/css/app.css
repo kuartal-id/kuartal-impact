@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+/* Class-based dark mode, shared with every Kuartal site via localStorage 'kuartal-theme'. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Kuartal Impact, styled exactly like kuartal.id (layout, type, cards, pills,
+ * sticky see-through header, grey social strip, big-logo footer). Copied from
+ * kuartal-id/kuartal-id via kuartal-id/kuartalgroup; ONLY the colours change,
+ * to the Kuartal Impact logo palette:
+ *   black #000, white #fff, neon #9eff1f, deep forest #1a4e41, cream #f3eee3.
+ * Token names are kuartal.id's so markup ports 1:1:
+ *   navy  -> deep forest (headings, dark text)      green-400 -> neon (fills, with black text)
+ *   green-500/600 -> forest (accent TEXT on light)  green-300 -> neon (accent text on dark)
+ *   gray-bg -> cream (container surfaces only, never full-width bands)          surface-dark -> black, -alt -> dark forest
+ * Contrast (WCAG AA): neon is never text on light grounds; on light, accent
+ * text is forest #1a4e41 (9.6:1 on white, 8.3:1 on cream). On black, neon text is 16:1.
+ */
+@theme {
+    --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    --font-subhead: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    --font-sans: 'Arial Nova', Arial, Helvetica, ui-sans-serif, system-ui, sans-serif;
+
+    --color-navy-50: #eef4f2;
+    --color-navy-100: #d4e3de;
+    --color-navy-200: #a9c6bd;
+    --color-navy-300: #7aa597;
+    --color-navy-400: #4d8070;
+    --color-navy-500: #2d6455;
+    --color-navy-600: #215848;
+    --color-navy-700: #1a4e41;
+    --color-navy-800: #133a30;
+    --color-navy-900: #000000;
+    --color-navy: #1a4e41;
+    --color-navy-deep: #000000;
+
+    --color-green-50: #f4ffe6;
+    --color-green-100: #e4ffc2;
+    --color-green-200: #cdff8a;
+    --color-green-300: #b6ff57;
+    --color-green-400: #9eff1f;
+    --color-green-500: #1a4e41;
+    --color-green-600: #1a4e41;
+    --color-green-700: #133a30;
+    --color-green-800: #0e2c24;
+    --color-green-900: #091d18;
+    --color-green: #9eff1f;
+    --color-neon: #9eff1f;
+    --color-forest: #1a4e41;
+    --color-cream: #f3eee3;
+
+    --color-gray-bg: #f3eee3;
+    --color-gray-border: #e2dccd;
+    --color-gray-muted: #4d5a54;
+    --color-gray-muted-dark: #43504a;
+
+    --color-surface: #ffffff;
+    --color-surface-light: #ffffff;
+    --color-surface-dark: #000000;
+    --color-surface-dark-alt: #0c2620;
+
+    --radius-card: 14px;
+    --radius-pill: 999px;
+
+    --shadow-card: 0 2px 10px rgba(26, 78, 65, 0.07);
+    --shadow-card-dark: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* A few semantic vars for the rare inline style (charts, admin). */
+:root { --k-accent: #1a4e41; --k-line: #e2dccd; --k-ink: #000; --k-muted: #4d5a54; --k-bg: #fff; color-scheme: light; }
+.dark { --k-accent: #9eff1f; --k-line: rgba(255,255,255,.1); --k-ink: #fff; --k-muted: rgba(255,255,255,.65); --k-bg: #000; color-scheme: dark; }
+
+@layer base {
+    html { scroll-behavior: smooth; }
+    body { @apply bg-white text-black font-sans antialiased transition-colors duration-200; }
+    .dark body { @apply bg-surface-dark text-white; }
+    h1, h2, h3, h4 { @apply font-display font-semibold text-navy tracking-tight; }
+    h5, h6 { @apply font-subhead font-semibold text-navy; }
+    blockquote { @apply font-subhead text-lg italic text-navy/90; }
+    .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 { @apply text-white; }
+    .dark blockquote { @apply text-white/85; }
+    ::selection { @apply bg-green-400 text-black; }
+    :focus-visible { outline: 2px solid var(--k-accent); outline-offset: 3px; }
+}
+
+@layer components {
+    .k-container { @apply mx-auto w-full px-6 md:px-10; max-width: 1440px; }
+    .k-container-wide { @apply mx-auto w-full px-6 md:px-10; max-width: 1720px; }
+    .k-section { @apply py-16 md:py-24; }
+    /* Alternate sections stay white in light mode (cream is a container surface only: cards, panels,
+       callouts, form boxes, tags); a hairline marks the change of section. Dark mode unchanged. */
+    .k-band { @apply border-y border-gray-border bg-white dark:border-transparent dark:bg-surface-dark-alt; }
+    /* Cream container surface for use on white. */
+    .k-surface { @apply rounded-card bg-cream dark:bg-surface-dark-alt; }
+    .k-skip { @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-pill focus:bg-green-400 focus:px-4 focus:py-2 focus:text-black; }
+
+    .k-btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               bg-green-400 text-black hover:-translate-y-0.5 hover:bg-green-300 shadow-sm hover:shadow-card;
+    }
+    .k-btn-outline {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               border border-navy/25 text-navy hover:border-navy hover:bg-navy hover:text-white
+               dark:border-white/25 dark:text-white dark:hover:border-green-400 dark:hover:bg-transparent dark:hover:text-green-400;
+    }
+    .k-btn-ghost {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               text-navy/80 hover:text-navy dark:text-white/70 dark:hover:text-white;
+    }
+    .k-btn-white {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               bg-white text-black hover:bg-green-400 hover:-translate-y-0.5 shadow-sm hover:shadow-card;
+    }
+    .k-btn-outline-white {
+        @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
+               font-subhead font-medium text-sm tracking-wide transition-all duration-150
+               border border-white/60 text-white hover:border-green-400 hover:text-green-400;
+    }
+
+    .k-card, .k-panel {
+        @apply rounded-card border border-gray-border bg-white p-6 shadow-card transition-colors duration-200
+               dark:border-white/10 dark:bg-surface-dark-alt dark:shadow-card-dark;
+    }
+    a.k-card { @apply hover:border-navy/40 dark:hover:border-green-400/60; }
+
+    .k-eyebrow, .k-kicker { @apply font-subhead text-xs font-bold text-navy dark:text-green-400; }
+    .k-navlink { @apply font-subhead text-sm font-medium text-black/80 hover:text-navy transition-colors dark:text-white/80 dark:hover:text-green-400; }
+    .k-rule { @apply border-t border-gray-border dark:border-white/10; }
+    .k-muted { @apply text-gray-muted dark:text-white/65; }
+    .k-lead { @apply text-lg text-gray-muted dark:text-white/65; }
+    .k-accent { @apply text-navy dark:text-green-400; }
+    .k-meta { @apply font-subhead text-xs text-gray-muted dark:text-white/55; }
+
+    .k-hero-bg {
+        @apply absolute inset-0 -z-10;
+        background: radial-gradient(ellipse at 20% 20%, rgba(158, 255, 31, 0.28), transparent 55%),
+                    radial-gradient(ellipse at 85% 80%, rgba(26, 78, 65, 0.6), transparent 50%),
+                    linear-gradient(120deg, #000 0%, #07120f 60%, #1a4e41 100%);
+        background-size: 200% 200%;
+        animation: k-hero-drift 18s ease-in-out infinite;
+    }
+    .k-hero-overlay { @apply absolute inset-0 -z-10 bg-black/50; }
+
+    /* Inner-page opener, as on kuartal.id/about: centred title on a white band (never cream). */
+    .k-page-hero { @apply relative border-b border-gray-border bg-white text-navy dark:border-white/10 dark:bg-surface-dark-alt dark:text-white; }
+
+    .k-placeholder { @apply bg-gray-bg dark:bg-white/5; }
+    .k-icon-badge { @apply flex h-12 w-12 items-center justify-center rounded-xl bg-green-400 text-black; }
+    .k-info-tile {
+        @apply flex flex-col items-center gap-3 rounded-card border border-gray-border bg-white px-6 py-8
+               text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-navy/40
+               dark:border-white/10 dark:bg-surface-dark-alt dark:shadow-card-dark dark:hover:border-green-400/60;
+    }
+    .k-list-card {
+        @apply flex items-center justify-between gap-4 rounded-card border border-gray-border bg-white px-5 py-4 shadow-card
+               transition-colors hover:border-navy/40 dark:border-white/10 dark:bg-surface-dark-alt dark:shadow-card-dark dark:hover:border-green-400/60;
+    }
+    .k-list-card + .k-list-card { @apply mt-3; }
+
+    .k-chip {
+        @apply inline-flex items-center gap-1 rounded-pill border border-gray-border px-3 py-1 text-xs font-subhead font-medium text-black/80
+               hover:border-navy hover:text-navy transition-colors dark:border-white/15 dark:text-white/80 dark:hover:border-green-400 dark:hover:text-green-400;
+    }
+    /* Impact Index: grade badges and the spending bar. */
+    .k-grade { @apply inline-flex min-w-10 items-center justify-center rounded-lg px-2 py-1 font-display text-sm font-bold; }
+    .k-grade-top { @apply bg-green-400 text-black; }
+    .k-grade-mid { @apply bg-navy text-white dark:bg-white dark:text-black; }
+    .k-grade-low { @apply border border-black/40 text-black dark:border-white/40 dark:text-white; }
+    .k-grade-none { @apply border border-dashed border-gray-border text-gray-muted font-subhead text-xs font-medium dark:border-white/20 dark:text-white/60; }
+    .k-chip.is-active { @apply border-green-400 bg-green-400 text-black; }
+    .k-chip { max-width: 100%; }
+    /* Phones: org rows keep the name readable; the score drops its "/ 100". */
+    @media (max-width: 639px) { [data-org-row] .k-grade-of { display: none; } }
+    /* Impact Index filters: a fold-out on phones, an always-open panel on desktop. */
+    .k-filters-toggle {
+        @apply flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 font-subhead text-base font-semibold text-navy dark:text-white;
+        min-height: 52px;
+    }
+    .k-filters-toggle::-webkit-details-marker { display: none; }
+    .k-filters[open] .k-filters-toggle svg { transform: rotate(180deg); }
+    .k-filters-count { @apply ml-2 inline-flex h-6 min-w-6 items-center justify-center rounded-pill bg-green-400 px-2 text-xs font-bold text-black; }
+    .k-empty {
+        @apply flex flex-col items-center gap-2 rounded-card border border-dashed border-gray-border bg-white px-6 py-10 text-center
+               dark:border-white/15 dark:bg-surface-dark-alt;
+    }
+    .k-empty h3 { @apply font-subhead text-base font-semibold; }
+    .k-empty p { @apply max-w-md text-sm text-gray-muted dark:text-white/65; }
+    .k-stat { @apply rounded-card border border-gray-border bg-white p-5 dark:border-white/10 dark:bg-surface-dark-alt; }
+
+    .k-prose { @apply text-base leading-relaxed text-black/90 dark:text-white/85; }
+    .k-prose > * + * { margin-top: 1.1em; }
+    .k-prose h2 { @apply text-2xl mt-10; }
+    .k-prose h3 { @apply text-xl mt-8; }
+    .k-prose a { @apply text-navy underline underline-offset-2 dark:text-green-400; }
+    .k-prose ul { @apply list-disc pl-6; }
+    .k-prose ol { @apply list-decimal pl-6; }
+    .k-prose blockquote { @apply border-l-4 border-green-400 pl-5; }
+    .k-prose img { @apply rounded-card; max-width: 100%; height: auto; }
+    .k-prose pre { @apply overflow-x-auto rounded-lg bg-gray-bg p-4 text-sm dark:bg-white/5; }
+    .k-prose table { @apply w-full text-sm; }
+    .k-prose th, .k-prose td { @apply border-b border-gray-border px-2 py-1 text-left dark:border-white/10; }
+
+    /* Logo: black artwork in light mode, neon in dark (see components/wordmark). */
+    .k-wordmark img { display: block; }
+    .k-wordmark .k-logo-dark { display: none; }
+    .dark .k-wordmark .k-logo-light { display: none; }
+    .dark .k-wordmark .k-logo-dark { display: block; }
+}
+
+/* Admin (layouts/portal.blade.php) */
+@layer components {
+    .k-input { @apply w-full min-w-0 max-w-full rounded-lg border border-gray-border bg-white px-3 py-2 text-sm text-black focus:border-navy focus:outline-none focus:ring-2 focus:ring-green-400/40; }
+    .k-label { @apply block text-xs font-subhead font-medium text-gray-muted mb-1; }
+    .k-table { @apply w-full text-sm; }
+    .k-table th { @apply text-left text-xs font-subhead font-semibold text-gray-muted border-b border-gray-border py-2 pr-4; }
+    .k-table td { @apply border-b border-gray-border/60 py-2 pr-4 align-top; }
+    .k-pill { @apply inline-block rounded-full px-2 py-0.5 text-xs font-medium; }
+    .k-editor { @apply min-h-[320px] rounded-b-lg border border-gray-border bg-white p-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-400/40; }
+    .k-editor-bar { @apply flex flex-wrap gap-1 rounded-t-lg border border-b-0 border-gray-border bg-gray-bg p-1; }
+    .k-editor-bar button { @apply rounded px-2 py-1 text-xs font-subhead hover:bg-white; }
+}
+
+@keyframes k-hero-drift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .k-hero-bg { animation: none; }
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+/* Mobile nav panel (kuartal-id PR #5 fix): the header is sticky, so the open
+   panel scrolls itself, capped at the viewport below the 4rem bar. */
+.k-mobile-panel {
+    max-height: calc(100vh - 4rem);
+    max-height: calc(100dvh - 4rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+}
+html.k-nav-locked, html.k-nav-locked body { overflow: hidden; }
+
+/* Admin keeps a calm light skin. */
+.k-admin { color-scheme: light; }

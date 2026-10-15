@@ -1,0 +1,58 @@
+# kuartalimpact.org: root .htaccess for Hostinger Git deploy (LiteSpeed/Apache).
+#
+# Hostinger Git deploys the `deploy` branch into public_html, so the REPOSITORY ROOT is
+# the web root. This file:
+#   1. refuses (403) every framework path, dotfile and data file, before any rewrite;
+#   2. sends everything else into public/, where public/.htaccess hands off to index.php.
+# Nothing outside public/ is ever served. Investor data (uploaded documents, the SQLite database, logs)
+# must never be reachable: the deny list is tested by tests/Unit/WebRootHtaccessTest.php,
+# against real Apache in .github/workflows/build-deploy-branch.yml, and against the live
+# site with bin/check-webroot.sh. Protected file (owner-approved).
+
+Options -Indexes -MultiViews
+
+<IfModule mod_headers.c>
+    Header always unset X-Powered-By
+    Header unset X-Powered-By
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Data and config files by name, in any directory (also covers public/).
+# .xml is refused except the app's /sitemap.xml route (served by Laravel, not a file).
+<FilesMatch "(^\.|^(?!sitemap\.xml$).*\.(env|log|sqlite|sqlite3|db|sql|md|lock|bak|backup|old|orig|save|swp|dist|sh|yml|yaml|neon|xml|key|pem|ini)$|^(composer|package|package-lock)\.json$|^(artisan|phpunit\.xml|vite\.config\.js|error_log)$)">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Let's Encrypt / Hostinger SSL validation.
+    RewriteRule ^\.well-known/acme-challenge/ - [L]
+
+    # Dotfiles and dot-directories anywhere (.env, .env.save, .git, .github, .ai, ...) -> 403
+    RewriteRule (^|/)\. - [F,L]
+
+    # Framework, source and data directories -> 403
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|storage|tests|vendor|node_modules|docs|deploy|bin|lang)(/|$) - [F,L,NC]
+
+    # Root files that must never be served -> 403
+    RewriteRule ^(artisan|composer\.(json|lock)|package(-lock)?\.json|phpunit\.xml|vite\.config\.js|[^/]+\.md|[^/]+\.log|\.env.*)$ - [F,L,NC]
+
+    # Everything else is served from public/ (public/.htaccess then routes to index.php).
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Without mod_rewrite nothing above protects the tree: refuse everything instead.
+<IfModule !mod_rewrite.c>
+    Require all denied
+</IfModule>
